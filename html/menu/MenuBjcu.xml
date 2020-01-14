@@ -1,0 +1,133 @@
+﻿<WebConfig>
+<chinese>
+<admin>
+<Item MenuLevel="1" MenuName = "状态" url = "html/ssmp/deviceinfo/deviceinfo.asp">
+<Item MenuLevel="2" MenuName = "设备信息" url = "html/ssmp/deviceinfo/deviceinfo.asp">
+<Item MenuLevel="3" MenuName = "设备基本信息" url = "html/ssmp/deviceinfo/deviceinfo.asp" />
+<Item MenuLevel="3" MenuName = "LAN接口信息" url = "html/amp/ethinfo/ethinfo.asp" />
+<Item MenuLevel="3" MenuName = "WLAN接口信息" featurectrl="HW_AMP_FEATURE_WLAN" url = "html/amp/wlaninfo/wlaninfo.asp" />
+<Item MenuLevel="3" MenuName = "WAN接口信息" url = "html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="3" MenuName="业务开通状态" url="html/ssmp/bss/bssinfo.asp" />
+<Item MenuLevel="3" MenuName="VoIP信息" featurectrl="HW_SSMP_FEATURE_WEB_BJUNICOM" url="html/voip/status/voipmaintain.asp" />
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "用户自服务" url = "html/ssmp/accoutcfg/accountadmin.asp">
+<Item MenuLevel="2" MenuName = "用户配置" url = "html/ssmp/accoutcfg/accountadmin.asp">
+<Item MenuLevel="3" MenuName = "Web登录密码更改" url = "html/ssmp/accoutcfg/accountadmin.asp" />
+<Item MenuLevel="3" MenuName = "无线网络参数配置" featurectrl="HW_AMP_FEATURE_WLAN" url = "html/amp/wlanbasic/wlan.asp"/>
+<Item MenuLevel="3" MenuName = "Internet连接" url = "html/bbsp/wan/wan.asp"/>
+<Item MenuLevel="3" MenuName = "静态路由配置" featurectrl="BBSP_FT_BJUNICOM" url = "html/bbsp/staticroute/staticroute.asp"/>
+<Item MenuLevel="3" MenuName = "RMS" featurectrl="HW_SSMP_FEATURE_WEB_BJUNICOM" url = "html/ssmp/tr069/tr069.asp"/>
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "应用" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp">
+<Item MenuLevel="2" MenuName = "绿色上网" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp">
+<Item MenuLevel="3" MenuName = "绿色上网" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp" />
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "重启系统" url = "html/ssmp/reset/reset.asp">
+<Item MenuLevel="2" MenuName = "重启系统" url = "html/ssmp/reset/reset.asp">
+<Item MenuLevel="3" MenuName = "当前配置重启" url = "html/ssmp/reset/reset.asp"/>
+<Item MenuLevel="3" MenuName = "开源软件使用声明" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</Item>
+</admin>	
+<normal> 
+<Item MenuLevel="1" MenuName = "状态" url = "html/ssmp/deviceinfo/deviceinfo.asp">
+<Item MenuLevel="2" MenuName = "设备信息" url = "html/ssmp/deviceinfo/deviceinfo.asp">
+<Item MenuLevel="3" MenuName = "设备基本信息" url = "html/ssmp/deviceinfo/deviceinfo.asp" />
+<Item MenuLevel="3" MenuName = "LAN接口信息" url = "html/amp/ethinfo/ethinfo.asp" />
+<Item MenuLevel="3" MenuName = "WLAN接口信息" featurectrl="HW_AMP_FEATURE_WLAN" url = "html/amp/wlaninfo/wlaninfo.asp" />
+<Item MenuLevel="3" MenuName = "WAN接口信息" url = "html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="3" MenuName="业务开通状态" url="html/ssmp/bss/bssinfo.asp" />
+<Item MenuLevel="3" MenuName="VoIP信息" featurectrl="HW_SSMP_FEATURE_WEB_BJUNICOM" url="html/voip/status/voipmaintain.asp" />
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "用户自服务" url = "html/ssmp/accoutcfg/account.asp">
+<Item MenuLevel="2" MenuName = "用户配置" url = "html/ssmp/accoutcfg/account.asp">
+<Item MenuLevel="3" MenuName = "Web登录密码更改" url = "html/ssmp/accoutcfg/account.asp" />
+<Item MenuLevel="3" MenuName = "无线网络参数配置" featurectrl="HW_AMP_FEATURE_WLAN" url = "html/amp/wlanbasic/wlan.asp"/>
+<Item MenuLevel="3" MenuName = "Internet连接" url = "html/bbsp/wan/wan.asp"/>
+<Item MenuLevel="3" MenuName = "静态路由配置" featurectrl="BBSP_FT_BJUNICOM" url = "html/bbsp/staticroute/staticroute.asp"/>
+<Item MenuLevel="3" MenuName = "RMS" featurectrl="HW_SSMP_FEATURE_WEB_BJUNICOM" url = "html/ssmp/tr069/tr069.asp"/>
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "应用" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp">
+<Item MenuLevel="2" MenuName = "绿色上网" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp">
+<Item MenuLevel="3" MenuName = "绿色上网" url = "html/bbsp/urlfiltersetting/urlfiltersetting.asp" />
+</Item>
+</Item>
+<Item MenuLevel="1" MenuName = "重启系统" url = "html/ssmp/reset/reset.asp">
+<Item MenuLevel="2" MenuName = "重启系统" url = "html/ssmp/reset/reset.asp">
+<Item MenuLevel="3" MenuName = "当前配置重启" url = "html/ssmp/reset/reset.asp"/>
+<Item MenuLevel="3" MenuName = "开源软件使用声明" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</Item>
+</normal>	
+</chinese>
+<public>
+<Item url="/resource/common/InitForm.asp"/>
+<Item url = "/html/get_swm_status.asp"/>
+<Item url = "/html/msgerrcode.asp"/>
+<Item url = "/html/proerrcode.asp"/>
+<Item url = "/html/relocation.asp"/>
+<Item url="/html/get_swm_status.asp" />
+<Item url="/html/ssmp/common/StartFileLoad.asp" />
+<Item url="/html/ssmp/smblist/smb_choosedir_list.asp" />
+<Item url="/html/ssmp/common/getCurrentUsbDir.asp" />
+<Item url="/html/ssmp/common/CheckUSBFileExist.asp" />
+<Item url="/html/ssmp/common/CheckNormalPwd.asp"/>
+<Item url="/html/ssmp/common/CheckAdminPwd.asp"/>
+<Item url="/html/ssmp/common/getCollectStatus.asp"/>
+<Item url="/html/ssmp/common/getCurLanguage.asp"/>
+<Item url="/html/ssmp/common/getCurUserType.asp"/>
+<Item url="/html/ssmp/common/getCurWebFrame.asp"/>
+<Item url="/html/ssmp/common/getPwdModifyFlag.asp"/>
+<Item url="/html/ssmp/common/getPageName.asp"/>
+<Item url="/html/ssmp/common/getCurWebMenuPath.asp"/>
+<Item url="/html/ssmp/common/CheckNormalPwd.asp"/>
+<Item url="/html/ssmp/common/refreshTime.asp"/>
+<Item url="/html/ssmp/common/ProductCapInfo.asp" />
+<Item url="/html/ssmp/common/GetDeviceState.asp"/>
+<Item url = "/html/management/pingwait.asp"/>
+<Item url="/html/bbsp/common/userinfo.asp" />
+<Item url="/html/bbsp/common/lanmodelist.asp" />
+<Item url="/html/bbsp/common/ontstate.asp" />   
+<Item url="/html/bbsp/common/topoinfo.asp" />
+<Item url="/html/bbsp/common/wanaddressacquire.asp" />
+<Item url="/html/bbsp/common/wandns.asp" />
+<Item url="/html/bbsp/common/wanipv6state.asp" />
+<Item url="/html/bbsp/common/managemode.asp" />
+<Item url="/html/amp/common/wlan_list.asp" />
+<Item url="/html/amp/wlanbasic/WlanWpsPin.asp" />
+<Item url="/html/amp/wlaninfo/getradar.asp" />
+<Item url="/html/bbsp/common/ipv6staticroute.asp" />
+<Item url="/html/bbsp/common/dnshostslist.asp" />
+<Item url="/html/amp/wlaninfo/getassociateddeviceinfo.asp" />
+<Item url="/html/amp/wlaninfo/getneighbourAPinfo.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnshosts.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnssearchlist.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnsconfig.asp" />
+<Item url="/html/bbsp/maintenance/selftestwait.asp" />
+<Item url="/html/bbsp/maintenance/pingwaitcommon.asp" />
+<Item url="html/bbsp/userdevinfo/userdetdevinfo.asp" />
+<Item url="html/bbsp/userdevinfo/netapp.asp" />
+<Item url="/html/bbsp/common/dhcpinfo.asp" />
+<Item url="/html/bbsp/common/lanuserinfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDhcpInfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDevInfo.asp"/>
+<Item url="/html/httpsdirect.asp"/>
+<Item url="/html/voip/status/sipvoipmaintain.asp"/>
+<Item url="/html/voip/status/h248voipmaintain.asp"/>
+<Item url="/html/bbsp/common/wan_list_info.asp"/>
+<Item url="/html/bbsp/common/wan_list.asp"/>
+<Item url="/html/bbsp/common/wan_pageparse.asp"/>
+<Item url="/html/bbsp/common/wan_servicelist.asp"/>
+<Item url="/html/bbsp/common/wan_control.asp"/>
+<Item url="/html/bbsp/common/wan_check.asp"/>
+</public>
+<adminfiles>
+</adminfiles>
+<userfiles>
+</userfiles>
+</WebConfig>

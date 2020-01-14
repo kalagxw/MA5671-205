@@ -1,0 +1,21 @@
+﻿var conditionpoolfeature ='<%HW_WEB_GetFeatureSupport(BBSP_FT_DHCPS_COND_POOL);%>';
+var DescRefPoolInfo = (conditionpoolfeature == '1') ? "bbsp_conpool" : "bbsp_secpool";
+var DescRefEnableInfo = (conditionpoolfeature == '1') ? "bbsp_enableconvermh" : "bbsp_enablesecvermh";
+
+var SecPoolReload = 
+[
+	{ReloadId:"SecPoolInfoBar", ReloadValue:[{DescRef:DescRefPoolInfo}]},
+	{ReloadId:"DHCPEnable", ReloadValue:[{DescRef:DescRefEnableInfo}]},
+
+]
+
+var TitleRefOption60 = (conditionpoolfeature == '1') ? "" : "bbsp_60prnote";
+var SlaveCfgReload =
+[
+	{ReloadId:"SecPoolInfoBar", ReloadValue:[{TitleRef:TitleRefOption60}]},
+]
+
+function CusLoadFrame()
+{
+
+}

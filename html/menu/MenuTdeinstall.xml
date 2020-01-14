@@ -1,0 +1,39 @@
+﻿<WebConfig>
+<english>
+<admin>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de Dispositivo" url="html/ssmp/deviceinfo/deviceinfoinstall.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas" url="">
+<Item MenuLevel="2" MenuName="Reinicio" url="html/ssmp/reset/resetinstall.asp" />
+<Item MenuLevel="2" MenuName="Actualizar Firmware" url="html/ssmp/fireware/firmwareinstall.asp" />
+<Item MenuLevel="2" MenuName="Autenticación ONT" url="html/amp/ontauth/password_install.asp" />
+</Item>
+</admin>
+<normal>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de Dispositivo" url="html/ssmp/deviceinfo/deviceinfoinstall.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas" url="">
+<Item MenuLevel="2" MenuName="Reinicio" url="html/ssmp/reset/resetinstall.asp" />
+<Item MenuLevel="2" MenuName="Actualizar Firmware" url="html/ssmp/fireware/firmwareinstall.asp" />
+<Item MenuLevel="2" MenuName="Autenticación ONT" url="html/amp/ontauth/password_install.asp" />
+</Item>
+</normal>
+</english>
+<public>
+<Item url="/resource/common/InitForm.asp"/>
+<Item url="/html/ssmp/common/getPwdModifyFlag.asp"/>
+<Item url="/html/ssmp/common/StartFileLoad.asp" />
+<Item url="/html/ssmp/common/CheckUserResult.asp"/>
+<Item url="/html/ssmp/common/GetDeviceState.asp"/>
+<Item url="/html/bbsp/common/portfwdprohibit.asp"/>
+<Item url="/html/ssmp/common/getCurLanguage.asp"/>
+<Item url="/html/ssmp/common/getCurUserType.asp"/>
+<Item url="/html/ssmp/common/getCurWebFrame.asp"/>
+<Item url="/html/ssmp/common/getPageName.asp"/>
+<Item url="/html/ssmp/common/getCurWebMenuPath.asp"/>
+<Item url="/html/get_swm_status.asp"/>
+<Item url="/html/ssmp/common/refreshTime.asp"/>
+</public>
+</WebConfig>

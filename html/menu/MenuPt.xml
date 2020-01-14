@@ -1,0 +1,153 @@
+﻿<WebConfig>
+<english>
+<admin/>
+<normal>
+<Item MenuLevel="1" MenuName="Status" url="">
+<Item MenuLevel="2" MenuName="WAN Information" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="VoIP Information" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="WLAN Information" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wlaninfo/wlaninfo.asp" />
+<Item MenuLevel="2" MenuName="Smart WiFi Coverage" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificoverinfo/wlancoverinfo.asp" />
+<Item MenuLevel="2" MenuName="Eth Port Information" url="html/amp/ethinfo/ethinfo.asp" />
+<Item MenuLevel="2" MenuName="DHCP Information" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpinfo/dhcpinfo.asp" />
+<Item MenuLevel="2" MenuName="Optical Information" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Battery Information" featurectrl="HW_SSMP_FEATURE_BATTERY" url="html/ssmp/batteryinfo/batteryinfo.asp" />
+<Item MenuLevel="2" MenuName="Device Information" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+<Item MenuLevel="2" MenuName="User Device Information" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/userdevinfo/userdevinfo.asp" />
+<Item MenuLevel="2" MenuName="Service Provisioning Status" url="html/ssmp/bss/bssinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="WAN Configuration" featurectrl="BBSP_FT_WAN" url="html/bsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="LAN" url="">
+<Item MenuLevel="2" MenuName="LAN Host Configuration" url="html/bbsp/dhcp/dhcp.asp" />
+<Item MenuLevel="2" MenuName="DHCP Server Configuration" featurectrl="BBSP_FT_L3_ALL" url="html/bbsp/dhcpservercfg/dhcp2.asp" />
+<Item MenuLevel="2" MenuName="DHCP Static IP Configuration" featurectrl="BBSP_FT_L3_ALL" url="html/bbsp/dhcpstatic/dhcpstatic.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="WLAN Basic Configuration" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp" />
+<Item MenuLevel="2" MenuName="WLAN Advance Configuration" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp" />
+<Item MenuLevel="2" MenuName="Automatic WiFi Shutdown" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wifische/WlanSchedule.asp" />
+<Item MenuLevel="2" MenuName="WiFi Coverage Management" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificovercfg/wifiCover.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Security" url="">
+<Item MenuLevel="2" MenuName="Firewall Level Configuration" featurectrl="BBSP_FT_FIREWALL" url="html/bbsp/firewalllevel/firewalllevel.asp" />
+<Item MenuLevel="2" MenuName="IP Filter Configuration" featurectrl="BBSP_FT_IPFILTERIN" url="html/bbsp/ipincoming/ipincoming.asp" />
+<Item MenuLevel="2" MenuName="MAC Filter Configuration" featurectrl="BBSP_FT_MACFILTER" url="html/bbsp/macfilter/macfilter.asp" />
+<Item MenuLevel="2" MenuName="WLAN MAC Filter Configuration" featurectrl="BBSP_FT_WLANMACFILER" url="html/bbsp/wlanmacfilter/wlanmacfilter.asp" />
+<Item MenuLevel="2" MenuName="URL Filter Configuration" featurectrl="BBSP_FT_PARENTAL_CTRL_URL_FLT" url="html/bbsp/urlfiltersetting/urlfiltersetting.asp" />
+<Item MenuLevel="2" MenuName="Parental Control Configuration" featurectrl="BBSP_FT_PARENTAL_CONTROL" url="html/bbsp/parentalctrl/parentalctrlstatus.asp" />
+<Item MenuLevel="2" MenuName="DoS Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/Dos/Dos.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="DMZ Configuration" featurectrl="BBSP_FT_DMZ_IP" url="html/bbsp/dmz/dmz.asp" />
+<Item MenuLevel="2" MenuName="Port Mapping Configuration" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+<Item MenuLevel="2" MenuName="Port Trigger Configuration" featurectrl="BBSP_FT_PORTTRIGGER_IP" url="html/bbsp/porttrigger/porttrigger.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Network Application" url="">
+<Item MenuLevel="2" MenuName="USB Application" featurectrl="HW_SSMP_FEATURE_USB" url="html/ssmp/usbftp/usbhost.asp" />
+<Item MenuLevel="2" MenuName="Home Sharing" featurectrl="HW_SSMP_FEATURE_USBPRINTER" url="html/ssmp/samba/samba.asp" />
+<Item MenuLevel="2" MenuName="Media Sharing" featurectrl="HW_SSMP_FEATURE_DLNA" url="html/ssmp/dlna/dlna.asp" />
+<Item MenuLevel="2" MenuName="ALG Configuration" featurectrl="BBSP_FT_ALG" url="html/bbsp/alg/alg.asp" />
+<Item MenuLevel="2" MenuName="UPnP Configuration" featurectrl="BBSP_FT_UPNP_MAIN" url="html/bbsp/upnp/upnp.asp" />
+<Item MenuLevel="2" MenuName="ARP Configuration" featurectrl="BBSP_FT_ARP" url="html/bbsp/arp/arp.asp" />
+<Item MenuLevel="2" MenuName="DDNS Configuration" featurectrl="BBSP_FT_DDNS_IP" url="html/bbsp/ddns/ddns.asp" />
+<Item MenuLevel="2" MenuName="IGMP Configuration" featurectrl="BBSP_FT_MULTICAST_WANPROXY" url="html/bbsp/igmp/igmp.asp" />
+<Item MenuLevel="2" MenuName="DNS Configuration" featurectrl="BBSP_FT_L3_ALL" url="html/bbsp/dnsconfiguration/dnshosts.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="System Tools" url="">
+<Item MenuLevel="2" MenuName="Reboot" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Configuration File" url="html/ssmp/cfgfile/cfgfileroot.asp" />
+<Item MenuLevel="2" MenuName="Firmware Upgrade" url="html/ssmp/fireware/firmware.asp" />
+<Item MenuLevel="2" MenuName="Restore Default Configuration" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Maintenance" featurectrl="BBSP_FT_WAN" url="html/bbsp/maintenance/diagnosecommon.asp" />
+<Item MenuLevel="2" MenuName="Log" url="html/ssmp/userlog/normallogview.asp" />
+<Item MenuLevel="2" MenuName="ONT Authentication" url="html/amp/ontauth/passwordcommon.asp" />
+<Item MenuLevel="2" MenuName="Advanced Power Management" featurectrl="HW_SSMP_FEATURE_APM" url="html/ssmp/apm/apmcfg.asp" />
+<Item MenuLevel="2" MenuName="Modify Login Password" url="html/ssmp/accoutcfg/account.asp" />
+<Item MenuLevel="2" MenuName="Open Source Software Notice" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</normal>
+</english>
+<public>
+<Item url="/resource/common/InitForm.asp"/>
+<Item url="/html/ssmp/common/getCollectStatus.asp" />
+<Item url="/html/ssmp/common/StartFileLoad.asp" />
+<Item url="/html/ssmp/common/CheckNormalPwd.asp"/>
+<Item url="/html/ssmp/common/CheckUserResult.asp"/>
+<Item url="/html/ssmp/common/GetDeviceState.asp"/>
+<Item url="/html/ssmp/common/getCurLanguage.asp"/>
+<Item url="/html/ssmp/common/getCurUserType.asp"/>
+<Item url="/html/ssmp/common/getCurWebFrame.asp"/>
+<Item url="/html/ssmp/common/getPwdModifyFlag.asp"/>
+<Item url="/html/ssmp/common/getPageName.asp"/>
+<Item url="/html/ssmp/common/getCurWebMenuPath.asp"/>
+<Item url="/html/get_swm_status.asp"/>
+<Item url="/html/ssmp/common/CheckUSBFileExist.asp" />
+<Item url="/html/ssmp/smblist/smb_choosedir_list.asp" />
+<Item url="/html/ssmp/common/getCurrentUsbDir.asp" />
+<Item url="/html/ssmp/common/refreshTime.asp"/>
+<Item url="/html/amp/ontauth/ontOnlineStatus.asp" />
+<Item url="/html/amp/ontauth/xgponauth_func.asp" />
+<Item url="/html/amp/common/WlanChannel.asp" />
+<Item url="/html/amp/wlanbasic/WlanWpsPin.asp" />
+<Item url="/html/msgerrcode.asp" />
+<Item url="/html/proerrcode.asp" />
+<Item url="/html/relocation.asp" />
+<Item url="/html/bbsp/common/userinfo.asp" />
+<Item url="/html/bbsp/common/lanmodelist.asp" />
+<Item url="/html/bbsp/common/ontstate.asp" />
+<Item url="/html/bbsp/common/topoinfo.asp" />
+<Item url="/html/bbsp/common/wanaddressacquire.asp" />
+<Item url="/html/bbsp/common/wandns.asp" />
+<Item url="/html/bbsp/common/wanipv6state.asp" />
+<Item url="/html/amp/wlaninfo/getradar.asp" />
+<Item url="/html/bbsp/common/managemode.asp" />
+<Item url="/html/bbsp/common/EquipTestResult.asp" />
+<Item url="/html/amp/common/wlan_list.asp" />
+<Item url="/html/bbsp/common/dnshostslist.asp" />
+<Item url="/html/amp/wlaninfo/getassociateddeviceinfo.asp" />
+<Item url="/html/amp/wlaninfo/getneighbourAPinfo.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnshosts.asp" />
+<Item url="/html/bbsp/maintenance/selftestwait.asp" />
+<Item url="/html/bbsp/maintenance/pingwaitcommon.asp" />
+<Item url="/html/bbsp/maintenance/GetPingResult.asp" />
+<Item url="/html/bbsp/maintenance/GetPingDnsResult.asp" />
+<Item url="/html/bbsp/maintenance/GetRouteResult.asp" />
+<Item url="/html/bbsp/maintenance/getEquipTestResult.asp" />
+<Item url="html/bbsp/userdevinfo/userdetdevinfo.asp" />
+<Item url="html/bbsp/userdevinfo/netapp.asp" />
+<Item url="html/amp/wificoverinfo/apNeighborList.asp" />
+<Item url="html/amp/wificoverinfo/apssidStat.asp" />
+<Item url="html/amp/wificoverinfo/apssidStation.asp" />
+<Item url="/html/bbsp/common/lanuserinfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDhcpInfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDevInfo.asp"/>
+<Item url="/html/common/ProductCapInfo.asp" />
+<Item url="/html/voip/status/sipvoipmaintain.asp" />
+<Item url="/html/voip/status/h248voipmaintain.asp" />
+<Item url="/html/bbsp/common/dhcpinfo.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlmac.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltime.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlurl.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltemplate.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlStat.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltemplatename.asp" />
+<Item url="/html/bbsp/parentalctrl/urlList.asp" />
+<Item url="/html/bbsp/parentalctrl/GetParentalctrlStatResult.asp" />
+<Item url="/html/bbsp/common/parentalctrlinfo.asp" />
+<Item url="/html/bbsp/common/time.asp" />
+<Item url="/html/bbsp/portmapping/portmappingnew.asp" />
+<Item url="/html/bbsp/portmapping/portmappingold.asp" />
+<Item url="/html/httpsdirect.asp"/>
+<Item url="/html/bbsp/common/wan_list_info.asp"/>
+<Item url="/html/bbsp/common/wan_list.asp"/>
+<Item url="/html/bbsp/common/wan_pageparse.asp"/>
+<Item url="/html/bbsp/common/wan_servicelist.asp"/>
+<Item url="/html/bbsp/common/wan_control.asp"/>
+<Item url="/html/bbsp/common/wan_check.asp"/>
+</public>
+<adminfiles>
+</adminfiles>
+<userfiles>
+</userfiles>
+</WebConfig>

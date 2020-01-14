@@ -1,0 +1,14 @@
+<InternetGatewayDevice> 
+<X_HW_ALG setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<TftpEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<H323Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SipEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<RTSPEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PptpEnable setconfig = "0x00000003" getconfig =  "0x00000003"/>
+<L2TPForward setconfig = "0x00000003" getconfig =  "0x00000003"/>
+<IPSecForward setconfig = "0x00000003" getconfig =  "0x00000003"/>
+<FtpEnable setconfig = "0x00000003" getconfig =  "0x00000003"/>
+<RTCPEnable setconfig = "0x00000003" getconfig =  "0x00000003"/>
+<RTCPPort setconfig = "0x00000003" getconfig =  "0x00000003"/>
+</X_HW_ALG>
+</InternetGatewayDevice> 

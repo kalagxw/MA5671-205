@@ -1,0 +1,17 @@
+#!/bin/sh
+#Çå³ýlastword
+
+if [ 0 -ne $# ]; then
+    echo "ERROR::input para is not right!";
+    return 1;
+else
+    echo -n "Confirm to clean the lastword(yes):"
+    read var_confirm
+    if [ $var_confirm == "yes" ] ; then
+        echo cls > /proc/wap_proc/wap_lastword
+        return 0;
+    else
+        echo "Cancel to clean the lastword."
+        return 1;
+    fi
+fi

@@ -1,0 +1,9 @@
+<InternetGatewayDevice> 
+<DeviceInfo setconfig = "0x00000003" getconfig = "0x00000003" > 
+<X_HW_Syslog setconfig = "0x00000002" getconfig = "0x00000003"> 
+<Enable  setconfig = "0x00000002" getconfig = "0x00000003"/> 
+<Level  setconfig = "0x00000002" getconfig = "0x00000003"/> 
+<QueryLevel  setconfig = "0x00000002" getconfig = "0x00000003"/>
+</X_HW_Syslog> 
+</DeviceInfo> 
+</InternetGatewayDevice> 

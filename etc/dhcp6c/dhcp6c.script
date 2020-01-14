@@ -1,0 +1,46 @@
+#!/bin/ash
+
+WAN_NAME=$1
+PATH="/var/ipv6/dhcp6c/$WAN_NAME"
+
+PID_FILE="$PATH/dhcp6c.pid"
+WAN_RET="$PATH/dhcp6c_result"
+DUID_FILE="$PATH/dhcp6c_duid"
+
+pid=
+get_pid()
+{
+	read pid < $PID_FILE
+}
+
+# send signal to notify the change of wan status 
+send_sig()
+{
+	get_pid		
+	kill -SIGUSR1 $pid 
+}
+
+# clear config file
+clear_ret()
+{
+	echo > $WAN_RET
+}
+
+# write dhcp option info to config file
+write_ret()
+{		
+	[ -n "$iapd_prefix" ] && echo iapd_prefix= $iapd_prefix >> $WAN_RET
+	[ -n "$iana_addr" ] && echo iana_addr= $iana_addr >> $WAN_RET
+	[ -n "$new_domain_name_servers" ] && echo dns= $new_domain_name_servers >> $WAN_RET	
+	[ -n "$aftr_name" ] && echo aftr_name= $aftr_name >> $WAN_RET	
+}
+
+
+clear_ret
+write_ret
+send_sig
+
+exit 0
+		
+		
+		

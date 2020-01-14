@@ -1,0 +1,14 @@
+<InternetGatewayDevice> 
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<UrlFilterIpConcern setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ParentalCtrl>
+<Templates setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<UrlFilterPolicy setconfig= "0x00000003" getconfig = "0x00000003"/>
+<UrlFilterRight setconfig = "0x00000003" getconfig = "0x00000003"/>
+<UrlFilter setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<UrlAddress setconfig= "0x00000003" getconfig = "0x00000003"/>
+</UrlFilter>
+</Templates>
+</ParentalCtrl>
+</X_HW_Security>
+</InternetGatewayDevice> 

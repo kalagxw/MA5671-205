@@ -1,0 +1,88 @@
+#! /bin/sh
+
+umask 0027
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/osgi/bin
+export LD_LIBRARY_PATH=/lib:/lib/omci_module:/lib/oam_module:/usr/osgi/lib:/usr/osgi/lib/arm:/usr/osgi/lib/arm/jli:/usr/osgi/lib/arm/minimal
+
+#insmod the watchdog ko
+[ -f /lib/modules/linux/extra/arch/arm/mach-hisi/hi_drv_wdt.ko ] && insmod /lib/modules/linux/extra/arch/arm/mach-hisi/hi_drv_wdt.ko
+
+# Clearing the console to fullscreen
+# clear
+
+echo
+echo -e "\t\t\t-=#  DOPRA LINUX 1.0  #=-"
+echo -e "\t\t\t-=#  EchoLife WAP 0.1  #=-"
+echo -e "\t\t\t-=#  Huawei Technologies Co., Ltd #=-"
+echo
+
+   echo "mount file system"
+ 
+   #mount -a 默认目录权限为755，文件权限为750
+   #mount -t proc proc /proc 
+   #mount -t sysfs -o mode=750 sysfs /sys
+   #mount -t tmpfs -o mode=750 tmpfs /dev
+   #chmod 750 /proc
+   mkdir /dev/pts
+   mkdir /dev/shm
+   mount -t devpts -o mode=620 devpts /dev/pts
+   mount -t tmpfs -o nodev,size=512m,mode=755 tmpfs /dev/shm
+   mount -t tmpfs -o nodev,size=10m,mode=755 none /tmp
+   mount -t tmpfs -o nodev,size=512m,mode=755 none /var
+   mount -t tmpfs -o nodev,size=4k,mode=755 none /mnt
+   mkdir /mnt/jffs2
+   mkdir /mnt/nfs
+
+   mkdir /var/osgi
+   mkdir /var/web
+   mkdir /var/cli
+   mount -t tmpfs -o nodev,size=16m,mode=755 none /var/osgi
+
+   echo "Loading the kernel modules: "
+
+   cat /etc/modules | sed -e '/^[ \t]*$/d' |
+   while read module
+   do
+       echo "Loading module: $module"
+       modprobe $module
+    done
+								    
+
+
+
+# Setting the console Log status mode
+	if [ -w /proc/sys/kernel/printk ]
+	then
+        	echo "Setting console log message level: "
+	        echo "1 4 1 7" > /proc/sys/kernel/printk
+	        echo 3 > /proc/sys/kernel/printk_ratelimit_burst
+	fi
+
+# Setting up initial hostname
+	echo "Setting hostname: "
+	hostname -F /etc/HOSTNAME
+	
+	
+# Setting up the sysctl confgiruaton options	
+	echo "Settingup the sysctl configurations:"
+	sysctl -p /etc/sysctl.conf > /dev/null
+
+# Setting up localhost loopback interface
+	echo "Setting up interface lo: "
+	ifconfig lo up 127.0.0.1
+
+# Running local startup scripts
+	echo "Running local startup scripts."
+	for i in `ls /etc/rc.d/rc.start/*` ; do
+	        if [ -x $i ]; then
+			$i start
+	        fi
+	done
+
+# Calling user defined scripts if any	
+	if [ -x /etc/rc.d/rc.local ]; then
+	        /etc/rc.d/rc.local
+	fi
+	
+	

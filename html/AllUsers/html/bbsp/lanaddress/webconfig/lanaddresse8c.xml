@@ -1,0 +1,40 @@
+<InternetGatewayDevice>
+<LANDevice setconfig="0x00000003" getconfig="0x00000003">
+<X_HW_RouterAdvertisement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<Enable setconfig = "0x00000003" getconfig="0x00000003"/>
+<ManagedFlag setconfig = "0x00000003" getconfig="0x00000003"/>
+<MinRtrAdvInterval setconfig = "0x00000003" getconfig="0x00000003"/>
+<MaxRtrAdvInterval setconfig = "0x00000003" getconfig="0x00000003"/>
+<OtherConfigFlag setconfig = "0x00000003" getconfig="0x00000003"/>
+<mode setconfig = "0x00000003" getconfig="0x00000003"/>
+<MTU setconfig = "0x00000003" getconfig="0x00000003"/>
+</X_HW_RouterAdvertisement>
+<LANHostConfigManagement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<X_HW_IPv6Interface setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<LanInterface setconfig = "0x00000003" getconfig="0x00000003"/>
+<IPv6Address setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<IPv6Address setconfig = "0x00000003" getconfig="0x00000003"/>
+</IPv6Address>
+<IPv6Prefix setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<ParentPrefix setconfig = "0x00000003" getconfig="0x00000003"/>
+<ChildPrefixMask setconfig = "0x00000003" getconfig="0x00000003"/>
+<Mode setconfig = "0x00000003" getconfig="0x00000003"/>
+<Prefix setconfig = "0x00000003" getconfig="0x00000003"/>
+<PreferredLifeTime setconfig = "0x00000003" getconfig="0x00000003"/>
+<ValidLifeTime  setconfig = "0x00000003" getconfig="0x00000003"/>
+</IPv6Prefix>
+</X_HW_IPv6Interface>
+</LANHostConfigManagement>
+<X_HW_DHCPv6 setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<X_HW_E8C_Enable setconfig = "0x00000003" getconfig="0x00000003"/>
+<X_HW_E8C_MinAddress setconfig = "0x00000003" getconfig="0x00000003"/>
+<X_HW_E8C_MaxAddress setconfig = "0x00000003" getconfig="0x00000003"/>
+</X_HW_DHCPv6>
+<X_HW_IPv6Config setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig="0x00000003">
+<DomainName setconfig = "0x00000003" getconfig="0x00000003"/>
+<IPv6DNSConfigType setconfig = "0x00000003" getconfig="0x00000003"/>
+<IPv6DNSWANConnection setconfig = "0x00000003" getconfig="0x00000003"/>
+<IPv6DNSServers setconfig = "0x00000003" getconfig="0x00000003"/>     
+</X_HW_IPv6Config>
+</LANDevice>
+</InternetGatewayDevice> 

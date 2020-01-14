@@ -1,0 +1,103 @@
+<InternetGatewayDevice>
+<Services>
+    <VoiceService>
+        <VoiceProfile>
+            <SIP>
+                <InboundAuthPassword/>
+            </SIP>
+            <X_HW_H248>
+                <auth>
+                    <authInitKey/>
+                    <Rfc2833EncryptKey/>
+                </auth>
+            </X_HW_H248>
+            <Line>
+                <SIP>
+                    <AuthPassword/>
+                </SIP>
+            </Line>
+        </VoiceProfile>
+    </VoiceService>
+    <StorageService>
+        <UserAccount>
+            <Password/>
+        </UserAccount>
+    </StorageService>
+</Services>
+<WANDevice>
+    <WANConnectionDevice>
+      <WANIPConnection>
+        <X_HW_DDNSConfiguration>
+        	<DDNSPassword/>
+        </X_HW_DDNSConfiguration>
+	  </WANIPConnection>
+      <WANPPPConnection>
+        <Password/>
+        <X_HW_DDNSConfiguration>
+        	<DDNSPassword/>
+        </X_HW_DDNSConfiguration>
+	  </WANPPPConnection>
+    </WANConnectionDevice>
+</WANDevice>
+<LANDevice>
+	<X_HW_WLANForISP>
+		<RadiusKey/>
+	</X_HW_WLANForISP>
+	<WLANConfiguration>
+                <X_HW_RadiusKey/>
+                <KeyPassphrase/>
+		<WEPKey >
+			<WEPKey/>
+		</WEPKey>
+		<PreSharedKey>
+			<PreSharedKey/>
+			<KeyPassphrase/>
+		</PreSharedKey>
+		<WPS>
+			<DevicePassword/>
+		</WPS>
+	</WLANConfiguration>
+</LANDevice>
+<X_HW_ServiceManage>
+    <FtpPassword/>
+</X_HW_ServiceManage>
+<ManagementServer>
+    <Password/>
+    <ConnectionRequestPassword/>
+    <STUNPassword/>
+    <X_HW_CertPassword/>
+  </ManagementServer>
+<X_HW_OmciPppoeAccount>
+    <OmciPppoeAccount>
+        <Password/>
+     </OmciPppoeAccount>
+</X_HW_OmciPppoeAccount>
+<X_HW_AmpInfo>
+	<X_HW_WpsDefaultPin>
+		<DevicePassword />
+	</X_HW_WpsDefaultPin>
+</X_HW_AmpInfo>
+<UserInterface>
+    <X_HW_WebSslInfo>
+        <CertPassword/>
+    </X_HW_WebSslInfo>
+</UserInterface>
+<X_HW_UserInfo >
+<UserName />
+<UserId/>
+</X_HW_UserInfo>
+<X_HW_SSMPPDT >
+<Deviceinfo >
+<X_HW_DataCardManage >
+<X_HW_DataCard >
+<X_HW_SIMCard >
+<PinCode />
+</X_HW_SIMCard>
+</X_HW_DataCard>
+</X_HW_DataCardManage>
+</Deviceinfo>
+</X_HW_SSMPPDT>
+<X_HW_Radio_WAN>
+<Password/>
+</X_HW_Radio_WAN>
+</InternetGatewayDevice>

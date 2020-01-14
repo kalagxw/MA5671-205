@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#==============================================================================
+# Log Message Codes
+#==============================================================================
+DL_LOG_FILE="/var/log/dlinstall.log"
+DL_LOG_DEFAULT=3    # Default log level is to log all messages
+DL_LOG_LEVEL=${DL_LOG_DEFAULT}
+DL_MSG_BASE=0000    # Log Message Code Base, can be relocated
+DL_LED_CTRL="" #Will be updated by the OCT with boot_hook path
+
+#Deployment log message codes, for reference in UM
+
+DEP_ERR_CMD_UNAVAIL=1
+DEP_ERR_DUP_MNT_POINT=2
+DEP_ERR_FMT_FAIL=3
+DEP_ERR_FSCK=4
+DEP_ERR_GEN=5
+DEP_ERR_GEN_SFDISK_FAIL=6
+DEP_ERR_GET_FSTAB_FAIL=7
+DEP_ERR_GRUB_INSTL_FAIL=8
+DEP_ERR_INVALID_DISK_NUM=9
+DEP_ERR_INVALID_FSTYPE=10
+DEP_ERR_INVALID_PT=11
+DEP_ERR_INVALID_PT_SIZE=12
+DEP_ERR_KRN_PARAM=13
+DEP_ERR_MNT_FAIL=14
+DEP_ERR_NO_BOOT_PT=15
+DEP_ERR_NO_HD=16
+DEP_ERR_PCONF_NOT_MATCH=17
+DEP_ERR_SFDISK_FAIL=18
+DEP_ERR_TRNSFR_FAIL=19
+DEP_ERR_UPGRADE_FAIL=20
+DEP_ERR_USB_DETECT_FAIL=21
+DEP_ERR_VER_CHK_FAIL=22
+DEP_ERR_NO_PARTITIONS=23
+
+DEP_INF_GEN=101
+DEP_INF_START=102
+DEP_INF_SUCCESS=103
+
+DEP_WRN_GEN=201

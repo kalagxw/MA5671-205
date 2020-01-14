@@ -1,0 +1,19 @@
+<InternetGatewayDevice>
+<Services>
+<X_HW_IPTV setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<IGMPEnable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ProxyEnable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SnoopingEnable setconfig = "0x00000002" getconfig = "0x00000002"/>
+</X_HW_IPTV>
+</Services>
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000003">
+<WANIPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_MultiCastVLAN setconfig = "0x00000002" getconfig = "0x00000002"/>
+</WANIPConnection>
+<WANPPPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_MultiCastVLAN setconfig = "0x00000002" getconfig = "0x00000002"/>
+</WANPPPConnection>
+</WANConnectionDevice>
+</WANDevice>
+</InternetGatewayDevice> 

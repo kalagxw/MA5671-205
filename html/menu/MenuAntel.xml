@@ -1,0 +1,468 @@
+﻿<WebConfig>
+<spanish>
+<admin>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de la WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="Información de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Información de la WLAN" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wlaninfo/wlaninfo.asp" />
+<Item MenuLevel="2" MenuName="Cobertura de Wi-Fi inteligente" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificoverinfo/wlancoverinfo.asp" />
+<Item MenuLevel="2" MenuName="Información del puerto Ethernet" url="html/amp/ethinfo/ethinfo.asp" />
+<Item MenuLevel="2" MenuName="Información de DHCP" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpinfo/dhcpinfo.asp" />
+<Item MenuLevel="2" MenuName="Información componentes ópticos" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Información de la batería" featurectrl="HW_SSMP_FEATURE_BATTERY" url="html/ssmp/batteryinfo/batteryinfo.asp" />
+<Item MenuLevel="2" MenuName="Información del dispositivo" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+<Item MenuLevel="2" MenuName="Gestión remota" featurectrl="HW_SSMP_FEATURE_TR069" url="html/ssmp/RomteInfo/acsstatus.asp" />
+<Item MenuLevel="2" MenuName="Lista de dispositivos" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/userdevinfo/userdevinfo.asp" />
+<Item MenuLevel="2" MenuName="Estado de aprov del servicio" url="html/ssmp/bss/bssinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="Config de WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+<Item MenuLevel="2" MenuName="Config de opciones cliente DHCP" featurectrl="BBSP_FT_DHCP_CLIENT_OPTION" url="html/bbsp/wandhcpoption/wandhcpoption.asp" />
+<Item MenuLevel="2" MenuName="Parám de solicitud cliente DHCP" featurectrl="BBSP_FT_DHCP_CLIENT_OPTION" url="html/bbsp/wandhcppara/wandhcppara.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="LAN" url="">
+<Item MenuLevel="2" MenuName="Config del puerto LAN" featurectrl="BBSP_FT_L3" url="html/bbsp/layer3/layer3.asp" />
+<Item MenuLevel="2" MenuName="Config del Gateway" url="html/bbsp/dhcp/dhcp.asp" />
+<Item MenuLevel="2" MenuName="Config del servidor DHCP" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpservercfg/dhcp2.asp" />
+<Item MenuLevel="2" MenuName="Config de opciones servidor DHCP" featurectrl="BBSP_FT_DHCPS_OPTION" url="html/bbsp/landhcpoption/landhcpoption.asp" />
+<Item MenuLevel="2" MenuName="Config IP estática DHCP" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpstatic/dhcpstatic.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="IPv6" url="">
+<Item MenuLevel="2" MenuName="Rutas predeterminadas" featurectrl="BBSP_FT_IPV6_ROUTE" url="html/bbsp/ipv6defaultroute/defaultroute.asp" />
+<Item MenuLevel="2" MenuName="Config de IP estática" featurectrl="BBSP_FT_IPV6_ROUTE" url="html/bbsp/ipv6staticroute/ipv6staticroute.asp" />
+<Item MenuLevel="2" MenuName="Config dirección de LAN" featurectrl="BBSP_FT_IPV6_LANDEV" url="html/bbsp/lanaddress/lanaddress.asp" />
+<Item MenuLevel="2" MenuName="Config de IP estática DHCPv6" featurectrl="BBSP_FT_IPV6_DHCP6S" url="html/bbsp/dhcpstaticaddr/dhcpstaticaddress.asp" />
+<Item MenuLevel="2" MenuName="Información de DHCPv6" featurectrl="BBSP_FT_IPV6_DHCP6S" url="html/bbsp/dhcpv6info/dhcpv6info.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="Config básica de WLAN" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp" />
+<Item MenuLevel="2" MenuName="Config avanzada de WLAN" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp" />
+<Item MenuLevel="2" MenuName="Config básica de la red 2.4G" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp?2G" />
+<Item MenuLevel="2" MenuName="Config avanzada de la red 2.4G" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp?2G" />
+<Item MenuLevel="2" MenuName="Config básica de la red 5G" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp?5G" />
+<Item MenuLevel="2" MenuName="Config avanzada de la red 5G" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp?5G" />
+<Item MenuLevel="2" MenuName="Apagado automático de Wi-Fi" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wifische/WlanSchedule.asp" />
+<Item MenuLevel="2" MenuName="Gestión de cobertura de Wi-Fi" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificovercfg/wifiCover.asp" />
+<Item MenuLevel="2" MenuName="Certificado WAPI" featurectrl="HW_AMP_FEATURE_WAPI" url="html/amp/wapi/Wapi.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Seguridad" url="">
+<Item MenuLevel="2" MenuName="Config nivel de firewall" featurectrl="BBSP_FT_FIREWALL" url="html/bbsp/firewalllevel/firewalllevel.asp" />
+<Item MenuLevel="2" MenuName="Config de IP Filter" featurectrl="BBSP_FT_IPFILTERIN" url="html/bbsp/ipincoming/ipincoming.asp" />
+<Item MenuLevel="2" MenuName="Config del MAC Filter" featurectrl="BBSP_FT_MACFILTER" url="html/bbsp/macfilter/macfilter.asp" />
+<Item MenuLevel="2" MenuName="Config del WLAN MAC Filter" featurectrl="BBSP_FT_WLANMACFILER" url="html/bbsp/wlanmacfilter/wlanmacfilter.asp" />
+<Item MenuLevel="2" MenuName="Config del URL Filter" featurectrl="BBSP_FT_PARENTAL_CTRL_URL_FLT" url="html/bbsp/urlfiltersetting/urlfiltersetting.asp" />
+<Item MenuLevel="2" MenuName="Config de control parental" featurectrl="BBSP_FT_PARENTAL_CONTROL" url="html/bbsp/parentalctrl/parentalctrlstatus.asp" />
+<Item MenuLevel="2" MenuName="Config de DoS" featurectrl="BBSP_FT_WAN" url="html/bbsp/Dos/Dos.asp" />
+<Item MenuLevel="2" MenuName="Config de acceso a la ONT" featurectrl="BBSP_FT_WAN" url="html/bbsp/acl/acl.asp" />
+<Item MenuLevel="2" MenuName = "Config de acceso a la WAN" featurectrl="BBSP_FT_WAN" url = "html/bbsp/wanacl/wanacl.asp" />
+<Item MenuLevel="2" MenuName="Config del log del firewall" featurectrl="BBSP_FT_FIREWALL_FLOW_LOG" url="html/bbsp/firewalllogcfg/firewalllogcfg.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Ruta" url="">
+<Item MenuLevel="2" MenuName="Rutas predeterminadas" featurectrl="BBSP_FT_ROUTE" url="html/bbsp/route/route.asp" />
+<Item MenuLevel="2" MenuName="Config de IP estática" featurectrl="BBSP_FT_ROUTE_STATIC" url="html/bbsp/staticroute/staticroute.asp" />
+<Item MenuLevel="2" MenuName="Config rutas de políticas" featurectrl="BBSP_FT_ROUTE_POLICY" url="html/bbsp/policyroute/policyroute.asp" />
+<Item MenuLevel="2" MenuName = "Config asociación de VLAN" featurectrl="BBSP_FT_ROUTE_POLICY" url = "html/bbsp/vlanctc/vlanctc.asp" />
+<Item MenuLevel="2" MenuName = "Config de ruta de servicios" featurectrl="BBSP_FT_ROUTE_POLICY" url = "html/bbsp/serviceroute/serviceroute.asp" />
+<Item MenuLevel="2" MenuName="Tabla de enrutamiento"             featurectrl="BBSP_FT_ROUTE" url="html/bbsp/routeinfo/routeinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="DMZ" featurectrl="BBSP_FT_DMZ_IP" url="html/bbsp/dmz/dmz.asp" />
+<Item MenuLevel="2" MenuName="Port Forwarding" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+<Item MenuLevel="2" MenuName="Port Trigger" featurectrl="BBSP_FT_PORTTRIGGER_IP" url="html/bbsp/porttrigger/porttrigger.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Aplicación de red" url="">
+<Item MenuLevel="2" MenuName="Aplicación USB" featurectrl="HW_SSMP_FEATURE_USB" url="html/ssmp/usbftp/usbhost.asp" />
+<Item MenuLevel="2" MenuName="Uso compartido residencial" featurectrl="HW_SSMP_FEATURE_USBPRINTER" url="html/ssmp/samba/samba.asp" />
+<Item MenuLevel="2" MenuName="Uso compartido de medios" featurectrl="HW_SSMP_FEATURE_DLNA" url="html/ssmp/dlna/dlna.asp" />
+<Item MenuLevel="2" MenuName="ALG" featurectrl="BBSP_FT_ALG" url="html/bbsp/alg/alg.asp" />
+<Item MenuLevel="2" MenuName="UPnP" featurectrl="BBSP_FT_UPNP_MAIN" url="html/bbsp/upnp/upnp.asp" />
+<Item MenuLevel="2" MenuName="ARP" featurectrl="BBSP_FT_ARP" url="html/bbsp/arp/arp.asp" />
+<Item MenuLevel="2" MenuName="Portal" featurectrl="BBSP_FT_PORTAL" url="html/bbsp/portal/portal.asp" />
+<Item MenuLevel="2" MenuName="DDNS" featurectrl="BBSP_FT_DDNS_IP" url="html/bbsp/ddns/ddns.asp" />
+<Item MenuLevel="2" MenuName="IGMP" featurectrl="BBSP_FT_MULTICAST_WANPROXY" url="html/bbsp/igmp/igmp.asp" />
+<Item MenuLevel="2" MenuName="Inteligente canales" featurectrl="BBSP_FT_QOS_CFG"  url="html/bbsp/qossmart/qossmart.asp" />
+<Item MenuLevel="2" MenuName="Limite de conexiones" featurectrl="BBSP_FT_ACCLIMIT" url="html/bbsp/accesslimit/accesslimit.asp" />
+<Item MenuLevel="2" MenuName="Ping ARP" featurectrl="BBSP_FT_WAN" url="html/bbsp/arpping/arpping.asp" />
+<Item MenuLevel="2" MenuName ="DNS" featurectrl="BBSP_FT_L3_ALL" url = "html/bbsp/dnsconfiguration/dnsconfigcommon.asp" />
+<Item MenuLevel="2" MenuName ="Envejecimiento de ARP" featurectrl="BBSP_FT_R13_ONETRACK" url = "html/bbsp/arpagetime/arpagetime.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Voz" url="">
+<Item MenuLevel="2" MenuName="Configuración de VoIP básica" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/voipinterface/voipinterface.asp" />
+<Item MenuLevel="2" MenuName="Configuración de VoIP avanzada" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/voipuser/voipuser.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas del sistema" url="">
+<Item MenuLevel="2" MenuName="Reiniciar" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Archivo de Config" url="html/ssmp/cfgfile/cfgfile.asp" />
+<Item MenuLevel="2" MenuName="Restauración desde USB" featurectrl="HW_SSMP_FEATURE_QUICKCFG" url="html/ssmp/usbback/usbbackup.asp" />
+<Item MenuLevel="2" MenuName="Actualización de firmware" url="html/ssmp/fireware/firmware.asp" />
+<Item MenuLevel="2" MenuName="Restablecer conf predeterminada" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Cambio de modo" url="html/bbsp/internetmodeswitch/internetmodeswitch.asp"/>
+<Item MenuLevel="2" MenuName="Pruebas de Red" url="html/bbsp/maintenance/diagnosecommon.asp" />
+<Item MenuLevel="2" MenuName="Estadísticas de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/statistic/voipstatistic.asp" />
+<Item MenuLevel="2" MenuName="Diagnóstico de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/diagnose/voipdiagnose.asp" />
+<Item MenuLevel="2" MenuName="Espejamiento remoto" featurectrl="BBSP_FT_WAN" url="html/bbsp/remotepktmirror/remotepktmirror.asp"/>
+<Item MenuLevel="2" MenuName="Log" url="html/ssmp/userlog/logview.asp" />
+<Item MenuLevel="2" MenuName="Depurar log" url="html/ssmp/debuglog/debuglogview.asp" />
+<Item MenuLevel="2" MenuName="Log del firewall" featurectrl="BBSP_FT_FIREWALL_FLOW_LOG" url="html/bbsp/firewalllog/firewalllogview.asp" />
+<Item MenuLevel="2" MenuName="Autenticación en la ONT" url="html/amp/ontauth/passwordcommon.asp" />
+<Item MenuLevel="2" MenuName="Configurar la tarjeta de Internet 3G" featurectrl="HW_SSMP_FEATURE_UMTS_SUPPORT" url="html/ssmp/3GManage/3GManage.asp" />
+<Item MenuLevel="2" MenuName="Config de fecha y hora" featurectrl="BBSP_FT_SNTP" url="html/ssmp/sntp/sntp.asp" />
+<Item MenuLevel="2" MenuName="TR-069" featurectrl="HW_SSMP_FEATURE_TR069" url="html/ssmp/tr069/tr069.asp" />
+<Item MenuLevel="2" MenuName="Gestión avanzada de alimentación" featurectrl="HW_SSMP_FEATURE_APM" url="html/ssmp/apm/apmcfg.asp" />
+<Item MenuLevel="2" MenuName="Modificar contraseña" featurectrl="HW_SSMP_FEATURE_MODIFYPWDPAGE" url="html/ssmp/accoutcfg/accountadmin.asp" />
+<Item MenuLevel="2" MenuName="Estadísticas canales intel" featurectrl="BBSP_FT_QOS_CFG"  url="html/bbsp/qossmartstatistics/qossmartstatistics.asp" />
+<Item MenuLevel="2" MenuName="Recopilación información fallas" url="html/ssmp/collect/collectInfo.asp" />
+<Item MenuLevel="2" MenuName="Indicator Status Management" url="html/ssmp/ledcfg/ledcfg.asp" />
+<Item MenuLevel="2" MenuName="Aviso software de código abierto" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</admin>
+<normal>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de la WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="Información de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Información componentes ópticos" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Información del dispositivo" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="Config de WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="Config de WLAN" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas del sistema" url="">
+<Item MenuLevel="2" MenuName="Reiniciar" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restablecer conf predeterminada" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Aviso software de código abierto" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</normal>
+<normaluser>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de la WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="Información de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Información componentes ópticos" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Información del dispositivo" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="Config de WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="Config de WLAN" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="Port Forwarding" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas del sistema" url="">
+<Item MenuLevel="2" MenuName="Reiniciar" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restablecer conf predeterminada" url="html/ssmp/restore/restore.asp" />
+</Item>
+</normaluser>
+<installuser>
+<Item MenuLevel="1" MenuName="Estado" url="">
+<Item MenuLevel="2" MenuName="Información de la WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="Información de VoIP" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Información componentes ópticos" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Información del dispositivo" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="Config de WAN" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="Config de WLAN" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="Port Forwarding" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Herramientas del sistema" url="">
+<Item MenuLevel="2" MenuName="Reiniciar" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restablecer conf predeterminada" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Autenticación en la ONT" url="html/amp/ontauth/passwordcommon.asp" />
+<Item MenuLevel="2" MenuName="Aviso software de código abierto" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</installuser>
+</spanish>
+<english>
+<admin>
+<Item MenuLevel="1" MenuName="Status" url="">
+<Item MenuLevel="2" MenuName="WAN Information" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="VoIP Information" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="WLAN Information" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wlaninfo/wlaninfo.asp" />
+<Item MenuLevel="2" MenuName="Smart WiFi Coverage" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificoverinfo/wlancoverinfo.asp" />
+<Item MenuLevel="2" MenuName="Eth Port Information" url="html/amp/ethinfo/ethinfo.asp" />
+<Item MenuLevel="2" MenuName="DHCP Information" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpinfo/dhcpinfo.asp" />
+<Item MenuLevel="2" MenuName="Optical Information" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Battery Information" featurectrl="HW_SSMP_FEATURE_BATTERY" url="html/ssmp/batteryinfo/batteryinfo.asp" />
+<Item MenuLevel="2" MenuName="Device Information" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+<Item MenuLevel="2" MenuName="Remote Manage" featurectrl="HW_SSMP_FEATURE_TR069" url="html/ssmp/RomteInfo/acsstatus.asp" />
+<Item MenuLevel="2" MenuName="User Device Information" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/userdevinfo/userdevinfo.asp" />
+<Item MenuLevel="2" MenuName="Service Provisioning Status" url="html/ssmp/bss/bssinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="WAN Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+<Item MenuLevel="2" MenuName="DHCP Client Option Configuration" featurectrl="BBSP_FT_DHCP_CLIENT_OPTION" url="html/bbsp/wandhcpoption/wandhcpoption.asp" />
+<Item MenuLevel="2" MenuName="DHCP Client Request Parameter" featurectrl="BBSP_FT_DHCP_CLIENT_OPTION" url="html/bbsp/wandhcppara/wandhcppara.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="LAN" url="">
+<Item MenuLevel="2" MenuName="LAN Port Work Mode" featurectrl="BBSP_FT_L3" url="html/bbsp/layer3/layer3.asp" />
+<Item MenuLevel="2" MenuName="LAN Host Configuration" url="html/bbsp/dhcp/dhcp.asp" />
+<Item MenuLevel="2" MenuName="DHCP Server Configuration" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpservercfg/dhcp2.asp" />
+<Item MenuLevel="2" MenuName="DHCP Server Option Configuration" featurectrl="BBSP_FT_DHCPS_OPTION" url="html/bbsp/landhcpoption/landhcpoption.asp" />
+<Item MenuLevel="2" MenuName="DHCP Static IP Configuration" featurectrl="BBSP_FT_DHCP_MAIN" url="html/bbsp/dhcpstatic/dhcpstatic.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="IPv6" url="">
+<Item MenuLevel="2" MenuName="Default Route Configuration" featurectrl="BBSP_FT_IPV6_ROUTE" url="html/bbsp/ipv6defaultroute/defaultroute.asp" />
+<Item MenuLevel="2" MenuName="Static Route Configuration" featurectrl="BBSP_FT_IPV6_ROUTE" url="html/bbsp/ipv6staticroute/ipv6staticroute.asp" />
+<Item MenuLevel="2" MenuName="LAN Address Configuration" featurectrl="BBSP_FT_IPV6_LANDEV" url="html/bbsp/lanaddress/lanaddress.asp" />
+<Item MenuLevel="2" MenuName="DHCPv6 Static IP Configuration" featurectrl="BBSP_FT_IPV6_DHCP6S" url="html/bbsp/dhcpstaticaddr/dhcpstaticaddress.asp" />
+<Item MenuLevel="2" MenuName="DHCPv6 Information" featurectrl="BBSP_FT_IPV6_DHCP6S" url="html/bbsp/dhcpv6info/dhcpv6info.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="WLAN Basic Configuration" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp" />
+<Item MenuLevel="2" MenuName="WLAN Advanced Configuration" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp" />
+<Item MenuLevel="2" MenuName="2.4G Basic Network Settings" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp?2G" />
+<Item MenuLevel="2" MenuName="2.4G Advanced Network Settings" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp?2G" />
+<Item MenuLevel="2" MenuName="5G Basic Network Settings" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanbasic/WlanBasic.asp?5G" />
+<Item MenuLevel="2" MenuName="5G Advanced Network Settings" featurectrl="HW_AMP_FEATURE_DOUBLE_WLAN" url="html/amp/wlanadv/WlanAdvance.asp?5G" />
+<Item MenuLevel="2" MenuName="Automatic WiFi Shutdown" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wifische/WlanSchedule.asp" />
+<Item MenuLevel="2" MenuName="WiFi Coverage Management" featurectrl="HW_AMP_FEATURE_WLAN" url="html/amp/wificovercfg/wifiCover.asp" />
+<Item MenuLevel="2" MenuName="WAPI Certification" featurectrl="HW_AMP_FEATURE_WAPI" url="html/amp/wapi/Wapi.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Security" url="">
+<Item MenuLevel="2" MenuName="Firewall Level Configuration" featurectrl="BBSP_FT_FIREWALL" url="html/bbsp/firewalllevel/firewalllevel.asp" />
+<Item MenuLevel="2" MenuName="IP Filter Configuration" featurectrl="BBSP_FT_IPFILTERIN" url="html/bbsp/ipincoming/ipincoming.asp" />
+<Item MenuLevel="2" MenuName="MAC Filter Configuration" featurectrl="BBSP_FT_MACFILTER" url="html/bbsp/macfilter/macfilter.asp" />
+<Item MenuLevel="2" MenuName="WLAN MAC Filter Configuration" featurectrl="BBSP_FT_WLANMACFILER" url="html/bbsp/wlanmacfilter/wlanmacfilter.asp" />
+<Item MenuLevel="2" MenuName="URL Filter Configuration" featurectrl="BBSP_FT_PARENTAL_CTRL_URL_FLT" url="html/bbsp/urlfiltersetting/urlfiltersetting.asp" />
+<Item MenuLevel="2" MenuName="Parental Control Configuration" featurectrl="BBSP_FT_PARENTAL_CONTROL" url="html/bbsp/parentalctrl/parentalctrlstatus.asp" />
+<Item MenuLevel="2" MenuName="DoS Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/Dos/Dos.asp" />
+<Item MenuLevel="2" MenuName="ONT Access Control Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/acl/acl.asp" />
+<Item MenuLevel="2" MenuName = "WAN Access Control Configuration" featurectrl="BBSP_FT_WAN" url = "html/bbsp/wanacl/wanacl.asp" />
+<Item MenuLevel="2" MenuName="Firewall Log Configuration" featurectrl="BBSP_FT_FIREWALL_FLOW_LOG" url="html/bbsp/firewalllogcfg/firewalllogcfg.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Route" url="">
+<Item MenuLevel="2" MenuName="Default Route Configuration" featurectrl="BBSP_FT_ROUTE" url="html/bbsp/route/route.asp" />
+<Item MenuLevel="2" MenuName="Static Route Configuration" featurectrl="BBSP_FT_ROUTE_STATIC" url="html/bbsp/staticroute/staticroute.asp" />
+<Item MenuLevel="2" MenuName="Policy Route Configuration" featurectrl="BBSP_FT_ROUTE_POLICY" url="html/bbsp/policyroute/policyroute.asp" />
+<Item MenuLevel="2" MenuName = "VLAN Binding Configuration" featurectrl="BBSP_FT_ROUTE_POLICY" url = "html/bbsp/vlanctc/vlanctc.asp" />
+<Item MenuLevel="2" MenuName = "Service Route Configuration" featurectrl="BBSP_FT_ROUTE_POLICY" url = "html/bbsp/serviceroute/serviceroute.asp" />
+<Item MenuLevel="2" MenuName="Routing Table"             featurectrl="BBSP_FT_ROUTE" url="html/bbsp/routeinfo/routeinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="DMZ Configuration" featurectrl="BBSP_FT_DMZ_IP" url="html/bbsp/dmz/dmz.asp" />
+<Item MenuLevel="2" MenuName="Port Mapping Configuration" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+<Item MenuLevel="2" MenuName="Port Trigger Configuration" featurectrl="BBSP_FT_PORTTRIGGER_IP" url="html/bbsp/porttrigger/porttrigger.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Network Application" url="">
+<Item MenuLevel="2" MenuName="USB Application" featurectrl="HW_SSMP_FEATURE_USB" url="html/ssmp/usbftp/usbhost.asp" />
+<Item MenuLevel="2" MenuName="Home Sharing" featurectrl="HW_SSMP_FEATURE_USBPRINTER" url="html/ssmp/samba/samba.asp" />
+<Item MenuLevel="2" MenuName="Media Sharing" featurectrl="HW_SSMP_FEATURE_DLNA" url="html/ssmp/dlna/dlna.asp" />
+<Item MenuLevel="2" MenuName="ALG Configuration" featurectrl="BBSP_FT_ALG" url="html/bbsp/alg/alg.asp" />
+<Item MenuLevel="2" MenuName="UPnP Configuration" featurectrl="BBSP_FT_UPNP_MAIN" url="html/bbsp/upnp/upnp.asp" />
+<Item MenuLevel="2" MenuName="ARP Configuration" featurectrl="BBSP_FT_ARP" url="html/bbsp/arp/arp.asp" />
+<Item MenuLevel="2" MenuName="Portal Configuration" featurectrl="BBSP_FT_PORTAL" url="html/bbsp/portal/portal.asp" />
+<Item MenuLevel="2" MenuName="DDNS Configuration" featurectrl="BBSP_FT_DDNS_IP" url="html/bbsp/ddns/ddns.asp" />
+<Item MenuLevel="2" MenuName="IGMP Configuration" featurectrl="BBSP_FT_MULTICAST_WANPROXY" url="html/bbsp/igmp/igmp.asp" />
+<Item MenuLevel="2" MenuName="Intelligent Channel Configuration" featurectrl="BBSP_FT_QOS_CFG"  url="html/bbsp/qossmart/qossmart.asp" />
+<Item MenuLevel="2" MenuName="Terminal Limit Configuration" featurectrl="BBSP_FT_ACCLIMIT" url="html/bbsp/accesslimit/accesslimit.asp" />
+<Item MenuLevel="2" MenuName="ARP Ping" featurectrl="BBSP_FT_WAN" url="html/bbsp/arpping/arpping.asp" />
+<Item MenuLevel="2" MenuName ="DNS Configuration" featurectrl="BBSP_FT_L3_ALL" url = "html/bbsp/dnsconfiguration/dnsconfigcommon.asp" />
+<Item MenuLevel="2" MenuName ="ARP Aging" featurectrl="BBSP_FT_R13_ONETRACK" url = "html/bbsp/arpagetime/arpagetime.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Voice" url="">
+<Item MenuLevel="2" MenuName="VoIP Basic Configuration" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/voipinterface/voipinterface.asp" />
+<Item MenuLevel="2" MenuName="VoIP Advanced Configuration" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/voipuser/voipuser.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="System Tools" url="">
+<Item MenuLevel="2" MenuName="Reboot" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Configuration File" url="html/ssmp/cfgfile/cfgfile.asp" />
+<Item MenuLevel="2" MenuName="USB Backup Restore CFG" featurectrl="HW_SSMP_FEATURE_QUICKCFG" url="html/ssmp/usbback/usbbackup.asp" />
+<Item MenuLevel="2" MenuName="Firmware Upgrade" url="html/ssmp/fireware/firmware.asp" />
+<Item MenuLevel="2" MenuName="Restore Default Configuration" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Routing/Bridging Mode Switching" url="html/bbsp/internetmodeswitch/internetmodeswitch.asp"/>
+<Item MenuLevel="2" MenuName="Maintenance" url="html/bbsp/maintenance/diagnosecommon.asp" />
+<Item MenuLevel="2" MenuName="VoIP Statistics" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/statistic/voipstatistic.asp" />
+<Item MenuLevel="2" MenuName="VoIP Diagnose" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/diagnose/voipdiagnose.asp" />
+<Item MenuLevel="2" MenuName="Remote Mirror" featurectrl="BBSP_FT_WAN" url="html/bbsp/remotepktmirror/remotepktmirror.asp"/>
+<Item MenuLevel="2" MenuName="User Log" url="html/ssmp/userlog/logview.asp" />
+<Item MenuLevel="2" MenuName="Debug Log" url="html/ssmp/debuglog/debuglogview.asp" />
+<Item MenuLevel="2" MenuName="Firewall Log" featurectrl="BBSP_FT_FIREWALL_FLOW_LOG" url="html/bbsp/firewalllog/firewalllogview.asp" />
+<Item MenuLevel="2" MenuName="ONT Authentication" url="html/amp/ontauth/passwordcommon.asp" />
+<Item MenuLevel="2" MenuName="Configure 3G Internet Card" featurectrl="HW_SSMP_FEATURE_UMTS_SUPPORT" url="html/ssmp/3GManage/3GManage.asp" />
+<Item MenuLevel="2" MenuName="Time Setting" featurectrl="BBSP_FT_SNTP" url="html/ssmp/sntp/sntp.asp" />
+<Item MenuLevel="2" MenuName="TR-069" featurectrl="HW_SSMP_FEATURE_TR069" url="html/ssmp/tr069/tr069.asp" />
+<Item MenuLevel="2" MenuName="Advanced Power Management" featurectrl="HW_SSMP_FEATURE_APM" url="html/ssmp/apm/apmcfg.asp" />
+<Item MenuLevel="2" MenuName="Modify Login Password" featurectrl="HW_SSMP_FEATURE_MODIFYPWDPAGE" url="html/ssmp/accoutcfg/accountadmin.asp" />
+<Item MenuLevel="2" MenuName="Intelligent Channel Statistics" featurectrl="BBSP_FT_QOS_CFG"  url="html/bbsp/qossmartstatistics/qossmartstatistics.asp" />
+<Item MenuLevel="2" MenuName="Fault Info Collect" url="html/ssmp/collect/collectInfo.asp" />
+<Item MenuLevel="2" MenuName="Indicator Status Management" url="html/ssmp/ledcfg/ledcfg.asp" />
+<Item MenuLevel="2" MenuName="Open Source Software Notice" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</admin>
+<normal>
+<Item MenuLevel="1" MenuName="Status" url="">
+<Item MenuLevel="2" MenuName="WAN Information" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="VoIP Information" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Optical Information" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Device Information" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="WAN Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="WLAN Configuration" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="System Tools" url="">
+<Item MenuLevel="2" MenuName="Reboot" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restore Default Configuration" url="html/ssmp/restore/restore.asp" />
+</Item>
+</normal>
+<normaluser>
+<Item MenuLevel="1" MenuName="Status" url="">
+<Item MenuLevel="2" MenuName="WAN Information" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="VoIP Information" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Optical Information" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Device Information" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="WAN Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="WLAN Configuration" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="Port Mapping Configuration" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="System Tools" url="">
+<Item MenuLevel="2" MenuName="Reboot" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restore Default Configuration" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="Open Source Software Notice" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</normaluser>
+<installuser>
+<Item MenuLevel="1" MenuName="Status" url="">
+<Item MenuLevel="2" MenuName="WAN Information" featurectrl="BBSP_FT_WAN" url="html/bbsp/waninfo/waninfo.asp" />
+<Item MenuLevel="2" MenuName="VoIP Information" featurectrl="HW_VSPA_FEATURE_VOIP" url="html/voip/status/voipmaintain.asp" />
+<Item MenuLevel="2" MenuName="Optical Information" url="html/amp/opticinfo/opticinfo.asp" />
+<Item MenuLevel="2" MenuName="Device Information" url="html/ssmp/deviceinfo/deviceinfo.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WAN" url="">
+<Item MenuLevel="2" MenuName="WAN Configuration" featurectrl="BBSP_FT_WAN" url="html/bbsp/wan/wan.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="WLAN" url="">
+<Item MenuLevel="2" MenuName="WLAN Configuration" featurectrl="HW_AMP_FEATURE_SINGLE_WLAN" url="/html/amp/wlanbasic/wlanantel.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="Forward Rules" url="">
+<Item MenuLevel="2" MenuName="Port Mapping Configuration" featurectrl="BBSP_FT_PORTMAP_IP" url="html/bbsp/portmapping/portmapping.asp" />
+</Item>
+<Item MenuLevel="1" MenuName="System Tools" url="">
+<Item MenuLevel="2" MenuName="Reboot" url="html/ssmp/reset/reset.asp" />
+<Item MenuLevel="2" MenuName="Restore Default Configuration" url="html/ssmp/restore/restore.asp" />
+<Item MenuLevel="2" MenuName="ONT Authentication" url="html/amp/ontauth/passwordcommon.asp" />
+<Item MenuLevel="2" MenuName="Open Source Software Notice" url = "html/ssmp/softnotice/opensfnotice.asp"/>
+</Item>
+</installuser>
+</english>
+<public>
+<Item url="/resource/common/InitForm.asp"/>
+<Item url="/html/ssmp/common/getCollectStatus.asp" />
+<Item url="/html/ssmp/common/StartFileLoad.asp" />
+<Item url="/html/ssmp/common/CheckNormalPwd.asp"/>
+<Item url="/html/ssmp/common/CheckAdminPwd.asp"/>
+<Item url="/html/ssmp/common/CheckUserResult.asp"/>
+<Item url="/html/ssmp/common/GetDeviceState.asp"/>
+<Item url="/html/bbsp/common/portfwdprohibit.asp"/>
+<Item url="/html/ssmp/common/getCurLanguage.asp"/>
+<Item url="/html/ssmp/common/getCurUserType.asp"/>
+<Item url="/html/ssmp/common/getCurWebFrame.asp"/>
+<Item url="/html/ssmp/common/getPwdModifyFlag.asp"/>
+<Item url="/html/ssmp/common/getPageName.asp"/>
+<Item url="/html/ssmp/common/getCurWebMenuPath.asp"/>
+<Item url="/html/get_swm_status.asp"/>
+<Item url="/html/ssmp/common/CheckUSBFileExist.asp" />
+<Item url="/html/ssmp/smblist/smb_choosedir_list.asp" />
+<Item url="/html/ssmp/common/getCurrentUsbDir.asp" />
+<Item url="/html/ssmp/common/refreshTime.asp"/>
+<Item url="/html/amp/ontauth/ontOnlineStatus.asp" />
+<Item url="/html/amp/ontauth/xgponauth_func.asp" />
+<Item url="/html/amp/common/WlanChannel.asp" />
+<Item url="/html/amp/wlanbasic/WlanWpsPin.asp" />
+<Item url="/html/msgerrcode.asp" />
+<Item url="/html/proerrcode.asp" />
+<Item url="/html/relocation.asp" />
+<Item url="/html/management/pingwait.asp" />
+<Item url="/html/bbsp/common/userinfo.asp" />
+<Item url="/html/bbsp/common/lanmodelist.asp" />
+<Item url="/html/bbsp/common/ontstate.asp" />
+<Item url="/html/bbsp/common/topoinfo.asp" />
+<Item url="/html/bbsp/common/wanaddressacquire.asp" />
+<Item url="/html/bbsp/common/wandns.asp" />
+<Item url="/html/bbsp/common/wanipv6state.asp" />
+<Item url="/html/bbsp/common/managemode.asp" />
+<Item url="/html/bbsp/common/EquipTestResult.asp" />
+<Item url="/html/amp/common/wlan_list.asp" />
+<Item url="/html/amp/wlaninfo/getradar.asp" />
+<Item url="/html/bbsp/common/dnshostslist.asp" />
+<Item url="/html/amp/wlaninfo/getassociateddeviceinfo.asp" />
+<Item url="/html/amp/wlaninfo/getneighbourAPinfo.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnshosts.asp" />
+<Item url="/html/bbsp/maintenance/selftestwait.asp" />
+<Item url="/html/bbsp/maintenance/pingwaitcommon.asp" />
+<Item url="/html/bbsp/maintenance/GetPingResult.asp" />
+<Item url="/html/bbsp/maintenance/GetPingDnsResult.asp" />
+<Item url="/html/bbsp/maintenance/GetRouteResult.asp" />
+<Item url="/html/bbsp/maintenance/getEquipTestResult.asp" />
+<Item url="html/bbsp/userdevinfo/userdetdevinfo.asp" />
+<Item url="html/bbsp/userdevinfo/netapp.asp" />
+<Item url="html/amp/wificoverinfo/apNeighborList.asp" />
+<Item url="html/amp/wificoverinfo/apssidStat.asp" />
+<Item url="html/amp/wificoverinfo/apssidStation.asp" />
+<Item url="/html/bbsp/common/lanuserinfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDhcpInfo.asp"/>
+<Item url="/html/bbsp/common/GetLanUserDevInfo.asp"/>
+<Item url="/html/common/ProductCapInfo.asp" />
+<Item url="/html/voip/status/sipvoipmaintain.asp" />
+<Item url="/html/voip/status/h248voipmaintain.asp" />
+<Item url="/html/bbsp/common/dhcpinfo.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlmac.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltime.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlurl.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltemplate.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrlStat.asp" />
+<Item url="/html/bbsp/parentalctrl/parentalctrltemplatename.asp" />
+<Item url="/html/bbsp/parentalctrl/urlList.asp" />
+<Item url="/html/bbsp/parentalctrl/GetParentalctrlStatResult.asp" />
+<Item url="/html/bbsp/common/parentalctrlinfo.asp" />
+<Item url="/html/bbsp/common/time.asp" />
+<Item url="/html/bbsp/portmapping/portmappingnew.asp" />
+<Item url="/html/bbsp/portmapping/portmappingold.asp" />
+<Item url="/html/httpsdirect.asp"/>
+<Item url="/html/bbsp/common/wan_list_info.asp"/>
+<Item url="/html/bbsp/common/wan_list.asp"/>
+<Item url="/html/bbsp/common/wan_pageparse.asp"/>
+<Item url="/html/bbsp/common/wan_servicelist.asp"/>
+<Item url="/html/bbsp/common/wan_control.asp"/>
+<Item url="/html/bbsp/common/wan_check.asp"/>
+</public>
+<adminfiles>
+<Item url="/html/voip/statistic/voipstatistic.asp" />
+<Item url="/html/voip/diagnose/sipvoipdiagnose.asp" />
+<Item url="/html/voip/voipinterface/sipvoipinterface.asp" />
+<Item url="/html/voip/status/sipvoipmaintain.asp" />
+<Item url="/html/voip/voipuser/sipvoipuser.asp" />
+<Item url="/html/voip/voiperror/voiperror.asp" />
+<Item url="/html/voip/voipinterface/h248voipinterface.asp" />
+<Item url="/html/voip/status/h248voipmaintain.asp" />
+<Item url="/html/voip/voipuser/h248voipuser.asp" />
+<Item url="/html/voip/changeprotocol/voipchangeprotocol.asp" />
+<Item url="/html/bbsp/dnsconfiguration/dnssearchlist.asp"/>
+<Item url="/html/bbsp/dnsconfiguration/dnspolicy.asp"/>
+<Item url="/html/bbsp/common/wanaccesslist.asp"/>
+<Item url="/html/bbsp/common/ipv6staticroute.asp" />
+<Item url="/html/bbsp/qossmartstatistics/GetQosStatisticsResult.asp" />
+</adminfiles>
+<userfiles>
+</userfiles>
+<normaluserfiles>
+</normaluserfiles>
+<installuserfiles>
+</installuserfiles>
+</WebConfig>

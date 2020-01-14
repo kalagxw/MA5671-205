@@ -1,0 +1,13 @@
+<InternetGatewayDevice> 
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<ParentalCtrl>
+<Templates setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Name setconfig = "0x00000003" getconfig = "0x00000003"/>
+<UrlFilterPolicy setconfig= "0x00000003" getconfig = "0x00000003"/>
+<UrlFilterRight setconfig = "0x00000003" getconfig = "0x00000003"/>
+<StartDate setconfig= "0x00000003" getconfig = "0x00000003"/>
+<EndDate setconfig= "0x00000003" getconfig = "0x00000003"/>
+</Templates>
+</ParentalCtrl>
+</X_HW_Security>
+</InternetGatewayDevice> 

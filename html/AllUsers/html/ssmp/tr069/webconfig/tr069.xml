@@ -1,0 +1,15 @@
+<InternetGatewayDevice> 
+<ManagementServer setconfig = "0x00000002" getconfig = "0x00000002"> 
+<PeriodicInformEnable    setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<PeriodicInformInterval  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<PeriodicInformTime  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<URL  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<Username   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<Password   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<ConnectionRequestUsername  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<ConnectionRequestPassword   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<X_HW_DSCP   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<X_HW_EnableCertificate    setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<X_HW_CertPassword    setconfig = "0x00000002" getconfig = "0x00000002"/> 
+</ManagementServer>
+</InternetGatewayDevice> 

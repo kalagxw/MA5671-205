@@ -1,0 +1,6 @@
+<InternetGatewayDevice> 
+<X_HW_DNS setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<SupportedRecordTypes setconfig = "0x00000002" getconfig = "0x00000002"/>
+<LocalDNSPolicy setconfig = "0x00000002" getconfig = "0x00000002"/>
+</X_HW_DNS> 
+</InternetGatewayDevice> 

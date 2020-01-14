@@ -1,0 +1,30 @@
+<InternetGatewayDevice>
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000003" getconfig = "0x00000003">
+<WANIPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_DDNSConfiguration setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DDNSCfgEnabled setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSProvider setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSUsername setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSPassword setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ServicePort setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSDomainName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSHostName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SaltAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DDNSConfiguration>
+</WANIPConnection>
+<WANPPPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_DDNSConfiguration setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DDNSCfgEnabled setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSProvider setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSUsername setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSPassword setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ServicePort setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSDomainName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DDNSHostName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SaltAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DDNSConfiguration>
+</WANPPPConnection>
+</WANConnectionDevice>
+</WANDevice>
+</InternetGatewayDevice>

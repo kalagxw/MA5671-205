@@ -1,0 +1,23 @@
+<InternetGatewayDevice> 
+<QueueManagement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<X_HW_ClassificationEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Classification setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<ClassInterface setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DomainName setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestMask setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourceIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourceMask setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Protocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestPortRangeMax setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourcePort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourcePortRangeMax setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DSCPMark setconfig = "0x00000003" getconfig = "0x00000003"/>
+<VLANIDCheck setconfig = "0x00000003" getconfig = "0x00000003"/>
+<TRAFFIC setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PRIMARK setconfig = "0x00000003" getconfig = "0x00000003"/>
+<TRAFFICMARK setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_Classification>
+</QueueManagement>
+</InternetGatewayDevice> 

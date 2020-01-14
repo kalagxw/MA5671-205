@@ -1,0 +1,8 @@
+<InternetGatewayDevice>
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Firewall setconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Config setconfig = "0x00000003" getconfig = "0x00000003"/>
+</Firewall>
+</X_HW_Security>
+</InternetGatewayDevice> 

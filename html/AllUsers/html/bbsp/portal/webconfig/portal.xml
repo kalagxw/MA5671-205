@@ -1,0 +1,12 @@
+<InternetGatewayDevice> 
+<Services>
+<X_HW_PortalManagement setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DefaultUrl setconfig = "0x00000002" getconfig = "0x00000002"/>
+<TypePortal setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DeviceTypeName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<PortalUrl setconfig = "0x00000002" getconfig = "0x00000002"/>
+</TypePortal>
+</X_HW_PortalManagement>
+</Services>
+</InternetGatewayDevice> 

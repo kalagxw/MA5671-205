@@ -1,0 +1,47 @@
+SHELL:uptime
+SHELL:free
+SHELL:cat /proc/meminfo
+SHELL:wap.ssp.ps
+SHELL:cat /proc/slabinfo
+SHELL:dlw
+SHELL:dlog
+SHELL:cat /proc/sysvipc/msg
+SHELL:cat /proc/wap_proc/wap_timer
+SHELL:ls -l /var/*
+SHELL:ls -l /var/*/*
+SHELL:ls -l /var/*/*/*
+WAP:display version
+WAP:display sn
+WAP:display inner version
+WAP:display deviceInfo
+WAP:display access mode
+WAP:display apmChipStatus
+WAP:display batteryStatus
+WAP:display boardItem
+WAP:display cwmp debug
+WAP:display ipconlanbind
+WAP:display machineItem
+WAP:display swm state
+WAP:display sysinfo
+WAP:display syslog
+WAP:display timer type 5
+
+SHELL:dmesg
+SHELL:cat /mnt/jffs2/panicinfo
+SHELL:cat /proc/wap_proc/wap_debug_log
+SHELL:cat /proc/wap_proc/panicinfo
+SHELL:cat /mnt/jffs2/wap_syslog.0
+SHELL:cat /mnt/jffs2/wap_syslog
+SHELL:cat /var/log/message.0
+SHELL:cat /var/log/message
+
+
+SHELL:cat /proc/kbox/deviceinfo
+SHELL:cat /proc/kbox/mem 
+SHELL:cat /proc/kbox/regions/panic
+SHELL:cat /proc/kbox/regions/ks_0
+SHELL:cat /proc/kbox/regions/ks_1
+SHELL:cat /proc/kbox/regions/ks_2
+SHELL:cat /proc/kbox/regions/ks_3
+SHELL:cat /proc/kbox/regions/ks_main
+SHELL:cat /proc/kbox/regions/deadlock

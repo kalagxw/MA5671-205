@@ -1,0 +1,1720 @@
+<X_HW_SystemConfig>
+  <CommonCfg>
+    <GPIO>
+      <!-- ********************************************
+           <NormalCfg NumberOfInstances="64">       
+        -->
+      <!-- ********************************************
+           <NormalCfgInstance InstanceID="1"
+                             AccessMode="0x200000ff"
+                             Cmd="0x20012000"
+                             Gpio_num="88"
+                             Chip_type="1" />    
+        -->
+      <!-- ********************************************
+        <NormalUse NumberOfInstances="33">
+        -->
+      <!-- ********************************************
+           <NormalUseInstance InstanceID="1"
+                             AccessMode="0x200000ff"          
+                             Cmd="0x20012000"
+                             Type="2"
+                             PinId="7"
+                             Invalid="0xff"
+                             Mode="1"
+                             Direct="1"
+                             InitValue="0" />
+          -->
+      <!-- 
+      <Cfg2>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">0</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg2>
+      <Cfg3>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">1</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg3>
+	  -->
+      <Cfg4>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">2</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg4>
+<!--
+      <Cfg5>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">3</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg5>
+      <Cfg6>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">4</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg6>
+      <Cfg7>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">5</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg7>
+-->
+
+	  <Cfg8>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">6</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg8>      
+      <Cfg9>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">7</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg9>         
+      <Cfg10>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">8</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg10>         
+      <Cfg11>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">9</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg11>         
+      <Cfg12>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">10</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg12>   
+      <Cfg13>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">11</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg13>  
+	<!--  	  
+      <Cfg14>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">12</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg14>   
+      <Cfg15>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">13</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg15>  
+      <Cfg16>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">14</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg16>  
+      <Cfg17>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">15</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg17>       
+      <Cfg18>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">16</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg18>   
+-->	  	  
+      <Cfg19>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">17</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg19>       
+      <Cfg20>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">18</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg20>       
+      <Cfg21>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">19</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg21>       
+      <Cfg22>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">20</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg22> 
+      <Cfg23>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">21</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg23> 
+      <Cfg24>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">22</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg24> 
+      <Cfg25>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">23</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg25> 
+      <Cfg26>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">24</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg26> 
+      <Cfg27>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">25</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg27> 
+      <Cfg28>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">26</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg28> 
+	  
+      <Cfg29>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">27</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg29> 
+      <Cfg30>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">28</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg30>       
+      <Cfg31>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">29</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg31> 
+      <Cfg32>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">30</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg32>    
+      <Cfg33>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">31</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg33>    
+      <Cfg34>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">32</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg34>    
+      <Cfg35>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">33</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg35>
+      <Cfg36>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">34</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg36>  
+	  
+      <Cfg37>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">35</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg37>   
+      <Cfg38>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">36</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg38>  
+      <Cfg39>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">37</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg39> 
+<!--      
+      <Cfg40>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">38</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg40>      
+      <Cfg41>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">39</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg41>           
+      <Cfg42>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">40</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg42>         
+      <Cfg43>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">41</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg43>           
+      <Cfg44>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">42</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg44>       
+      <Cfg45>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">43</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg45>           
+      <Cfg46>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">44</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg46>  
+	  <Cfg47>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">45</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg47>  
+-->	
+	<Cfg48>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">46</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg48>  
+      <Cfg49>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">47</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg49>  
+      <Cfg50>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">48</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg50>  
+	  <Cfg51>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">49</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg51>  
+      <Cfg52>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">50</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg52>  
+	  <Cfg53>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">51</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg53>  	 
+	  <Cfg54>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">52</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg54>  
+	  <Cfg55>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">53</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg55>  
+	  <Cfg56>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">54</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg56>  
+	  <Cfg57>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">55</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg57>  
+	  -->
+	  <Cfg58>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">56</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg58>  
+	  <Cfg59>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">57</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg59>  
+	  <Cfg60>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">58</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg60>  
+
+	  <Cfg61>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">59</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg61>  
+      <Cfg62>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">60</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg62>  
+	  <Cfg63>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">61</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg63>  
+	  <Cfg64>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">62</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg64>  
+	  <Cfg65>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">63</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg65>  
+
+	  <Cfg66>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">64</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg66>  
+      <Cfg67>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">65</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg67>  
+	  <Cfg68>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">66</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg68>  
+	  <Cfg69>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">67</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg69>  
+<!--
+	  <Cfg70>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">68</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg70>  
+      <Cfg71>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">69</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg71>  
+	  
+      <Cfg72>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">70</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg72>  
+	  <Cfg73>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">71</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg73>  
+-->
+
+<!--
+	  <Cfg74>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">72</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg74>  
+	  <Cfg75>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">73</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg75>  
+	  
+	  <Cfg76>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">74</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg76>  
+      <Cfg77>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">75</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg77>  
+	  <Cfg78>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">76</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg78>  
+      <Cfg79>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">77</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg79>  
+      <Cfg80>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">78</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg80>  
+	  <Cfg81>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">79</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg81>  
+	  <Cfg82>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">80</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg82>  
+	  
+      <Cfg83>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">81</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg83>  
+      <Cfg84>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">82</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg84>  
+	  <Cfg85>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">83</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg85>  
+	  <Cfg86>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">84</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg86>  
+	  -->
+	  <!--
+	  <Cfg87>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">85</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg87>  
+	  <Cfg88>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">86</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg88>
+  
+      <Cfg89>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">87</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg89>  
+      <Cfg90>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">88</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg90>  
+	  <Cfg91>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">89</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg91>  
+	  		  
+      <Cfg92>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">90</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg92>  
+      <Cfg93>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">91</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg93>  
+      <Cfg94>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">92</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">1</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg94>  
+	  <Cfg95>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">93</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg95>  
+      <Cfg96>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">94</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg96>  
+	  <Cfg97>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">95</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg97>  
+      <Cfg98>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">96</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg98>  
+	  <Cfg99>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">97</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg99>  
+	  <Cfg100>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">98</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg100>  
+	  <Cfg101>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">99</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg101>  
+	  <Cfg102>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">100</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg102>  
+	  <Cfg103>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">101</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg103>  
+	  -->
+	  <Cfg104>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">102</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg104>  
+<!--
+	  <Cfg105>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">103</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg105>  
+      <Cfg106>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">104</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg106>
+-->	  
+      <Cfg107>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">105</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg107>  
+	  <Cfg108>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">106</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg108>  
+	  <Cfg109>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">107</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg109>  
+	  <Cfg110>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">108</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg110>  
+<!--
+	  <Cfg111>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">109</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg111>  
+      <Cfg112>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">110</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg112>  
+      <Cfg113>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">111</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg113>
+-->	  
+      <Cfg114>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">112</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg114>  
+<!--
+      <Cfg115>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">113</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg115>  
+      <Cfg116>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">114</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg116>  
+      <Cfg117>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">115</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg117>
+-->	  
+      <Cfg118>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">116</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg118>  
+	  <Cfg119>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">117</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg119>  
+	  <Cfg120>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">118</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg120>  
+      <Cfg121>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">119</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg121>  
+	  <Cfg122>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">120</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg122>  
+	  <Cfg123>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">121</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg123>  
+<!--
+	  <Cfg124>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">122</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg124>  
+	  <Cfg125>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">123</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg125>  
+      <Cfg126>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">124</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg126>  
+	  <Cfg127>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">125</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg127>  
+	  <Cfg128>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">126</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">1</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg128>  
+-->	
+	<Cfg129>
+        <Cmd type="long" length="4">0x20012000</Cmd>
+        <para1 type="long" length="4">127</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">1</para5>
+      </Cfg129>    
+      <Cfg130>
+        <Cmd type="long" length="4">0x20012003</Cmd>
+      </Cfg130>
+    </GPIO>
+    <HIGHWAY>
+      <Cfg1>
+        <Cmd type="long" length="4">0x20016000</Cmd>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x20016001</Cmd>
+      </Cfg2>
+    </HIGHWAY>
+    <I2C>
+      <Cfg1>
+        <Cmd type="long" length="4">0x20013000</Cmd>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x20013001</Cmd>
+      </Cfg2>
+    </I2C>
+    <LSW>
+      <Cfg1>
+        <Cmd type="long" length="4">0x20001000</Cmd>
+      </Cfg1>
+      <!-- ********************************************
+           <InitComplete AccessMode="0x200000ff"
+                      Cmd="0x20001001"
+                      Type="1"
+                      ChipId="1" />
+        -->
+      <Cfg2>
+        <Cmd type="long" length="4">0x20001001</Cmd>
+        <para1 type="long" length="4">1</para1>
+      </Cfg2>
+    </LSW>
+    <UART>
+      <Cfg1>
+        <Cmd type="long" length="4">0x20015000</Cmd>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x20015001</Cmd>
+      </Cfg2>
+    </UART>
+    <BATTERY>
+      <!-- ********************************************
+           <BatteryInfo AccessMode="0x200000ff"
+                     Cmd="0x2000a000"
+                     Type="0"
+                     Support="1"
+                     SendDataTime="10"
+                     RecvDataTime="20"
+                     ReportTime="3000" 
+                     BatteryType="0"/>
+        -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x2000a000</Cmd>
+        <para1 type="long" length="4">1</para1>
+        <para2 type="long" length="4">10</para2>
+        <para3 type="long" length="4">20</para3>
+        <para4 type="long" length="4">3000</para4>
+        <para5 type="long" length="4">0</para5>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x2000a001</Cmd>
+      </Cfg2>
+    </BATTERY>
+    <DEV>
+      <!-- ********************************************
+           <NormalCfg NumberOfInstances="2">       
+        -->
+      <!-- ********************************************
+           <NormalCfgInstance InstanceID="1"
+                             AccessMode="0x200000ff"          
+                             Cmd="0x20004000"
+                             index = "0"
+                             uc_slic1_reset_gpio="0xff"
+                             uc_slic2_reset_gpio="0xff"
+                             uc_lsw_clk_gpio="0xff"
+                             uc_lsw_reset_gpio="0xff"
+                             uc_usb1_power_en_gpio="ff"
+                             uc_usb2_power_en_gpio="0xff"
+                             uc_optic_reset_gpio="0xff"
+                             uc_wifi_reset_gpio="0xff"
+                             uc_wifi_rf_en_gpio="0xff"
+                             uc_nandflash_lock_gpio="0xff"
+							 uc_extphy_reset_gpio  ="0xff"/>
+							 uc_slic3_reset_gpio="0xff"
+							 uc_slic4_reset_gpio="0xff"
+							 uc_sd5203_reset_gpio="0xff"/>
+          -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x20004000</Cmd>
+        <para1 type="long" length="4">0</para1>
+        <para2 type="long" length="4">0xff</para2>
+        <para3 type="long" length="4">0xff</para3>
+        <para4 type="long" length="4">0xff</para4>
+        <para5 type="long" length="4">0xff</para5>
+        <para6 type="long" length="4">0xff</para6>
+        <para7 type="long" length="4">0xff</para7>
+        <para8 type="long" length="4">0xff</para8>
+        <para9 type="long" length="4">0xff</para9>
+        <para10 type="long" length="4">0xff</para10>
+        <para11 type="long" length="4">0xff</para11>
+        <para12 type="long" length="4">0xff</para12>
+		<para13 type="long" length="4">0xff</para13>
+		<para14 type="long" length="4">0xff</para14>
+		<para15 type="long" length="4">0xff</para15>
+      </Cfg1>
+      <!-- ********************************************
+           <NormalCfgInstance InstanceID="2"
+                             AccessMode="0x200000ff"          
+                             Cmd="0x20004013"
+                             ui_chip_type = "4"
+                             WLAN="0"
+                             USB="1"
+                             RF="1"
+                             POTS="0"
+                             EXT_PHY_NUM="1"
+                             MAX_SPEED="2"
+                             ETH_NUM="4"
+                             SLIC_TYPE="0"
+							 RF_FILTER="0"
+							 EXT_PHY_TYPE="0"/>
+          -->
+      <Cfg2>
+        <Cmd type="long" length="4">0x20004013</Cmd>
+        <para1 type="long" length="4">0x4</para1>
+        <para2 type="long" length="4">0x0</para2>
+        <para3 type="long" length="4">0x0</para3>
+        <para4 type="long" length="4">0x0</para4>
+        <para5 type="long" length="4">0x0</para5>
+        <para6 type="long" length="4">0x0</para6>
+        <para7 type="long" length="4">0x2</para7>
+        <para8 type="long" length="4">0x4</para8>
+        <para9 type="long" length="4">0x0</para9>
+        <para10 type="long" length="4">0x0</para10>
+        <para11 type="long" length="4">0x0</para11>
+      </Cfg2>
+	    <!-- ********************************************
+           <NormalCfgInstance InstanceID="3"
+                             AccessMode="0x200000ff"          
+                             Cmd="0x20004019"
+                             ui_chip_type = "3"
+                             SLIC_DU_DC="0"
+							 SLIC_CROSS="0"
+							 SLIC_1A_DC ="0"
+							 SLIC_5REN ="0"/>
+          -->
+      <Cfg3>
+        <Cmd type="long" length="4">0x20004013</Cmd>
+        <para1 type="long" length="4">0x3</para1>
+        <para2 type="long" length="4">0x0</para2>
+        <para3 type="long" length="4">0x0</para3>
+        <para4 type="long" length="4">0x0</para4>
+        <para5 type="long" length="4">0x0</para5>
+       </Cfg3>
+		<!-- ********************************************
+	   <NormalCfgInstance InstanceID="4"
+						 AccessMode="0x200000ff"          
+						 Cmd="0x20004013"
+						 ui_chip_type = "2"
+						 SOC_TYPE="2"
+						 GPIO_NUM="128"
+						 USB_NUM="0"
+						 PCI_NUM="1"
+						 PCIE_NUM="0"
+						 SPI_NUM="1"
+						 GE_NUM="4"
+						 FE_NUM="0"
+						 PHY_SUPPORT="0"
+						 10G_NUM ="0"/>
+	  -->
+      <Cfg4>
+        <Cmd type="long" length="4">0x20004013</Cmd>
+        <para1 type="long" length="4">0x2</para1>
+        <para2 type="long" length="4">0x2</para2>
+        <para3 type="long" length="4">128</para3>
+        <para4 type="long" length="4">0</para4>
+        <para5 type="long" length="4">0x1</para5>
+        <para6 type="long" length="4">0x0</para6>
+        <para7 type="long" length="4">0x1</para7>
+        <para8 type="long" length="4">0x4</para8>
+        <para9 type="long" length="4">0x0</para9>
+        <para10 type="long" length="4">0x0</para10>
+		<para11 type="long" length="4">0x0</para11>
+       </Cfg4>
+	 <!-- ********************************************
+           <NormalCfgInstance InstanceID="2"
+                             AccessMode="0x200000ff"          
+                             Cmd="0x20004019"
+                             ui_chip_type = "3"
+                             SLIC_DU_DC="0"
+			     SLIC_CROSS="0"
+			     SLIC_1A_DC ="0"
+			     SLIC_5REN ="0"/>
+          -->
+
+       <Cfg5>
+        <Cmd type="long" length="4">0x20004019</Cmd>
+        <para1 type="uchar" length="1">0x2</para1>
+        <para2 type="uchar" length="1">0x2</para2>
+        <para3 type="uchar" length="1">0x2</para3>
+        <para4 type="uchar" length="1">0x2</para4>
+        <para5 type="uchar" length="1">0x2</para5>
+       </Cfg5>
+       <Cfg6>
+        <Cmd type="long" length="4">0x20004001</Cmd>
+       </Cfg6>
+    </DEV>
+    <KEY>
+      <!-- ********************************************
+           <KeyInfo AccessMode="0x200000ff"
+               Cmd="0x20007000"
+               Type="0"
+               RestoreTime="10"
+               WlanKeyTime="3"
+               WpsKeyTime="3"
+               LedTime="10"
+               ResetKeyGpio="34"
+               WlanKeyGpio="0xff"
+               WpsKeyGpio="0xff" 
+			   LedKeyGpio="0xffffffff"/>   
+        -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x20007000</Cmd>
+        <para1 type="long" length="4">10</para1>
+        <para2 type="long" length="4">3</para2>
+        <para3 type="long" length="4">3</para3>
+		<para4 type="long" length="4">10</para4>
+        <para5 type="long" length="4">0x7f</para5>
+        <para6 type="long" length="4">0xff</para6>
+        <para7 type="long" length="4">0xff</para7>
+	<para8 type="long" length="4">0xffffffff</para8>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x20007001</Cmd>
+      </Cfg2>
+    </KEY>
+    <LED>
+      <!-- ********************************************
+           <NormalCfg NumberOfInstances="12">       
+        -->
+      <!-- ********************************************
+           <NormalCfgInstance InstanceID="1"
+                             AccessMode="0x200000ff"           
+                             Cmd="0x20008000"
+                             Type="0"
+                             Index="0"
+                             LedID="0"
+                             LedName="powerled"
+                             RedLedGpio="0xffff0025"
+                             GreenLedGpio="0xffff0034"
+                             YellowLedGpio="0xffffffff" />   
+          -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x20008000</Cmd>
+        <para1 type="long" length="4">0</para1>
+        <para2 type="long" length="4">0</para2>
+        <para3 type="string" length="16">powerled</para3>
+        <para4 type="long" length="4">0xffff0015</para4>
+        <para5 type="long" length="4">0xffffffff</para5>
+        <para6 type="long" length="4">0xffffffff</para6>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x20008000</Cmd>
+        <para1 type="long" length="4">1</para1>
+        <para2 type="long" length="4">1</para2>
+        <para3 type="string" length="16">ponlos</para3>
+        <para4 type="long" length="4">0xffff0011</para4>
+        <para5 type="long" length="4">0xffffffff</para5>
+        <para6 type="long" length="4">0xffffffff</para6>
+      </Cfg2>
+      <Cfg3>
+        <Cmd type="long" length="4">0x20008000</Cmd>
+        <para1 type="long" length="4">2</para1>
+        <para2 type="long" length="4">2</para2>
+        <para3 type="string" length="16">pon</para3>
+        <para4 type="long" length="4">0xffff0070</para4>
+        <para5 type="long" length="4">0xffff0014</para5>
+        <para6 type="long" length="4">0xffffffff</para6>
+      </Cfg3>
+      <Cfg35>
+        <Cmd type="long" length="4">0x20008001</Cmd>
+      </Cfg35>
+    </LED>
+    <OPTIC>
+      <!-- ********************************************
+            <OpticInfo AccessMode="0x20000001"
+                       Cmd="0x20005000"
+                       Type="0"
+                       Para0="0xffff004c"
+                       Para1="0xffffff17"
+                       TxLevel="0x1"
+                       ControlMode="0x0" />   
+            -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x20005000</Cmd>
+        <para1 type="long" length="4">0x01660016</para1>
+        <para2 type="long" length="4">0xffffffff</para2>
+        <para3 type="long" length="4">0x1</para3>
+        <para4 type="long" length="4">0x0</para4>
+      </Cfg1>  
+      <Cfg2>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">PTB4J85-85654-SC/APC-KHL+</para1>
+             <para2 type="string" length="16"></para2>
+             <para3 type="uchar" length="1">0x2</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x1</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x7C4C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg2>
+      <Cfg3>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">ITR-D3T-HW6</para1>
+             <para2 type="string" length="16"></para2>
+             <para3 type="uchar" length="1">0x2</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x1</para6>
+             <para7 type="long" length="4">0x1</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x6C4C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>           
+      </Cfg3>
+      <Cfg4>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16"></para2>
+             <para3 type="uchar" length="1">0x0</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg4>
+      <Cfg5>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">HPSF212</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x1</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x1</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg5>
+      <Cfg6>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">PTB3J85-5638N-SC/APC-KNS+</para1>
+             <para2 type="string" length="16">PTB3J85-5638N-S</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg6>
+      <Cfg7>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">RTXM167-407</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg7>
+      <Cfg8>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">PTB3J85-5638N-SC/APC-KN+</para1>
+             <para2 type="string" length="16">PTB3J85-5638N-S</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg8>
+      <Cfg9>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">SFA-34-24T-HP-CDE-HW-3</para1>
+             <para2 type="string" length="16"></para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg9>
+      <Cfg10>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">SFU-34-24T-HP-CDE-HW-4</para1>
+             <para2 type="string" length="16">SFU3424THPCDEHW</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>            
+      </Cfg10>
+      <Cfg11>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">RTXM167-407-C10</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg11>
+      <Cfg12>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">LTB34D3-CC+</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x1</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg12>
+      <Cfg13>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">SFU-34-GB-P2-CDFB-HW</para1>
+             <para2 type="string" length="16">SFU34GBP2CDFBHW</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x1</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg13>
+      <Cfg14>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">RTXM169-504</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x1</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg14> 
+      <Cfg15>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">LTB3468L-CHG+</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg15>
+      <Cfg16>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">LTB3468L-BHG+</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg16>    
+      <Cfg17>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">LTB3468L-CCG+</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg17>
+      <Cfg18>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32"></para1>
+             <para2 type="string" length="16">LTB3468L-BCG+</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg18>       
+      <Cfg19>
+        <Cmd type="long" length="4">0x20005001</Cmd>
+             <para1 type="string" length="32">default-optic</para1>
+             <para2 type="string" length="16">default-optic</para2>
+             <para3 type="uchar" length="1">0x1</para3>
+             <para4 type="uchar" length="1">0x2</para4>
+             <para5 type="uchar" length="1">0x0</para5>
+             <para6 type="uchar" length="1">0x0</para6>
+             <para7 type="long" length="4">0x0</para7>
+             <para8 type="long" length="4">0x605456</para8>
+             <para9 type="long" length="4">0x62585A</para9>
+             <para10 type="long" length="4">0x644C4E</para10>
+             <para11 type="long" length="4">0x665052</para11>
+             <para12 type="long" length="4">0x683800</para12>
+             <para13 type="long" length="4">0x32595a</para13>
+             <para14 type="long" length="4">0x646532</para14>             
+      </Cfg19>     
+    </OPTIC>
+    <RF>
+      <Cfg1>
+        <Cmd type="long" length="4">0x2000b000</Cmd>
+      </Cfg1>
+      <Cfg2>
+        <Cmd type="long" length="4">0x2000b001</Cmd>
+      </Cfg2>
+    </RF>   
+  </CommonCfg>
+  <GPON>    
+    <PLOAM>
+      <!-- ********************************************
+            <PloamInfo AccessMode="0x20000001"
+                       Cmd="0x20003000"
+                       Type="0"
+                       OptTxPowerGpio="0x1d"
+                       OptPowerOnlev="0x0"
+                       OptPowerOfflev="0x1"
+                       TO2="200" />   
+            -->
+      <Cfg1>
+        <Cmd type="long" length="4">0x20003000</Cmd>
+      </Cfg1>
+    </PLOAM>
+  </GPON>
+</X_HW_SystemConfig>

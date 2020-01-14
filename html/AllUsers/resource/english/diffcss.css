@@ -1,0 +1,116 @@
+@charset "utf-8";
+.per_5_10{
+	width: 10%;
+}
+
+.per_5_15{
+	width: 15%;
+}
+
+.per_8_13{
+	width: 13%;
+}
+
+.per_8_15{
+	width: 15%;
+}
+
+.per_10_15{
+	width: 15%;
+}
+
+.per_13_15{
+	width: 13%;
+}
+
+.per_13_16{
+	width: 16%;
+}
+
+.per_15_20{
+	width: 20%;
+}
+
+.per_15_25{
+	width: 25%;
+}
+
+.per_18_21{
+	width: 18%;
+}
+
+.per_18_23{
+	width: 23%;
+}
+
+.per_18_25{
+	width: 25%;
+}
+
+.per_20_25{
+	width: 25%;
+}
+
+.per_25_35{
+	width: 25%;
+}
+
+.per_30_35{
+	width: 35%;
+}
+
+.per_35_40{
+	width: 40%;
+}
+
+.per_35_52{
+	width: 52%;
+}
+
+.per_40_45{
+	width: 45%;
+}
+
+.per_65_48{
+	width: 48%;
+}
+
+.per_10_5{
+	width: 5%;
+}
+
+.per_9_14{
+	width: 14%;
+}
+
+.pix_40_60{
+width: 60px;
+}
+
+.pix_50_80{
+	width: 80px;
+}
+
+.pix_70_120{
+	width: 120px;
+}
+
+.pix_70_130{
+	width: 130px;
+}
+
+.pix_90_130{
+	width: 130px;
+}
+
+.pix_100_120{
+	width: 120px;
+}
+
+.pix_100_150{
+	width: 150px;
+}
+
+.pix_100_180{
+	width: 180px;
+}

@@ -1,0 +1,33 @@
+<InternetGatewayDevice> 
+<QueueManagement setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_Mode setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_Bandwidth setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_Plan setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_EnableForceWeight setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_EnableDSCPMark setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_Enable8021p setconfig = "0x00000002" getconfig = "0x00000002"/>
+</QueueManagement>
+<X_HW_UplinkQos>
+<PriorityQueue setconfig = "0x00000002" addconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Priority setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Weight setconfig = "0x00000002" getconfig = "0x00000002"/>
+</PriorityQueue>
+<App setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<AppName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ClassQueue setconfig = "0x00000002" getconfig = "0x00000002"/>
+</App>
+<Classification setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<ClassQueue setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DSCPMarkValue setconfig = "0x00000002" getconfig = "0x00000002"/>
+<PriorityValue setconfig = "0x00000002" getconfig = "0x00000002"/>
+<type setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Type setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Max setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Min setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ProtocolList setconfig = "0x00000002" getconfig = "0x00000002"/>
+</type>
+</Classification>
+</X_HW_UplinkQos>
+</InternetGatewayDevice> 

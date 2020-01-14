@@ -1,0 +1,15 @@
+#!/bin/sh
+#²é¿´log
+
+if [ 0 -ne $# ]; then
+    echo "ERROR::input para is not right!";
+    return 1;
+else
+    rm -f /var/log_tmp_dlog
+    cp /proc/wap_proc/wap_log /var/log_tmp_dlog
+    ConvertLog2Dst /var/log_tmp_dlog /var/log_tmp_dlog1
+    cat /var/log_tmp_dlog1
+    rm -f /var/log_tmp_dlog1
+    rm -f /var/log_tmp_dlog
+    return 0;
+fi

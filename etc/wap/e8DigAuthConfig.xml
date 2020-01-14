@@ -1,0 +1,158 @@
+﻿<InternetGatewayDevice>
+<LANDevice>
+<WLANConfiguration  relycfg="2">
+<Enable  getcfg="1"/>
+<Status  getcfg="1"/>
+<SSID  setcfg="1" getcfg="1"/>
+<X_CT-COM_APModuleEnable  setcfg="1" getcfg="1"/>
+<ChannelsInUse  getcfg="1"/>
+<BeaconType  setcfg="1" getcfg="1"/>
+<WEPEncryptionLevel  setcfg="1" getcfg="1"/>
+<BasicAuthenticationMode  setcfg="1" getcfg="1"/>
+<WPAEncryptionModes  setcfg="1" getcfg="1"/>
+<WPAAuthenticationMode setcfg="1" getcfg="1" />
+<WEPKeyIndex  setcfg="1" getcfg="1"/>
+<Channel setcfg="1" getcfg="1" />
+<TotalBytesSent getcfg="1" />
+<TotalBytesReceived  getcfg="1"/>
+<TotalPacketsSent  getcfg="1"/>
+<TotalPacketsReceived  getcfg="1"/>
+<TotalAssociations  getcfg="1"/>
+<X_CT-COM_Service relycfg="2">
+<ServiceType getcfg="1" />
+</X_CT-COM_Service>
+<AssociatedDevice relycfg="2">
+<X_CT-COM_AssociatedDeviceType getcfg="1" />
+<X_CT-COM_AssociatedDevicedescriptions getcfg="1" />
+<AssociatedDeviceMACAddress getcfg="1" />
+<AssociatedDeviceIPAddress getcfg="1" />
+<AssociatedDeviceAuthenticationState getcfg="1" />
+<LastRequestedUnicastCipher getcfg="1" />
+<LastRequestedMulticastCipher getcfg="1" />
+<LastPMKId getcfg="1" />
+</AssociatedDevice>
+<WEPKey  relycfg="2">
+<WEPKey  setcfg="1" getcfg="2"/>
+</WEPKey>
+<PreSharedKey  relycfg="2">
+<PreSharedKey  setcfg="1" getcfg="2"/>
+<KeyPassphrase  setcfg="1" getcfg="2"/>
+<AssociatedDeviceMACAddress  setcfg="1" getcfg="1"/>
+</PreSharedKey>
+</WLANConfiguration>
+<LANEthernetInterfaceConfig>
+<Enable  getcfg="1"/>
+<Status  getcfg="1"/>
+<Stats>
+<BytesSent  getcfg="1"/>
+<BytesReceived  getcfg="1"/>
+<PacketsSent  getcfg="1"/>
+<PacketsReceived  getcfg="1"/>
+</Stats>
+<X_CT-COM_Service>
+<ServiceType  getcfg="1"/>
+</X_CT-COM_Service>
+<X_CT-COM_AssociatedDevice>
+<AssociatedDeviceType  getcfg="1"/>
+<AssociatedDevicedescriptions  getcfg="1"/>
+<AssociatedDeviceMACAddress  getcfg="1"/>
+<AssociatedDeviceIPAddress  getcfg="1"/>
+</X_CT-COM_AssociatedDevice>
+</LANEthernetInterfaceConfig>
+<Hosts>
+<Host>
+<IPAddress  getcfg="1"/>
+<AddressSource  getcfg="1"/>
+<LeaseTimeRemaining  getcfg="1"/>
+<MACAddress  getcfg="1"/>
+<HostName  getcfg="1"/>
+<InterfaceType  getcfg="1"/>
+</Host>
+</Hosts>
+<X_CT-COM_AccessControl proccfg="1">
+<Enabled  setcfg="1"/>
+<ControlType  setcfg="1"/>
+<ControlListType  setcfg="1"/>
+<ControlList  setcfg="1"/>
+</X_CT-COM_AccessControl>
+<LANUSBInterfaceConfig>
+<Enable getcfg="1" />
+<Status getcfg="1" />
+</LANUSBInterfaceConfig>
+</LANDevice>
+<WANDevice>
+<WANConnectionDevice>
+<WANIPConnection proccfg="1">
+<Enable  getcfg="1"/>
+<ConnectionStatus  getcfg="1"/>
+<LastConnectionError  getcfg="1"/>
+<ExternalIPAddress  getcfg="1"/>
+<SubnetMask  getcfg="1"/>
+<DefaultGateway  getcfg="1"/>
+<DNSServers  getcfg="1"/>
+<X_CT-COM_ServiceList  getcfg="1"/>
+<ConnectionType  getcfg="1"/>
+<X_CT-COM_LanInterface  setcfg="1"/>
+</WANIPConnection>
+<WANPPPConnection>
+<Enable  getcfg="1"/>
+<ConnectionStatus  getcfg="1"/>
+<LastConnectionError  getcfg="1"/>
+<ExternalIPAddress  getcfg="1"/>
+<X_CT-COM_ServiceList  getcfg="1"/>
+<ConnectionType  getcfg="1"/>
+<X_CT-COM_LanInterface  getcfg="1"/>
+</WANPPPConnection>
+<X_CT-COM_AccessControl proccfg="1">
+<Enabled  setcfg="1"/>
+<ControlType  setcfg="1"/>
+<ControlListType  setcfg="1"/>
+<ControlList  setcfg="1"/>
+</X_CT-COM_AccessControl>
+</WANConnectionDevice>
+<X_CT-COM_EponInterfaceConfig>
+<Status  getcfg="1"/>
+</X_CT-COM_EponInterfaceConfig>
+<X_CT-COM_GponInterfaceConfig>
+<Status  getcfg="1"/>
+</X_CT-COM_GponInterfaceConfig>
+</WANDevice>
+<Services>
+<VoiceService  relycfg="1">
+<VoiceProfile  relycfg="1">
+<Line  relycfg="1">
+<Enable  setcfg="0" getcfg="1"/>
+<PhyReferenceList  setcfg="0" getcfg="1"/>
+<Status  setcfg="0" getcfg="1"/>
+<CallState  setcfg="0" getcfg="1"/>
+<SIP relycfg="1">
+<URI setcfg="0" getcfg="1"/>
+</SIP>
+</Line>
+</VoiceProfile>
+<PhyInterface  relycfg="1">
+<PhyPort  setcfg="0" getcfg="1" />
+<InterfaceID  setcfg="0" getcfg="1" />
+<Tests  relycfg="1">
+<PhoneConnectivity  setcfg="0" getcfg="1"/>
+</Tests>
+</PhyInterface>
+</VoiceService>
+</Services>
+<X_CT-COM_UserInfo> 
+<Status/> 
+<ConfigureStatus /> 
+</X_CT-COM_UserInfo>  
+<DeviceInfo> 
+<Manufacturer setconfig = "0"/> 
+<ManufacturerOUI setconfig = "0"/> 
+<ProductClass setconfig = "0"/> 
+<SerialNumber setconfig = "0"/> 
+<HardwareVersion setconfig = "0"/> 
+<SoftwareVersion setconfig = "0"/>
+<X_CT-COM_DeviceType  setconfig = "0"/>
+<X_CT-COM_Card setconfig = "0"/>
+<X_CT-COM_UPLink setconfig = "0" /> 
+<X_CT-COM_Capability setconfig = "0"/> 
+</DeviceInfo> 
+</InternetGatewayDevice>

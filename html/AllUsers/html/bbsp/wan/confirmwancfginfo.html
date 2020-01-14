@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta HTTP-EQUIV = 'Pragma' CONTENT = 'no-cache'>
+<link rel="stylesheet" href="../../../resource/common/<%HW_WEB_CleanCache_Resource(style.css);%>" type="text/css"/>
+<link rel="stylesheet"  href='../../../Cuscss/<%HW_WEB_GetCusSource(frame.css);%>' type='text/css'>
+<script language="JavaScript" src="../../../resource/<%HW_WEB_Resource(bbspdes.html);%>"></script>
+<style>
+.mainbodysmart {
+	background-color:#FFFFFF;
+	font-family:"Î¢ÈíÑÅºÚ";
+	margin-left: 50px;
+	margin-right:50px;
+	margin-top: 20px;
+	list-style: none;
+}
+</style>
+
+<SCRIPT language = "javascript">
+var para = '';
+var CfgGuide = -1;
+
+if (window.location.href.indexOf("cfgguide") != -1)
+{
+	para = window.location.href.split("cfgguide")[1]; 
+	CfgGuide = para.split("=")[1];
+}
+
+function showWanInfo()
+{
+	if (1 == CfgGuide)
+	{
+		location.replace('/html/bbsp/wan/wan.asp'+'?cfgguide=1');
+	}
+	else
+	{
+		location.replace('/html/bbsp/wan/wan.asp');
+	}
+}
+
+function reloadWan()
+{ 
+    setTimeout("showWanInfo()", 3000);
+}
+</script>
+</head>
+<script>
+if (1 == CfgGuide)
+{
+	document.write('<body class="mainbodysmart" topmargin = "0" leftmargin = "0" marginwidth = "0" marginheight = "0" onLoad = "reloadWan()">');
+}
+else
+{
+	document.write('<body class="mainbody" topmargin = "0" leftmargin = "0" marginwidth = "0" marginheight = "0" onLoad = "reloadWan()">');
+}
+</script>
+
+<div align='center'>
+<br><br><br>
+<td align="center" width="500">	
+<DIV id='upgrade_info' align="center">	
+<script>document.write(htmlpage_language['wanwait']);</script></DIV>
+</td>
+</div>
+</body>
+</html>
+

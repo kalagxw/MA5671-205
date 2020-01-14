@@ -1,0 +1,12 @@
+<InternetGatewayDevice>
+<X_HW_NAT setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<IPMapping setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Priority setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Interface setconfig = "0x00000003" getconfig = "0x00000003"/>
+<StartIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<EndIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SnatSrcIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+</IPMapping>
+</X_HW_NAT> 
+</InternetGatewayDevice> 

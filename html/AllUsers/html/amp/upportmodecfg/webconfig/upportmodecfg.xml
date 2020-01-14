@@ -1,0 +1,6 @@
+<InternetGatewayDevice>
+<DeviceInfo setconfig="0x00000003">
+	<X_HW_UpPortMode setconfig="0x00000003"/>
+	<X_HW_UpPortID setconfig="0x00000003"/>
+</DeviceInfo>
+</InternetGatewayDevice>

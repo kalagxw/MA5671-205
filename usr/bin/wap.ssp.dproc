@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ $# -ne 1 ] ; then
+	echo "Error arg, please input task id. eg: wap.ssp.dproc 32"
+	exit 0
+fi
+
+echo $1 > /proc/wap_proc/proc_dbg
+cat /proc/wap_proc/proc_dbg
+
+echo "========================== backtrace ========================="
+#wap.ssp.procbt $1
+shellcmdexe $1 0x2004
+
+echo "========================== maps =============================="
+cat /proc/$1/maps
+

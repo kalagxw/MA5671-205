@@ -1,0 +1,4 @@
+var DnsSearchListReload = 
+[
+	{ReloadId:"DSLdomain", ReloadValue:[{display:0}]},
+]

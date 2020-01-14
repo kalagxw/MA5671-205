@@ -1,0 +1,15 @@
+<InternetGatewayDevice> 
+<ManagementServer getconfig = "0x00000003"> 
+<PeriodicInformEnable getconfig = "0x00000003"/> 
+<PeriodicInformInterval getconfig = "0x00000003"/> 
+<PeriodicInformTime getconfig = "0x00000003"/> 
+<URL getconfig = "0x00000003"/> 
+<Username getconfig = "0x00000003"/> 
+<Password getconfig = "0x00000003"/> 
+<ConnectionRequestUsername getconfig = "0x00000003"/> 
+<ConnectionRequestPassword getconfig = "0x00000003"/> 
+<X_HW_DSCP getconfig = "0x00000003"/> 
+<X_HW_EnableCertificate getconfig = "0x00000003"/> 
+<X_HW_CertPassword getconfig = "0x00000003"/> 
+</ManagementServer>
+</InternetGatewayDevice> 

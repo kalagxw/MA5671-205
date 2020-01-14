@@ -1,0 +1,213 @@
+﻿
+/* width defined percentage */
+.width_auto {
+	width: auto;
+}
+.width_per1 {
+	width: 1%;
+}
+.width_per2 {
+	width: 2%;
+}
+.width_per3 {
+	width: 3%;
+}
+.width_per98 {
+	width: 98%;
+}
+.width_per99{
+	width: 99%;
+}
+.width_per5 {
+	width: 5%;
+}
+.width_per6 {
+	width: 6%;
+}
+.width_per7 {
+	width: 7%;
+}
+.width_per8 {
+	width: 8%;
+}
+.width_per9 {
+	width: 9%;
+}
+.width_per95 {
+	width: 95%;
+}
+.width_per10 {
+	width: 10%;
+}
+.width_per12 {
+	width: 12%;
+}
+.width_per90 {
+	width: 90%;
+}
+
+.width_per15 {
+	width: 15%;
+}
+.width_per85 {
+	width: 85%;
+}
+.width_per19 {
+	width: 19%;
+}
+.width_per20 {
+	width: 20%;
+}
+.width_per80 {
+	width: 80%;
+}
+
+.width_per25 {
+	width: 25%;
+}
+.width_per75 {
+	width: 75%;
+}
+
+.width_per30 {
+	width: 30%;
+}
+.width_per70 {
+	width: 70%;
+}
+
+.width_per35 {
+	width: 35%;
+}
+.width_per65 {
+	width: 65%;
+}
+
+.width_per40 {
+	width: 40%;
+}
+.width_per60 {
+	width: 60%;
+}
+
+.width_per45 {
+	width: 45%;
+}
+.width_per55 {
+	width: 55%;
+}
+
+.width_per50 {
+	width: 50%;
+}
+
+.width_per100 {
+	width: 100%;
+}
+
+.width_per13 {
+	width: 13%;
+}
+
+.width_per16 {
+	width: 16%;
+}
+
+.width_per18 {
+	width: 18%;
+}
+
+/* width defined pixel */
+.width_10px{
+	width:10px;
+}
+.width_20px{
+	width:20px;
+}
+.width_30px{
+	width:30px;
+}
+.width_40px{
+	width:40px;
+}
+.width_50px{
+	width:50px;
+}
+.width_60px{
+	width:60px;
+}
+.width_70px{
+	width:70px;
+}
+.width_80px{
+	width:80px;
+}
+.width_100px{
+	width:100px;
+}
+.width_120px{
+	width:120px;
+}
+.width_123px{
+	width:123px;
+}
+.width_125px{
+	width:125px;
+}
+.width_135px{
+	width:135px;
+}
+.width_150px {
+	width:150px;
+}
+.width_155px {
+	width:155px;
+}
+.width_180px {
+	width:180px;
+}
+.width_200px{
+	width:200px;
+}
+.width_230px{
+	width:230px;
+}
+.width_254px{
+	width:254px;
+}
+.width_260px{
+	width:260px;
+}
+.width_300px{
+	width:300px;
+}
+
+/* height defined pixel */
+.height3p{
+	height:3px;
+}
+.height5p{
+	height:5px;
+}
+.height10p{
+	height:10px;
+}
+.height15p{
+	height:15px;
+}
+.height20p{
+	height:20px;
+}
+.height25p{
+	height:25px;
+}
+.height30p{
+	height:30px;
+}
+.height40p{
+	height:40px;
+}
+.height50p{
+	height:50px;
+}
+

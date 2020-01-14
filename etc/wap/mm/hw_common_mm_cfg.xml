@@ -1,0 +1,9 @@
+<Mm_Configuration>
+    <InternetGatewayDevice.DeviceInfo  SerialNumber="" X_HW_LanMac="" X_HW_MachineItem="" HardwareVersion="" SoftwareVersion="" AdditionalSoftwareVersion="" X_HW_SlaveSoftversion="" X_HW_WlanMac="" X_HW_WanMac="" X_HW_ReleaseTime=""/>
+    <InternetGatewayDevice.X_HW_DEBUG.SMP.DM.ShowWapVer MainVersion="" StandbyVersion="" />
+	<InternetGatewayDevice.LANDevice.WLANConfiguration SSID="" />
+	<InternetGatewayDevice.LANDevice.WLANConfiguration.PreSharedKey PreSharedKey="" />
+	<InternetGatewayDevice.X_HW_DEBUG.SMP.DM.CheckCurCustomize ProgramKey="" ConfigFileKey="" />
+	<InternetGatewayDevice.X_HW_Security.AclServices TELNETLanEnable="" />
+	<InternetGatewayDevice.X_HW_ChoiceProvinceInfo ProvinceList="" />
+</Mm_Configuration>

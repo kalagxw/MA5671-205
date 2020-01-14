@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "| Device Table: | Business Talbe:   | Business Status:  | Power Talbe:   | Device Status:    |"
+echo "| 1: SLIC       | 1: System         | 1: ACTIVE         | 1: NORMAL      | 1: ACTIVE         |"
+echo "| 2: HW         | 2: LAN            | 2: IDLE           | 2: BATTERY     | 2: SLEEP          |"
+echo "| 3: ZSP        | 3: USB            | 3: DISABLE        | 3: ECONOMIC    | 4: SHUT DOWN      |"
+echo "| 4: ARM        | 4: VSPA           |                   |                |                   |"
+echo "| 5: ECS        | 5: CATV           |                   |                |                   |"
+echo "| 6: OPTICAL    | 6: REMOTE DIA     |                   |                |                   |"    
+echo "| 7: USB        | 7: WLAN           |                   |                |                   |"
+echo "| 8: RF         | 8: LSW            |                   |                |                   |"
+echo "| 9: AR8317     |                   |                   |                |                   |"
+echo "| 10: GMII0     |                   |                   |                |                   |"
+echo "| 11: AR9227    |                   |                   |                |                   |"
+

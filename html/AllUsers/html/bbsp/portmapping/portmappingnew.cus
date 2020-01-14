@@ -1,0 +1,13 @@
+﻿var PublicIpFlag = '<%HW_WEB_GetFeatureSupport(BBSP_FT_SNAT_IPMAPPING);%>';
+
+var PortMappingReload = 
+[
+	{ReloadId:"PublicIP", ReloadValue:[{display:PublicIpFlag}]},
+
+]
+
+
+function CusLoadFrame()
+{
+
+}

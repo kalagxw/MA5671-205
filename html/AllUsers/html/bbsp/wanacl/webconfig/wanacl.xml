@@ -1,0 +1,12 @@
+<InternetGatewayDevice>
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<AclServices setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<WanAccess setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Protocol setconfig = "0x00000002" getconfig = "0x00000002"/>
+<WanName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SrcIPPrefix setconfig = "0x00000002" getconfig = "0x00000002"/>
+</WanAccess>
+</AclServices>
+</X_HW_Security> 
+</InternetGatewayDevice> 

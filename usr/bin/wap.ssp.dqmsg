@@ -1,0 +1,4 @@
+#!/bin/sh
+echo $1 $2 > /proc/wap_proc/msg_ctl
+#cat /proc/wap_proc/msg_ctl/proc/sysvipc/msg
+cat /proc/sysvipc/msg

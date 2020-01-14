@@ -1,0 +1,12 @@
+104001|Device Reboot|The deivce reboot.
+104030|High Rate Of CPU|The used rate of CPU is too high.
+104031|LOG Space Limited|The log space is limited.
+104032|Login Fail|Administrator login failed more than max times. 
+104035|Lack Of Available Bandwidth|The available bandwidth is not enough.
+104054|Update Config Fail|Update the configuration file failed.
+104055|Backup Config Fail|Backup the configuration file failed.
+104056|Recover Config Fail|Recover the configuration file failed.
+104057|Config File Unavailable|The configuration file is Unavailable.
+104058|Upgrade Software Fail|Upgrade software failed.
+104059|Lack Of Flash Space|The flash space is not enough.
+104142|DDNS Server Unreachable|DDNS server is unreachable.

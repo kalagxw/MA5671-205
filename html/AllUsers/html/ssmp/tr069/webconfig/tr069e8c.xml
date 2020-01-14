@@ -1,0 +1,20 @@
+<InternetGatewayDevice> 
+<ManagementServer setconfig = "0x00000002" getconfig = "0x00000002"> 
+<PeriodicInformEnable    setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<PeriodicInformInterval  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<PeriodicInformTime  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<URL  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<Username   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<Password   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<ConnectionRequestUsername  setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<ConnectionRequestPassword   setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<X_HW_EnableCertificate    setconfig = "0x00000002" getconfig = "0x00000002"/> 
+</ManagementServer>
+<DeviceInfo setconfig = "0x00000002" getconfig = "0x00000002"> 
+<X_HW_MiddlewareMgt setconfig = "0x00000002" getconfig = "0x00000002"> 
+<MiddlewareURL setconfig = "0x00000002" getconfig = "0x00000002"/> 
+<Tr069Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Port setconfig = "0x00000002" getconfig = "0x00000002"/> 
+</X_HW_MiddlewareMgt>
+</DeviceInfo> 
+</InternetGatewayDevice> 

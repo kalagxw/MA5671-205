@@ -1,0 +1,21 @@
+#
+# inittab       This file describes how the INIT process should set up
+#               the system during the initial booting process.
+
+# Ssystem initialization starts here
+
+::sysinit:/etc/rc.d/rc.ttyinit 
+#console::sysinit:/etc/rc.d/rc.sysinit
+
+#::sysinit:/etc/rc.d/rc.sysinit
+#ttyAMA1::respawn:-/bin/ash
+ttyAMA1::respawn:-/bin/"console.sh"
+#::respawn:/sbin/getty 115200 ttyAMA0
+#tty1::respawn:/sbin/getty 9600 tty1
+#tty2::respawn:/sbin/getty 9600 tty2
+#tty3::respawn:/sbin/getty 9600 tty3
+#tty4::respawn:/sbin/getty 9600 tty4
+#tty5::respawn:/sbin/getty 9600 tty5
+
+::shutdown:/etc/rc.d/rc.shutdown
+::ctrlaltdel:/bin/false

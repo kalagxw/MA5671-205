@@ -1,0 +1,44 @@
+﻿function WanConfigCallBack(TableName, ColumnNum, Wan)
+{
+	for(var i = 0; i < Wan.length - 1; i++)
+	{
+		var Color = Wan[i].RealName.indexOf("OLT") >= 0 ? "gray" : "black";
+
+		document.getElementById('wanInstTable_record_'+i).style.color=Color;
+
+		if('TELECOM' == CfgModeWord.toUpperCase() )
+		{
+			setDisable('wanInstTable_rml'+i,1);
+		}
+		else if(isReadModeForTR069Wan() && (Wan[i].ServiceList.indexOf("TR069") >= 0))
+		{
+			setDisable('wanInstTable_rml'+i,1);
+		}
+		else if('JSCMCC' == CfgModeWord.toUpperCase() && Wan[i].VlanId == 4031 && Wan[i] && Wan[i].ServiceList == 'OTHER' && Wan[i].EncapMode == 'PPPoE' && IsWanHidden(domainTowanname(Wan[i].domain)) == true)
+		{
+			setDisable('wanInstTable_rml'+i,1);
+		}
+		else
+		{
+		 
+		}
+	}
+}
+
+var Show6RdTable = (Is6RdSupported()) ? 1 : 0;
+var ShowLanDhcpSwitch = (isE8cAndCMCC()) ? 1 : 0;
+var ShowDstIPForwarding = ('E8C' == '<%HW_WEB_GetBinMode();%>'.toUpperCase()) ? 1 : 0;
+
+var WanReload = 
+[
+	{ReloadId:"RDMode", ReloadValue:[{display:Show6RdTable}]},
+	{ReloadId:"RdPrefix", ReloadValue:[{display:Show6RdTable}]},
+	{ReloadId:"RdPrefixLen", ReloadValue:[{display:Show6RdTable}]},
+	{ReloadId:"RdBRIPv4Address", ReloadValue:[{display:Show6RdTable}]},
+	{ReloadId:"RdIPv4MaskLen", ReloadValue:[{display:Show6RdTable}]},
+]
+
+function CusLoadFrame()
+{
+
+}

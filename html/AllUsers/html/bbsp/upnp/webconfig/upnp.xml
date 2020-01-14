@@ -1,0 +1,8 @@
+<InternetGatewayDevice>
+<X_HW_MainUPnP setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_MainUPnP>
+<X_HW_SlvUPnP setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_SlvUPnP> 
+</InternetGatewayDevice> 

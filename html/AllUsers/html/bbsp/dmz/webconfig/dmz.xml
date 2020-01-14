@@ -1,0 +1,18 @@
+<InternetGatewayDevice> 
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000003" getconfig = "0x00000003">
+<WANIPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_DMZ setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<DMZEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DMZHostIPAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DMZ>
+</WANIPConnection>
+<WANPPPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<X_HW_DMZ setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<DMZEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DMZHostIPAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DMZ>
+</WANPPPConnection>
+</WANConnectionDevice>
+</WANDevice>
+</InternetGatewayDevice> 

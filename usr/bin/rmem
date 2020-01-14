@@ -1,0 +1,110 @@
+#!/bin/sh
+
+# calc used start
+tmem=`cat /proc/cmdline | cut -d= -f2 | cut -dM -f1`
+afree=$((  1024 \* $tmem ))
+free1=`echo  3 >/proc/sys/vm/drop_caches ; cat /proc/meminfo | grep MemFree | cut -d: -f2 |cut -dk -f1`
+sleep 1
+free2=`echo  3 >/proc/sys/vm/drop_caches ; cat /proc/meminfo | grep MemFree | cut -d: -f2 |cut -dk -f1`
+free3=`echo  3 >/proc/sys/vm/drop_caches ; cat /proc/meminfo | grep MemFree | cut -d: -f2 |cut -dk -f1`
+cfree=$(( $free1 + $free2 + $free3 ))
+cfree=$(( $cfree / 3 ))
+used=$(( $afree - $cfree ))
+all_usr_mem=0
+echo "-------------------------------------------all used memory:$used------------------------------------------------"
+echo -e "proc_mem:\ttxt_mem:\tkstack_mem:\theap_mem:\tshm_mem:\tdata_mem:\tproc_name"
+
+cd /proc
+
+#Shared_Dirty|Private_Clean|Private_Dirty
+
+for d in *; do
+	if [ -e $d/smaps ]; then
+		if [ -d $d/task ]; then
+			
+			name=`cat /proc/$d/cmdline`
+			if [ "$name" != "" ]; then
+				#calc use memory used
+				all_size=0
+				txt_size=0
+				heap_size=0
+				data_size=0
+				shm_size=0
+                                
+				cat $d/smaps | grep 'Shared_Dirty\|Private_Clean\|Private_Dirty' | grep -v " 0 k" | cut -d":" -f2 | cut -d"k" -f1 >/tmp/all_size
+                                cat $d/smaps | sed -n /r-xp/,/Private_Dirty/p | grep 'Shared_Dirty\|Private_Clean\|Private_Dirty' | grep -v " 0 k" | cut -d":" -f2 | cut -d"k" -f1 >/tmp/txt_size
+                                cat $d/smaps | sed -n /heap/,/Private_Dirty/p | grep 'Private_Dirty' | cut -d":" -f2 | cut -d"k" -f1 >/tmp/heap_size
+                                cat $d/smaps | sed -n /rw-s/,/Private_Dirty/p | grep 'Shared_Dirty\|Private_Clean\|Private_Dirty'  | cut -d":" -f2 | cut -d"k" -f1 >/tmp/shm_size
+
+				for c in `cat /tmp/all_size`
+				do 
+					all_size=$(( $all_size + $c ))
+				done
+
+				for c in `cat /tmp/txt_size`
+				do 
+					txt_size=$(( $txt_size + $c ))
+				done
+				
+				for c in `cat /tmp/heap_size`
+				do 
+					heap_size=$(( $heap_size + $c ))
+					break;
+				done
+
+				for c in `cat /tmp/shm_size`
+				do 
+					shm_size=$(( $shm_size + $c ))
+				done
+
+				data_size=$(( $all_size - $txt_size - $heap_size - $shm_size ))
+
+				#calc kernel task_stack memory
+				kstack_size=0
+				for t in $d/task/*
+				do
+					kstack_size=$(( $kstack_size + 8 ))
+				done
+
+				all_size=$(( $all_size + $kstack_size ))
+
+				all_usr_mem=$(( $all_usr_mem + $all_size ))
+
+				echo -e "$all_size:\t\t$txt_size:\t\t$kstack_size:\t\t$heap_size:\t\t$shm_size:\t\t$data_size:\t\t$name"
+			fi
+		fi
+	fi
+done
+echo "-------------------------------------------all user memory:$all_usr_mem-------------------------------------------------"
+
+krnl_mod=0
+lsmod | cut -d' ' -f 2-100 | sed 's/^[ ][ ]*//g' | cut -d" " -f1 | grep "[0-9]" >/tmp/krnl_mod
+for c in `cat /tmp/krnl_mod`
+do
+	krnl_mod=$(( $krnl_mod + $c ))
+done
+krnl_mod=$(( $krnl_mod / 1000 ))
+
+slab_mem=`cat /proc/meminfo | grep Slab | cut -d":" -f2 | cut -d"k" -f1`
+slab_mem=$(( $slab_mem ))
+share_mem=`cat /proc/meminfo | grep Shmem | cut -d":" -f2 | cut -d"k" -f1`
+share_mem=$(( $share_mem ))
+krnl_txt=`dmesg | grep "\.text :" | cut -d"(" -f2 | cut -d"k" -f1`
+krnl_dat=`dmesg | grep "\.data :" | cut -d"(" -f2 | cut -d"k" -f1`
+krnl_mem=$(( $krnl_txt + $krnl_dat ))
+KernelStack=`cat /proc/meminfo | grep KernelStack | cut -d":" -f2 | cut -d"k" -f1`
+KernelStack=$(( $KernelStack ))
+PageTables=`cat /proc/meminfo | grep PageTables | cut -d":" -f2 | cut -d"k" -f1`
+PageTables=$(( $PageTables ))
+othermem=$(( $used - $krnl_mod - $all_usr_mem - $slab_mem - $share_mem - $krnl_mem - $KernelStack - $PageTables))
+
+
+echo -e "used_mem:\tusr_mem:\tkrnl_mod:\tslab_mem:\tshare_mem:\tkrnl_mem:\tkrnl_stk:\tpage_Tbl:\tothermem"
+echo -e "$used:\t\t$all_usr_mem:\t\t$krnl_mod:\t\t$slab_mem:\t\t$share_mem:\t\t$krnl_mem:\t\t$KernelStack:\t\t$PageTables:\t\t$othermem"
+
+rm /tmp/all_size
+rm /tmp/txt_size
+rm /tmp/heap_size
+rm /tmp/krnl_mod
+
+

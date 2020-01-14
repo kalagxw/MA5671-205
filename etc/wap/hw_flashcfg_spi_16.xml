@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<option system_pack="1" flash_size="0x01000000"/>
+<startcode rotate_flag="0" address0="0" length0="0x00040000"/>
+<uboot rotate_flag="1" addressA="0x00040000" lengthA="0x00040000" addressB="0x00080000" lengthB="0x00040000"/>
+<flash_config rotate_flag="0" address0="0x000C0000" length0="0x00040000" />
+<slave_param rotate_flag="0" address0="0x00100000" length0="0x00040000" />
+<kernel rotate_flag="1" addressA="0x00140000" lengthA="0x00200000" addressB="0x00340000" lengthB="0x00200000" />
+<rootfs rotate_flag="1" addressA="0x00540000" lengthA="0x00480000" addressB="0x009C0000" lengthB="0x00480000" />
+<file_system rotate_flag="0" address0="0x00E40000" length0="0x00180000" />
+</root>

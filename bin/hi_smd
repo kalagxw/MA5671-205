@@ -1,0 +1,109 @@
+#/bin/sh
+
+# hi_smd sdk load
+# hi_smd sdk clear
+# hi_smd phy load
+# hi_smd phy clear
+
+PrintHelp()
+{
+  echo " "
+	echo "hi_smd Usage:"
+	echo "hi_smd sdk load svrip 192.168.100.102 -----> to load sdk"
+	echo "hi_smd sdk clear                      -----> to clear sdk"
+	echo "hi_smd phy load svrip 192.168.100.102 -----> to load phy patch."
+	echo "hi_smd phy clear                      -----> to clear phy patch."
+}
+
+case $1  in
+	sdk )	
+		if [ $2 = load ]; then
+				if [ $# -ne 4 ] ; then
+					echo "para num is not right" && exit 1
+				fi
+				
+				if [ $3 = svrip ]; then
+					echo "svrip="$4
+			  else
+			  	echo "ERROR::input para3 is not right!" && exit 1
+				fi
+				
+		  	cd /mnt/jffs2/
+		  	mkdir TranStar
+		  	cd TranStar
+				
+		  	tftp -g -r hi_sysctl.ko $4
+		  	tftp -g -r hi_spi.ko $4
+		  	tftp -g -r hi_pie.ko $4
+		  	tftp -g -r delivery.ko $4
+		  	tftp -g -r hi_gpio_5115.ko $4
+		  	tftp -g -r hi_gpio.ko $4
+		  	tftp -g -r hi_i2c.ko $4
+		  	tftp -g -r hi_timer.ko $4
+		  	tftp -g -r hi_serdes.ko $4
+		  	tftp -g -r hi_hw.ko $4
+		  	tftp -g -r hi_uart.ko $4
+		  	tftp -g -r hi_bridge_5115.ko $4
+		  	tftp -g -r hi_bridge.ko $4
+		  	tftp -g -r hi_xgpon.ko $4
+		  	tftp -g -r hi_xepon.ko $4
+		  	tftp -g -r hi_gpon.ko $4
+		  	tftp -g -r hi_epon.ko $4
+		  	tftp -g -r hi_l3_5115.ko $4
+		  	tftp -g -r hi_l3.ko $4
+		  	tftp -g -r hi_oam.ko $4
+		  	tftp -g -r hi_sci.ko $4
+		  	tftp -g -r hi_mdio.ko $4
+		  	
+		  	echo "load sdk success!"
+		  	
+		elif [ $2 = clear ]; then
+				rm -fr /mnt/jffs2/TranStar
+				echo "rm sdk success!"
+		else
+			echo "ERROR::input para is not right!" && exit 1
+		fi
+		;;
+	phy )
+		if [ $2 = load ]; then
+				if [ $# -ne 4 ] ; then
+					echo "para num is not right" && exit 1
+				fi
+				
+				if [ $3 = svrip ]; then
+					echo "svrip="$4
+			  else
+			  	echo "ERROR::input para3 is not right!" && exit 1
+				fi
+				
+		  	cd /mnt/jffs2/
+		  	mkdir PhyPatch
+		  	cd PhyPatch
+				
+		  	tftp -g -r phy_patch_5115h.bin $4
+		  	tftp -g -r phy_patch_5115s.bin $4
+		  	tftp -g -r phy_patch_5115t.bin $4
+		  	tftp -g -r phy_patch_5116h_fe.bin $4
+		  	tftp -g -r phy_patch_5116h_ge.bin $4
+		  	tftp -g -r phy_patch_5116l_fe.bin $4
+		  	tftp -g -r phy_patch_5116l_ge.bin $4
+		  	tftp -g -r phy_patch_5116s.bin $4
+		  	tftp -g -r phy_patch_5116t.bin $4
+			tftp -g -r phy_patch_5118.bin $4
+		  	echo "load phy patch success!"
+		  	
+		elif [ $2 = clear ]; then
+				rm -fr /mnt/jffs2/PhyPatch
+				echo "rm phy patch success!"
+		else
+			echo "ERROR::input para is not right!" && exit 1
+		fi
+		;;
+	-h )
+	        PrintHelp && exit 0
+		;;	
+	* )
+		echo "ERROR::input para is not right!"
+		PrintHelp && exit 1
+		;;
+	esac

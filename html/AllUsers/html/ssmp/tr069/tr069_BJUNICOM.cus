@@ -1,0 +1,24 @@
+var AcsReload = null;
+function CusLoadFrame()
+{
+	setDisable('PeriodicInformEnable',1);
+	setDisable('PeriodicInformInterval',1);	
+	setDisable('PeriodicInformTime',1);
+	setDisable('URL',1);
+	setDisable('Username',1);
+	setDisable('Password',1);
+	setDisable('ConnectionRequestUsername',1);
+	setDisable('ConnectionRequestPassword',1);
+	setDisable('X_HW_DSCP',1);
+	setDisable('ACSbtnApply',1);
+	setDisable('ACScancelValue',1);
+	setDisable('CertificateEnable',1);
+	setDisable('X_HW_CertPassword',1);
+	setDisable('CfmPassword',1);
+	setDisable('PWDbtnApply',1);
+	setDisable('PWDcancelValue',1);
+	setDisable('f_file',1);
+	setDisable('t_file',1);
+	setDisable('btnBrowse',1);
+	setDisable('ImportCertification',1);
+}

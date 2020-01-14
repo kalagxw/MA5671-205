@@ -1,0 +1,23 @@
+var UnChangeURL = '<%HW_WEB_GetFeatureSupport(HW_SSMP_FEATURE_UNCHANGEURL);%>'
+var UnChangeUser = '<%HW_WEB_GetFeatureSupport(HW_SSMP_FEATURE_UNCHANGEUSER);%>'
+var UnChangePeriod = '<%HW_WEB_GetFeatureSupport(HW_SSMP_FEATURE_UNCHANGEPERIOD);%>'
+var DisableACSApply = '<%HW_WEB_GetFeatureSupport(HW_SSMP_FEATURE_DISABLEACSAPPLY);%>'
+var UnchangeTimePeriod = '<%HW_WEB_GetFeatureSupport(HW_SSMP_FEATURE_UNCHANGETIME);%>'
+var DisabledYimeInterval = (UnchangeTimePeriod | UnChangePeriod);
+
+var AcsReload = 
+[
+	{ReloadId:"PeriodicInformEnable", ReloadValue:[{disabled:UnChangePeriod}]},
+	{ReloadId:"PeriodicInformTime", ReloadValue:[{disabled:UnChangePeriod}]},
+	{ReloadId:"URL", ReloadValue:[{disabled:UnChangeURL}]},
+	{ReloadId:"Username", ReloadValue:[{disabled:UnChangeUser}]},
+	{ReloadId:"Password", ReloadValue:[{disabled:UnChangeUser}]},
+	{ReloadId:"ConnectionRequestUsername", ReloadValue:[{disabled:UnChangeUser}]},
+	{ReloadId:"ConnectionRequestPassword", ReloadValue:[{disabled:UnChangeUser}]},
+	{ReloadId:"PeriodicInformInterval", ReloadValue:[{disabled:DisabledYimeInterval}]},
+]
+
+function CusLoadFrame()
+{
+
+}

@@ -1,0 +1,24 @@
+<InternetGatewayDevice> 
+<X_HW_SpecialPacket setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<ClassInterface setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SourceIP setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SourceMask setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DestIP setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DestMask setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Protocol setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DestPort setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DestPortRangeMax setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SourcePort setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SourcePortRangeMax setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SourceMACAddress setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DestMACAddress setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Ethertype setconfig = "0x00000002" getconfig = "0x00000002"/>
+<VLANIDCheck setconfig = "0x00000002" getconfig = "0x00000002"/>
+<EthernetPriorityCheck setconfig = "0x00000002" getconfig = "0x00000002"/>
+<EthernetPriorityMark setconfig = "0x00000002" getconfig = "0x00000002"/>
+<OperationType setconfig = "0x00000002" getconfig = "0x00000002"/>
+<BpduGarpFlag setconfig = "0x00000002" getconfig = "0x00000002"/>
+<BpduCfmFlag setconfig = "0x00000002" getconfig = "0x00000002"/>
+<MultiFlowFlag setconfig = "0x00000002" getconfig = "0x00000002"/>
+</X_HW_SpecialPacket> 
+</InternetGatewayDevice> 

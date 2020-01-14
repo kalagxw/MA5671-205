@@ -1,0 +1,33 @@
+﻿<WebConfig>
+<english>
+<admin>
+</admin>
+<normal>
+<Item MenuLevel="1" MenuName="Quick Setup" url="">
+<Item MenuLevel="2" MenuName="Quick Setup" url="html/ssmp/cfgguide/configguide.asp" />
+</Item>
+</normal>
+</english>
+<public>
+<Item url="/resource/common/InitForm.asp"/>
+<Item url="/html/ssmp/common/getPwdModifyFlag.asp"/>
+<Item url="/html/ssmp/common/StartFileLoad.asp" />
+<Item url="/html/ssmp/common/getCurLanguage.asp"/>
+<Item url="/html/ssmp/common/getCurUserType.asp"/>
+<Item url="/html/ssmp/common/getCurWebFrame.asp"/>
+<Item url="/html/ssmp/common/getPageName.asp"/>
+<Item url="/html/ssmp/common/getCurWebMenuPath.asp"/>
+<Item url="/html/get_swm_status.asp"/>
+<Item url="/html/ssmp/common/refreshTime.asp"/>
+<Item url="/html/msgerrcode.asp"/>
+<Item url="/html/proerrcode.asp"/>
+<Item url="/html/relocation.asp"/>
+<Item url="/html/bbsp/common/userinfo.asp"/>
+<Item url="/html/bbsp/common/topoinfo.asp"/>
+<Item url="/html/bbsp/common/managemode.asp"/>
+<Item url="/html/amp/common/wlan_list.asp"/>
+<Item url="/html/httpsdirect.asp"/>
+<Item url="/html/bbsp/common/wan_list_info.asp"/>
+<Item url="/html/bbsp/common/wan_list.asp"/>
+</public>
+</WebConfig>

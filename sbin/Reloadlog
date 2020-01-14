@@ -1,0 +1,7 @@
+#! /bin/sh
+
+echo !reload > /proc/wap_proc/wap_log
+echo !reload > /proc/wap_proc/wap_debug_log
+echo !reload > /proc/wap_proc/flow_log
+echo !reload > /proc/wap_proc/dhcpd_log
+echo !head 0 > /proc/wap_proc/dhcpd_log

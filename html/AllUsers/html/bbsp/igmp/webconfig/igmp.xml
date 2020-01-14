@@ -1,0 +1,21 @@
+<InternetGatewayDevice>
+<Services>
+<X_HW_IPTV setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000003">
+<IGMPEnable setconfig = "0x00000002" getconfig = "0x00000003"/>
+<ProxyEnable setconfig = "0x00000002" getconfig = "0x00000003"/>
+<SnoopingEnable setconfig = "0x00000002" getconfig = "0x00000003"/>
+<IGMPVersion setconfig = "0x00000002" getconfig = "0x00000003"/>
+<Robustness setconfig = "0x00000002" getconfig = "0x00000003"/>
+<GenQueryInterval setconfig = "0x00000002" getconfig = "0x00000003"/>
+<GenResponseTime setconfig = "0x00000002" getconfig = "0x00000003"/>
+<SpQueryNumber setconfig = "0x00000002" getconfig = "0x00000003"/>
+<SpQueryInterval setconfig = "0x00000002" getconfig = "0x00000003"/>
+<SpResponseTime setconfig = "0x00000002" getconfig = "0x00000003"/>
+<RemarkIPPrecedence setconfig = "0x00000002" getconfig = "0x00000003"/>
+<RemarkPri setconfig = "0x00000002" getconfig = "0x00000003"/>
+<PPPoEWanSnoopingMode setconfig = "0x00000002" getconfig = "0x00000003"/>
+<BridgeWanProxyEnable setconfig = "0x00000002" getconfig = "0x00000003"/>
+<PPPoEWanProxyMode setconfig = "0x00000002" getconfig = "0x00000003"/>
+</X_HW_IPTV>
+</Services>
+</InternetGatewayDevice> 

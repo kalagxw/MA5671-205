@@ -1,0 +1,1 @@
+<%HW_WEB_GetParaByDomainName(InternetGatewayDevice.UserInterface.X_HW_WebUserInfo.1.ModifyPasswordFlag);%>

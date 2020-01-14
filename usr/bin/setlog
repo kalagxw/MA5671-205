@@ -1,0 +1,16 @@
+#!/bin/sh
+#²é¿´log
+if [ $# -eq 1 ]; then
+	echo !set $1 64 64 > /proc/wap_proc/wap_log
+fi
+
+if [ $# -eq 2 ]; then
+	echo !set $1 $2 64 > /proc/wap_proc/wap_log
+fi
+
+if [ $# -eq 3 ]; then
+	echo !set $1 $2 $3 > /proc/wap_proc/wap_log
+fi
+
+echo !get > /proc/wap_proc/wap_log
+

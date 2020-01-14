@@ -1,0 +1,13 @@
+<InternetGatewayDevice> 
+<Time setconfig = "0x00000003" getconfig = "0x00000003"> 
+<Enable      setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NTPServer1  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NTPServer2  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<LocalTimeZoneName  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<X_HW_SynInterval   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<X_HW_WanName   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<DaylightSavingsUsed  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<X_HW_DaylightSavingsStartDate   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<X_HW_DaylightSavingsEndDate   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+</Time> 
+</InternetGatewayDevice> 

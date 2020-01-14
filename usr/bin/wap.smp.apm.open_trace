@@ -1,0 +1,2 @@
+#!/bin/sh
+shellcmdexe $(pidof apm) 0x4000 3

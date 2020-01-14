@@ -1,0 +1,9 @@
+#!/bin/sh
+#Çå³ýlog
+echo -n "Confirm to clean the log(yes):"
+read var_confirm
+if [ $var_confirm == "yes" ] ; then
+    echo !cls > /proc/wap_proc/wap_log
+else
+    echo "Cancel to clean the log."
+fi

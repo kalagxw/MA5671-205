@@ -1,0 +1,7 @@
+<InternetGatewayDevice>
+<X_HW_AMPConfig setconfig = "0x00000003" getconfig = "0x00000003">
+<PortIsolate setconfig = "0x00000002" getconfig = "0x00000002">
+<PortIsolateSwitch setconfig = "0x00000002" getconfig = "0x00000002"/>
+</PortIsolate>
+</X_HW_AMPConfig>
+</InternetGatewayDevice> 

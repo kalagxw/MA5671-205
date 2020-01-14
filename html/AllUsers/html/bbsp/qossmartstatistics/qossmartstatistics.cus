@@ -1,0 +1,19 @@
+﻿function QosSmartCallBack(TableName, ColumnNum, QosSmartData)
+{
+	for(var i = 0; i < QosSmartData.length - 1; i++)
+	{
+		if(QosSmartEnable != "1")
+		{
+			setDisable("QossmartTable_rml" + i, 1);
+		}
+		else
+		{
+			setDisable("QossmartTable_rml" + i, 0);
+		}
+	}
+}
+
+function CusLoadFrame()
+{
+
+}

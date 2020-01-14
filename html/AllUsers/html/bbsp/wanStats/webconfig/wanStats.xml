@@ -1,0 +1,5 @@
+<InternetGatewayDevice>
+<X_HW_Radio_WAN_Stats setconfig = "0x00000003" getconfig = "0x00000003">
+<ResetStats setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_Radio_WAN_Stats>
+</InternetGatewayDevice> 

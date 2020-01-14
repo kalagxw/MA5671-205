@@ -1,0 +1,16 @@
+<Mm_Configuration>
+	<InternetGatewayDevice.DeviceInfo SerialNumber="" X_HW_LanMac="" X_HW_MachineItem="" HardwareVersion="" SoftwareVersion="" AdditionalSoftwareVersion=""	X_HW_SlaveSoftversion="" X_HW_WlanMac="" X_HW_WanMac=""
+	 Manufacturer="" ManufacturerOUI="" ModelName="" Description="" ManufactureInfo=""  ProductClass="" SpecVersion="" ProvisioningCode="" UpTime="" X_HW_ReleaseTime="" X_HW_UpPortMode=""  />
+	<InternetGatewayDevice.X_HW_DEBUG.SMP.DM.ShowWapVer MainVersion="" StandbyVersion="" />
+	<InternetGatewayDevice.LANDevice.WLANConfiguration SSID="" />
+	<InternetGatewayDevice.LANDevice.WLANConfiguration.PreSharedKey PreSharedKey="" />
+	<InternetGatewayDevice.X_HW_Security.AclServices TELNETLanEnable="" />
+	<InternetGatewayDevice.X_HW_DEBUG.AMP.GetSelfTest SD5113Result="" WifiResult="" LswResult="" CodecResult="" OpticResult="" Port1Result="" Port2Result="" Port3Result="" Port4Result="" Port5Result="" Port6Result="" ExtLswResult="" />
+	<InternetGatewayDevice.X_HW_DEBUG.AMP.Optic LosEnable="" SendPowerSupply="" ControlMode="" PowerSupply="" LinkStaus="" RxPower="" TxPower="" Voltage="" Temperature="" Bias="" RfRxPower="" VendorName="" VendorSN="" TxData="" />
+	<InternetGatewayDevice.X_HW_DEBUG.AMP.LedTest Optype="" />
+	<InternetGatewayDevice.X_HW_DEBUG.VSPA.vspavoiptest enable="" />
+	<InternetGatewayDevice.X_HW_DEBUG.SMP.SWM.LoadPack ChannelName="" IpAddr="" RemoteFilePath="" UserName="" Password="" Port="" Reserved="" />
+	<InternetGatewayDevice.X_HW_DEBUG.SMP.SWM.DisplaySwmState SwmState="" SwmOper="" SwmProgress="" />
+	<InternetGatewayDevice.X_HW_SSMPPDT.SWM RestoreAll="" />
+	<InternetGatewayDevice.X_HW_ChoiceProvinceInfo ProvinceList="" />
+</Mm_Configuration>

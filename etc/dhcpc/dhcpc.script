@@ -1,0 +1,233 @@
+#!/bin/ash
+
+WAN_NAME=$2
+PID_FILE="/var/wan/$WAN_NAME/pid"
+WAN_CONFIG="/var/wan/$WAN_NAME/config"
+WAN_ERRCODE="/var/wan/$WAN_NAME/err_code"
+WAN_STATUS="/var/wan/$WAN_NAME/status"
+#PARA_FILE="/var/wan/$WAN_NAME/flag"
+WAN_FRESH="/var/wan/$WAN_NAME/fresh"
+
+# get wan process id
+pid=
+get_pid()
+{
+	read pid < $PID_FILE
+}
+
+# record the wan interface status
+# 3-connect 6-disconnect
+# init sate:disconnect
+connect=3
+disconnect=6
+no_fresh=0
+fresh=1
+status=$disconnect
+get_status()
+{
+	read status < $WAN_STATUS
+}
+
+# send signal SIGIO to notify dhcpc
+send_sig()
+{
+	get_pid	
+	kill -29 $pid 
+	
+}
+
+clear_err_code()
+{
+        echo > $WAN_ERRCODE
+}
+
+write_err_code()
+{
+        echo $1 > $WAN_ERRCODE
+}
+
+# write dhcp option info to config file
+write_config()
+{	
+	echo > $WAN_CONFIG	
+	[ -n "$router" ] && echo router= $router >> $WAN_CONFIG
+	[ -n "$mask" ] && echo mask= $mask >> $WAN_CONFIG
+	[ -n "$domain" ] && echo domain= $domain >> $WAN_CONFIG
+	[ -n "$ip" ] && echo ip= $ip >> $WAN_CONFIG
+	[ -n "$dns" ] && echo dns= $dns >> $WAN_CONFIG
+	[ -n "$wins" ] && echo wins= $wins >> $WAN_CONFIG
+	[ -n "$sipsrv" ] && echo sipsrv= $sipsrv >> $WAN_CONFIG
+	[ -n "$tr069srv" ] && echo tr069srv= $tr069srv >> $WAN_CONFIG
+	[ -n "$ntpsrv" ] && echo ntpsrv= $ntpsrv >> $WAN_CONFIG
+	[ -n "$sroute" ] && echo sroute= $sroute >> $WAN_CONFIG
+	[ -n "$serverid" ] && echo serverid= $serverid >> $WAN_CONFIG
+	[ -n "$relayagent" ] && echo relayagent= $relayagent >> $WAN_CONFIG
+	[ -n "$stime" ] && echo stime= $stime >> $WAN_CONFIG
+	[ -n "$lease" ] && echo lease= $lease >> $WAN_CONFIG
+	[ -n "$dhcpsrv" ] && echo dhcpsrv= $dhcpsrv >> $WAN_CONFIG
+	[ -n "$tunnel6rd" ] && echo tunnel6rd= $tunnel6rd >> $WAN_CONFIG
+	[ -n "$tftp" ] && echo tftp= $tftp >> $WAN_CONFIG
+	[ -n "$bootfile" ] && echo bootfile= $bootfile >> $WAN_CONFIG
+	[ -n "$ftpname" ] && echo ftpname= $ftpname >> $WAN_CONFIG
+	[ -n "$ftppwd" ] && echo ftppwd= $ftppwd >> $WAN_CONFIG
+	[ -n "$ftpip" ] && echo ftpip= $ftpip >> $WAN_CONFIG
+	[ -n "$netfile" ] && echo netfile= $netfile >> $WAN_CONFIG
+	[ -n "$sftp" ] && echo sftp= $sftp >> $WAN_CONFIG
+	[ -n "$tftpip" ] && echo tftpip= $tftpip >> $WAN_CONFIG
+}
+
+# clear config file
+clear_config()
+{
+	echo > $WAN_CONFIG
+}
+
+[ -n "$broadcast" ] && BROADCAST="broadcast $broadcast"
+[ -n "$subnet" ] && NETMASK="netmask $subnet"
+
+# do something by the status 
+case "$1" in
+	deconfig)
+	if [ -f $WAN_STATUS ]
+	then
+		get_status
+		if [ "$status" = "$connect" -o "$status" = "" ]
+		then
+			#ifconfig $WAN_NAME 0.0.0.0
+			echo $disconnect > $WAN_STATUS
+			echo $no_fresh > $WAN_FRESH
+			clear_config
+			send_sig
+		fi
+	else
+		#echo status file not exist!
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+        fi
+        ;;
+	deconfig_nosig)
+	if [ -f $WAN_STATUS ]
+	then
+		get_status
+		if [ "$status" = "$connect" -o "$status" = "" ]
+		then			
+			echo $disconnect > $WAN_STATUS
+			echo $no_fresh > $WAN_FRESH
+			clear_config
+		fi
+	else
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+        fi
+        ;;
+	bound)
+        # the status file must exist!
+		#ifconfig $WAN_NAME $ip $BROADCAST $NETMASK
+		echo $fresh > $WAN_FRESH
+		write_config
+		clear_err_code
+		echo $connect > $WAN_STATUS
+		send_sig
+
+        ;;
+  renew)
+  get_status
+	if [ "$status" = "$connect" ]
+	then
+       echo $fresh > $WAN_FRESH
+       write_config
+       clear_err_code
+   
+       send_sig
+  fi      
+	;;
+
+  send_fail)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+                write_err_code 1
+  fi      
+	;;
+  noserv)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+                write_err_code 2
+  fi      
+	;;	
+  deny)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+	        write_err_code 3
+  fi      
+	;;	
+  getip_fail)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+	        write_err_code 4
+  fi      
+	;;
+	
+  em_send_fail)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+		get_pid
+		write_err_code 1
+		send_sig
+  fi      
+	;;
+  em_noserv)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+		get_pid
+		write_err_code 2
+		send_sig
+  fi      
+	;;	
+  em_deny)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+		get_pid
+		write_err_code 3
+		send_sig
+  fi      
+	;;	
+  em_getip_fail)
+    	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+		echo $disconnect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+		get_pid
+		write_err_code 4
+		send_sig
+  fi      
+	;;
+		
+  em_succ)
+  	get_status
+	if [ "$status" = "$disconnect" ]
+	then
+		#ifconfig $WAN_NAME $ip $BROADCAST $NETMASK
+		write_config
+		echo $connect > $WAN_STATUS
+		echo $no_fresh > $WAN_FRESH
+		clear_err_code
+		send_sig
+  fi      
+	;;	
+
+esac
+exit 0

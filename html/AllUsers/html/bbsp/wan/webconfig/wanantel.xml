@@ -1,0 +1,162 @@
+<InternetGatewayDevice>
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000001">
+<WANIPConnection setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<X_HW_BindPhyPortInfo setconfig = "0x00000002"/>
+<Enable setconfig = "0x00000002"/>
+<ConnectionType setconfig = "0x00000002"/>
+<NATEnabled setconfig = "0x00000002"/>
+<X_HW_NatType setconfig = "0x00000002"/>
+<AddressingType setconfig = "0x00000002"/>
+<ExternalIPAddress setconfig = "0x00000002"/>
+<SubnetMask setconfig = "0x00000002"/>
+<DefaultGateway setconfig = "0x00000002"/>
+<DNSEnabled setconfig = "0x00000002"/>
+<DNSOverrideAllowed setconfig = "0x00000002"/>
+<DNSServers setconfig = "0x00000002"/>
+<MaxMTUSize setconfig = "0x00000002"/>
+<X_HW_SERVICELIST setconfig = "0x00000002"/>
+<X_HW_VLAN setconfig = "0x00000002"/>
+<X_HW_PRI setconfig = "0x00000002"/>
+<X_HW_MultiCastVLAN setconfig = "0x00000002"/>
+<X_HW_IPv4Enable setconfig = "0x00000002"/>
+<X_HW_IPv6Enable setconfig = "0x00000002"/>
+<X_HW_IPv6MultiCastVLAN setconfig = "0x00000002"/>
+<X_HW_LANBIND setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Lan1Enable setconfig = "0x00000002"/>
+<Lan2Enable setconfig = "0x00000002"/>
+<Lan3Enable setconfig = "0x00000002"/>
+<Lan4Enable setconfig = "0x00000002"/>
+<SSID1Enable setconfig = "0x00000002"/>
+<SSID2Enable setconfig = "0x00000002"/>
+<SSID3Enable setconfig = "0x00000002"/>
+<SSID4Enable setconfig = "0x00000002"/>
+</X_HW_LANBIND>
+<X_HW_VenderClassID setconfig = "0x00000002"/>
+<X_HW_DDNSConfiguration setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<DDNSCfgEnabled setconfig = "0x00000002"/>
+<DDNSProvider setconfig = "0x00000002"/>
+<DDNSUsername setconfig = "0x00000002"/>
+<DDNSPassword setconfig = "0x00000002"/>
+<ServicePort setconfig = "0x00000002"/>
+<DDNSDomainName setconfig = "0x00000002"/>
+<DDNSHostName setconfig = "0x00000002"/>
+</X_HW_DDNSConfiguration>
+<X_HW_PriPolicy setconfig = "0x00000002"/>
+<X_HW_DefaultPri setconfig = "0x00000002"/>
+<X_HW_ClientID setconfig = "0x00000002"/>
+<X_HW_ExServiceList setconfig = "0x00000002"/>
+<X_HW_IPv6 setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<IPv6Prefix setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Alias setconfig = "0x00000002"/>
+<Origin setconfig = "0x00000002"/>
+<Prefix setconfig = "0x00000002"/>
+</IPv6Prefix>
+<IPv6Address setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Alias setconfig = "0x00000002"/>
+<Origin setconfig = "0x00000002"/>
+<IPAddress setconfig = "0x00000002"/>
+<ChildPrefixBits setconfig = "0x00000002"/>
+<UnnumberredWanReserveAddress setconfig = "0x00000002"/>
+<AddrMaskLen setconfig = "0x00000002"/>
+<DefaultGateway setconfig = "0x00000002"/>
+</IPv6Address>
+<IPv6DnsServer setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<DNSServer setconfig = "0x00000002"/>
+</IPv6DnsServer>
+<DSLite setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<WorkMode  setconfig = "0x00000002"/>
+<AFTRName  setconfig = "0x00000002"/>
+<InTunnelMTU  setconfig = "0x00000002"/>
+<OutTunnelMTU  setconfig = "0x00000002"/>
+</DSLite>
+</X_HW_IPv6>
+</WANIPConnection>
+<WANPPPConnection setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<X_HW_BindPhyPortInfo setconfig = "0x0000000f"/>
+<Enable setconfig = "0x0000000f"/>
+<ConnectionType setconfig = "0x0000000f"/>
+<NATEnabled setconfig = "0x0000000f"/>
+<X_HW_NatType setconfig = "0x0000000f"/>
+<AddressingType setconfig = "0x0000000f"/>
+<ExternalIPAddress setconfig = "0x0000000f"/>
+<SubnetMask setconfig = "0x0000000f"/>
+<DefaultGateway setconfig = "0x0000000f"/>
+<DNSEnabled setconfig = "0x0000000f"/>
+<Username setconfig = "0x0000000f"/>
+<Password setconfig = "0x0000000f"/>
+<DNSOverrideAllowed setconfig = "0x0000000f"/>
+<DNSServers setconfig = "0x0000000f"/>
+<MaxMRUSize setconfig = "0x0000000f"/>
+<X_HW_SERVICELIST setconfig = "0x0000000f"/>
+<X_HW_VLAN setconfig = "0x0000000f"/>
+<X_HW_PRI setconfig = "0x0000000f"/>
+<X_HW_MultiCastVLAN setconfig = "0x0000000f"/>
+<X_HW_IPv4Enable setconfig = "0x0000000f"/>
+<X_HW_IPv6Enable setconfig = "0x0000000f"/>
+<X_HW_IPv6MultiCastVLAN setconfig = "0x0000000f"/>
+<ConnectionTrigger setconfig = "0x0000000f"/>
+<IdleDisconnectTime setconfig = "0x0000000f"/>
+<X_HW_IdleDetectMode setconfig = "0x0000000f"/>
+<X_HW_ConnectionControl setconfig = "0x0000000f"/>
+<X_HW_LANBIND setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Lan1Enable setconfig = "0x00000002"/>
+<Lan2Enable setconfig = "0x00000002"/>
+<Lan3Enable setconfig = "0x00000002"/>
+<Lan4Enable setconfig = "0x00000002"/>
+<SSID1Enable setconfig = "0x00000002"/>
+<SSID2Enable setconfig = "0x00000002"/>
+<SSID3Enable setconfig = "0x00000002"/>
+<SSID4Enable setconfig = "0x00000002"/>
+</X_HW_LANBIND>
+<X_HW_DDNSConfiguration setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<DDNSCfgEnabled setconfig = "0x00000002"/>
+<DDNSProvider setconfig = "0x00000002"/>
+<DDNSUsername setconfig = "0x00000002"/>
+<DDNSPassword setconfig = "0x00000002"/>
+<ServicePort setconfig = "0x00000002"/>
+<DDNSDomainName setconfig = "0x00000002"/>
+<DDNSHostName setconfig = "0x00000002"/>
+</X_HW_DDNSConfiguration>
+<X_HW_PriPolicy setconfig = "0x0000000f"/>
+<X_HW_DefaultPri setconfig = "0x0000000f"/>
+<X_HW_LcpEchoReqCheck setconfig = "0x0000000f"/>
+<X_HW_ExServiceList setconfig = "0x0000000f"/>
+<X_HW_IPv6 setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<IPv6Prefix setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<Alias setconfig = "0x0000000f"/>
+<Origin setconfig = "0x0000000f"/>
+<Prefix setconfig = "0x0000000f"/>
+</IPv6Prefix>
+<IPv6Address setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<Alias setconfig = "0x0000000f"/>
+<Origin setconfig = "0x0000000f"/>
+<IPAddress setconfig = "0x0000000f"/>
+<ChildPrefixBits setconfig = "0x0000000f"/>
+<UnnumberredWanReserveAddress setconfig = "0x0000000f"/>
+<AddrMaskLen setconfig = "0x0000000f"/>
+<DefaultGateway setconfig = "0x0000000f"/>
+</IPv6Address>
+<IPv6DnsServer setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<DNSServer setconfig = "0x0000000f"/>
+</IPv6DnsServer>
+<DSLite setconfig = "0x0000000f" addconfig = "0x0000000f" delconfig = "0x0000000f">
+<WorkMode  setconfig = "0x0000000f"/>
+<AFTRName  setconfig = "0x0000000f"/>
+<InTunnelMTU  setconfig = "0x0000000f"/>
+<OutTunnelMTU  setconfig = "0x0000000f"/>
+</DSLite>
+</X_HW_IPv6>
+</WANPPPConnection>
+</WANConnectionDevice>
+</WANDevice>
+<X_HW_DNS setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Client setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Server setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002">
+<Alias setconfig = "0x00000002"/>
+<DNSServer setconfig = "0x00000002"/>
+<Interface setconfig = "0x00000002"/>
+</Server>
+</Client>
+</X_HW_DNS>  
+</InternetGatewayDevice> 

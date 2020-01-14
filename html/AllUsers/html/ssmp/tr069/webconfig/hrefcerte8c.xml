@@ -1,0 +1,5 @@
+<InternetGatewayDevice> 
+<ManagementServer setconfig = "0x00000002" getconfig = "0x00000002"> 
+<X_HW_EnableCertificate setconfig = "0x00000002" getconfig = "0x00000002"/> 
+</ManagementServer>
+</InternetGatewayDevice> 

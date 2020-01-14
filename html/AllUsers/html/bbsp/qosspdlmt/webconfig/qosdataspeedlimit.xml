@@ -1,0 +1,14 @@
+<InternetGatewayDevice> 
+<LANDevice setconfig="0x00000003" getconfig="0x00000003">
+<X_HW_DataSpeedLimit setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<SpeedLimitMode_UP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SpeedLimitMode_DOWN setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InterfaceLimit_UP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InterfaceLimit_DOWN setconfig = "0x00000003" getconfig = "0x00000003"/>    
+<VlanTagLimit_UP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<VlanTagLimit_DOWN setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPLimit_UP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPLimit_DOWN setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DataSpeedLimit>
+</LANDevice>
+</InternetGatewayDevice> 

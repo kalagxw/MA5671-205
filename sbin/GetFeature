@@ -1,0 +1,10 @@
+#! /bin/sh
+if [ ! $# = 1 ] ; then
+	echo "ERROR::invalid input parameter!"
+	return;
+fi
+resume_enble=$(cat /proc/wap_proc/feature | grep -w $1 | cut -c34)
+if [ ! "$resume_enble" = 1 ] ; then
+	resume_enble=0;
+fi
+echo $resume_enble

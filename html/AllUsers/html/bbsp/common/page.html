@@ -1,0 +1,60 @@
+﻿var CurrentMode = "ADD";
+
+function SetEditMode()
+{
+    CurrentMode = "EDIT";    
+}
+function SetAddMode()
+{
+    CurrentMode = "ADD";    
+}
+function IsEditMode()
+{
+    return CurrentMode=="EDIT" ? true : false;
+}
+function IsAddMode()
+{
+    return CurrentMode=="ADD" ? true : false;
+}
+function KeyValue(Key, Value)
+{
+    this.Key = Key;
+    this.Value = Value;
+}
+
+var PageParameter = new Array();
+function MakePageParameter()
+{
+    var Url = window.location.href;
+    var List = Url.split("?");
+    var Temp;
+    if (List.length < 2)
+    {
+        return;
+    }
+    
+    var ParameterString = List[1];
+    List = ParameterString.split("&");
+    for (var i = 0; i < List.length; i++)
+    {   
+        Temp = List[i].split("=");
+        PageParameter[i] = new KeyValue(Temp[0], Temp[1]);
+    }
+}
+MakePageParameter();
+
+function GetPageParameter(Key)
+{
+    for (var i = 0; i < PageParameter.length; i++)
+    {
+        if (Key == PageParameter[i].Key)
+        {
+            return PageParameter[i].Value; 
+        }
+    }
+    
+    return null;
+}
+
+
+

@@ -1,0 +1,35 @@
+<InternetGatewayDevice> 
+<LANDevice setconfig="0x00000003">
+	<WLANConfiguration addconfig="0x00000003" delconfig="0x00000003" setconfig="0x00000003">
+		<PreSharedKey setconfig="0x00000003">
+			<PreSharedKey setconfig="0x00000003"/>
+		</PreSharedKey>
+	</WLANConfiguration>
+</LANDevice>
+<UserInterface setconfig = "0x00000003"> 
+	<X_HW_WebUserInfo setconfig = "0x00000003"> 
+		<Password setconfig = "0x00000003"/> 
+		<OldPassword setconfig = "0x00000003"/>
+	</X_HW_WebUserInfo>
+</UserInterface> 
+<WANDevice>
+	<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000001">
+		<WANPPPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002">
+			<ConnectionType setconfig = "0x00000003"/>
+			<Username setconfig = "0x00000003"/>
+			<Password setconfig = "0x00000003"/>
+			<X_HW_LANBIND setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003">
+				<Lan1Enable setconfig = "0x00000003"/>
+				<Lan2Enable setconfig = "0x00000003"/>
+				<Lan3Enable setconfig = "0x00000003"/>
+				<Lan4Enable setconfig = "0x00000003"/>
+				<SSID1Enable setconfig = "0x00000003"/>
+				<SSID2Enable setconfig = "0x00000003"/>
+				<SSID3Enable setconfig = "0x00000003"/>
+				<SSID4Enable setconfig = "0x00000003"/>
+			</X_HW_LANBIND>
+		</WANPPPConnection>
+	</WANConnectionDevice>
+</WANDevice>
+
+</InternetGatewayDevice> 

@@ -1,0 +1,1 @@
+<InternetGatewayDevice><X_HW_DEBUG getconfig = "0x00000003">	<SSP> 		<DBSave getconfig = "0x00000003"/> 	</SSP>	<SMP> 		<DM getconfig = "0x00000003"> 			<ResetBoard getconfig = "0x00000003"/>		</DM> 	</SMP> </X_HW_DEBUG></InternetGatewayDevice> 

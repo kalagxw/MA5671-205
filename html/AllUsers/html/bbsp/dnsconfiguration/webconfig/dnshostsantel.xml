@@ -1,0 +1,8 @@
+<InternetGatewayDevice> 
+<X_HW_DNS setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<HOSTS setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<IPAddress setconfig = "0x00000002" getconfig = "0x00000002"/>
+<DomainName setconfig = "0x00000002" getconfig = "0x00000002"/>
+</HOSTS>
+</X_HW_DNS> 
+</InternetGatewayDevice>

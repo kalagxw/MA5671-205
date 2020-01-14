@@ -1,0 +1,320 @@
+#!/bin/bash
+
+#==============================================================================
+# FILE        : dl_log_utilities
+#
+# USAGE       : NA
+#
+# DESCRIPTION : This script contains the DOPRA Linux Log interfaces and generic
+#               Utility functions.
+#
+# OPTIONS     : None
+# REQUIREMENT : Generic requirement.
+# NOTES       : None
+# AUTHOR      : <shashi> - <s70553>
+# COMPANY     : Huawei Technologies India Pvt. Ltd.
+# VERSION     : <V100R001C03>
+# CREATED     : <03-04-2009>
+# REVISION    : <03-04-2009> - Created this file.
+# REVISION 27/05/2009 revices for LED review comments for comments
+# BUGS=========================================================================
+# Date       Modify Detail           Developer               Bug details
+#==============================================================================
+
+# The following macros define the first argument passed to User supplied 
+# interface (hooked using [boot_hook] section in OCT.conf) for various dep
+# methods. The variable DL_DEP_MODE_LED will have any of the following values
+DL_DEPMETHOD_NET=0  # If deployed using network (dldep)
+DL_DEPMETHOD_USB=1  # If deployed using USB (LiveUSB)
+DL_DEPMETHOD_CD=2   # If deployed using LiveCD (livecdcreator.sh
+DL_DEPMETHOD_LOCAL=3 # If target boots dl.e from local hard disk
+
+# The following macros define the second argument passed to User supplied
+# interface (hooked using [boot_hook] section in OCT.conf) for various dep mode
+# DL_DEPMODE_LED will have any of the following values
+DL_DEPMODE_INSTALL=0    # dep mode is to install the dl.e
+DL_DEPMODE_UPGRADE=1    # dep mode is to upgrade the already installed dl.e
+DL_DEPMODE_REPAIR=2     # dep mode is repair the already existing dl.e
+DL_DEPMODE_LOCALBOOT=3  # if target boots dl.e from local harddisk
+
+# The following macros define the third argument passed to the User supplied 
+# interface (hooked using [boot_hook] section in OCT.conf) for various dept mode
+DL_DEP_START=0  # cmdline verification done, disk_manager is going to be started 
+DL_DEP_PASS=1   # disk_manager successfull (dl.e installed) and all is mounted
+DL_DEP_FAIL=2   # disk_manager failed, (dl.e is not installed)
+DL_SERVICE_PASS=3   # All services found in /etc/rc.d/rc.start passed
+DL_SERVICE_FAIL=4   # Atleast one services found in /etc/rc.d/rc.start failed
+
+DL_LED_PRESENT=1 # 1 indicates boot_hook (User supplied interface) unavailable
+		 # 0 indicates boot_hook is available
+
+DL_DEP_MODE_LED="" # This variable holds the cmdline which gives the dep_mode 
+
+DL_DEPMETHOD_LED=${DL_DEPMETHOD_LOCAL} #value of first argument to boot_hook
+DL_DEPMODE_LED=${DL_DEPMODE_LOCALBOOT} #value of second arg to boot_hook
+
+DL_VERBOSE=0
+
+#==============================================================================
+# Function Name: DL_Log
+# Description  : DOPRA Linux Log interface for installation
+# Parameter    : 1) Severity of the log
+#                2) Line number of log message
+#                3) Log message code (for reference in UM)
+#                4) Remaining parameters passed to the interface
+# Date         : <03-04-2009>
+# Author       : <shashi> <s70553>
+#==============================================================================
+function DL_Log()
+{
+    PROGNAME=`basename ${BASH_SOURCE[2]}`
+    local severity=$1
+    local line_no=$2
+    local msg_code=$3
+    shift 3
+    if [[ ${severity} -le ${DL_LOG_LEVEL} ]]
+    then
+        if [[ ${DL_VERBOSE} -eq 1 ]]
+        then
+            case ${severity} in
+                1)  # Error log
+                    echo -n "[ ERROR ] - "
+                    ;;
+                2)  # Warning log
+                    echo -n "[ WARN  ] - "
+                    ;;
+                3)  # Information log
+                    echo -n "[ INFO  ] - "
+                    ;;
+                *)  # Any other logs
+                    echo -n "[       ] - "
+                    ;;
+            esac
+
+        local params="$@"
+        printf "[%s] %s:%-4s - [%d] : \"%s\"\n" \
+            "`date "+%b %d %Y %H:%M:%S"`" ${PROGNAME} ${line_no} \
+            $(( DL_MSG_BASE + msg_code )) "${params}"
+        fi
+
+        case ${severity} in
+            1)  # Error log
+                echo -n "[ ERROR ] - " >> ${DL_LOG_FILE}
+                ;;
+            2)  # Warning log
+                echo -n "[ WARN  ] - " >> ${DL_LOG_FILE}
+                ;;
+            3)  # Information log
+                echo -n "[ INFO  ] - " >> ${DL_LOG_FILE}
+                ;;
+            *)  # Any other logs
+                echo -n "[       ] - " >> ${DL_LOG_FILE}
+                ;;
+        esac
+
+        local params="$@"
+        printf "[%s] %s:%-4s - [%d] : \"%s\"\n" \
+            "`date "+%b %d %Y %H:%M:%S"`" ${PROGNAME} ${line_no} \
+            $(( DL_MSG_BASE + msg_code )) "${params}" >> ${DL_LOG_FILE}
+    fi
+}
+
+
+#==============================================================================
+# Function Name: DL_Log_Error
+# Description  : DOPRA Linux Error Log interface
+# Parameter    : 1) Error code (for reference in UM)
+#                2) Remaining parameters passed to the interface
+# Date         : <03-04-2009>
+# Author       : <shashi> <s70553>
+#==============================================================================
+function DL_Log_Error()
+{
+    DL_Log 1 $BASH_LINENO "$@"
+}
+
+
+#==============================================================================
+# Function Name: DL_Log_Warn
+# Description  : DOPRA Linux Warning Log interface
+# Parameter    : 1) Warning code (for reference in UM)
+#                2) Remaining parameters passed to the interface
+# Date         : <03-04-2009>
+# Author       : <shashi> <s70553>
+#==============================================================================
+function DL_Log_Warn()
+{
+    DL_Log 2 $BASH_LINENO "$@"
+}
+
+
+#==============================================================================
+# Function Name: DL_Log_Info
+# Description  : DOPRA Linux Information Log interface
+# Parameter    : 1) Info code (for reference in UM)
+#                2) Remaining parameters passed to the interface
+# Date         : <03-04-2009>
+# Author       : <shashi> <s70553>
+#==============================================================================
+function DL_Log_Info()
+{
+    DL_Log 3 $BASH_LINENO "$@"
+}
+
+
+#==============================================================================
+# Function Name: fn_GetCmdLineParamValue
+# Description  : Get value of the kernel command line parameter
+# Parameter    : kernel parameter
+# Date         : <03-04-2009>
+# Author       : <shashi> <s70553>
+#==============================================================================
+function fn_GetCmdLineParamValue()
+{
+    local CurParam=""
+    local Param=$1;
+
+    if [ -z "${Param}" ]
+    then
+        echo "";
+        return 1;
+    fi
+
+    for var in $(cat /proc/cmdline);
+    do
+        CurParam=`echo "$var" |awk -F '=' '{print $1}'`
+        if [ "$Param" = "$CurParam" ]
+        then
+            echo `echo $var |sed "s/$CurParam\=//g"`
+            echo $value
+            return 0;
+        fi
+    done
+
+    echo "";
+    return 1;
+}
+
+#==============================================================================
+# Function Name: fn_InitializeLED
+# Description  : The function which checks whether LED controller is present
+#			     and initializes the corresponding variables
+# Parameter    : None
+# Return Value : 0 on success 
+# Date         : <07/05/2009>
+# Author       : <Mano> <72225>
+#==============================================================================
+function fn_InitializeLED()
+{
+	test -z ${DL_LED_CTRL}
+	if [ $? -eq 0 ]
+	then
+		DL_LED_PRESENT=1
+		grep "No LED control interface found" ${DL_LOG_FILE} > /dev/null 2>&1
+		if [ $? -ne 0 ]
+		then
+		    DL_Log_Info ${DEP_INF_GEN} "No LED control interface found"
+		fi
+		return 0
+	fi
+
+	test -f ${DL_LED_CTRL} > /dev/null
+	if [ $? -eq 1 ]
+	then 
+		DL_LED_PRESENT=1
+		grep "LED controller is not integrated as per configuration" ${DL_LOG_FILE} > /dev/null 2>&1
+		if [ $? -ne 0 ]
+                then
+			DL_Log_Warn ${DEP_WRN_GEN} \
+                                "LED controller is not integrated as per configuration"
+		fi
+		return 0
+	fi
+	
+        test -x ${DL_LED_CTRL} > /dev/null
+        if [ $? -eq 1 ]
+        then
+                DL_LED_PRESENT=1
+		grep "LED controller does not have execute permission" ${DL_LOG_FILE} > /dev/null 2>&1
+		if [ $? -ne 0 ]
+		then
+                DL_Log_Warn ${DEP_WRN_GEN} \
+                                "LED controller does not have execute permission"
+		fi
+		return 0
+        fi
+
+	DL_LED_PRESENT=0
+
+	DL_DEP_MODE_LED="`fn_GetCmdLineParamValue "dl_depmode"`"
+
+    case ${DL_DEP_MODE_LED} in
+        "install")
+            DL_DEPMODE_LED=${DL_DEPMODE_INSTALL}
+	    ;;
+
+        "upgrade")
+            DL_DEPMODE_LED=${DL_DEPMODE_UPGRADE}
+           ;;
+
+        "recover")
+            DL_DEPMODE_LED=${DL_DEPMODE_REPAIR}
+            ;;
+
+        "localboot"|*)
+            # If Mode is not specified explicitly, fall back to local boot
+            DL_DEPMODE_LED=${DL_DEPMODE_LOCALBOOT}
+            ;;
+    esac
+
+    # There will be only one dep method cmdline value
+    # If one dep method is found then ther is no need to 
+    # check for others, but still for the code clarity purpose
+    # it is written in this way
+    grep "dl_netboot" /proc/cmdline > /dev/null
+    if [ $? -eq 0 ]
+    then
+        DL_DEPMETHOD_LED=${DL_DEPMETHOD_NET}
+    fi
+	
+    grep "dl_cdboot" /proc/cmdline > /dev/null
+    if [ $? -eq 0 ]
+    then
+        DL_DEPMETHOD_LED=${DL_DEPMETHOD_CD}
+    fi
+	
+    grep "dl_usbboot" /proc/cmdline > /dev/null
+    if [ $? -eq 0 ]
+    then
+        DL_DEPMETHOD_LED=${DL_DEPMETHOD_USB}
+    fi
+	
+	return 0
+}
+
+#==============================================================================
+# Function Name: fn_LED_ReportStatus
+# Description  : The function which checks whether LED controller is present
+#			     and initializes the corresponding variables
+# Parameter    : LED status
+# Return value : 0 on success
+# Date         : <07/05/2009>
+# Author       : <Mano> <72225>
+#==============================================================================
+function fn_LED_ReportStatus ()
+{
+   DL_LED_STATUS=$1
+	
+	if [ ${DL_LED_PRESENT} -eq 1 ]
+	then
+		return 0
+	fi
+
+	${DL_LED_CTRL} ${DL_DEPMETHOD_LED} ${DL_DEPMODE_LED} ${DL_LED_STATUS}
+	if [[ $? -ne 0 ]]
+	then
+		DL_Log_Warn ${DEP_WRN_GEN} \
+				"Setting LED status for deployment is unsuccessful"
+	fi
+}
+

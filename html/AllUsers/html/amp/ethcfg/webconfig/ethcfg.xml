@@ -1,0 +1,16 @@
+<InternetGatewayDevice>
+	<LANDevice setconfig="0x00000002">
+		<LANEthernetInterfaceConfig setconfig="0x00000002">
+			<Enable setconfig="0x00000002"/>
+			<DuplexMode setconfig="0x00000002"/>
+			<MaxBitRate setconfig="0x00000002"/>
+		</LANEthernetInterfaceConfig>
+	</LANDevice>
+	<WANDevice setconfig="0x00000002">
+		<WANEthernetInterfaceConfig setconfig="0x00000002">
+			<Enable setconfig="0x00000002"/>
+			<DuplexMode setconfig="0x00000002"/>
+			<MaxBitRate setconfig="0x00000002"/>
+		</WANEthernetInterfaceConfig>
+	</WANDevice>
+</InternetGatewayDevice>

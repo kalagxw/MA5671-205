@@ -1,0 +1,9 @@
+<InternetGatewayDevice> 
+<X_HW_IPv6Layer3Forwarding setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Forwarding setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DestIPPrefix setconfig = "0x00000002" getconfig = "0x00000002"/>
+<NextHop setconfig = "0x00000002" getconfig = "0x00000002"/>
+<WanName setconfig = "0x00000002" getconfig = "0x00000002"/>
+</Forwarding>
+</X_HW_IPv6Layer3Forwarding>
+</InternetGatewayDevice> 

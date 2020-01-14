@@ -1,0 +1,9 @@
+<InternetGatewayDevice>
+<DeviceInfo setconfig = "0x00000003" getconfig = "0x00000003"> 
+<X_HW_ServiceAccessInfo setconfig = "0x00000003" getconfig = "0x00000003">
+<BANDAccess setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPTVAccess setconfig = "0x00000003" getconfig = "0x00000003"/>
+<VOIPAccess setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_ServiceAccessInfo>
+</DeviceInfo>
+</InternetGatewayDevice>  

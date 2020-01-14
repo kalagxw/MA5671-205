@@ -1,0 +1,8 @@
+<InternetGatewayDevice> 
+<UserInterface setconfig = "0x00000003" getconfig = "0x00000003"> 
+<X_HW_WebUserInfo setconfig = "0x00000003" getconfig = "0x00000003"> 
+<Password setconfig = "0x00000003" getconfig = "0x00000003"/>
+<OldPassword setconfig = "0x00000003" getconfig = "0x00000003"/> 
+</X_HW_WebUserInfo>
+</UserInterface>
+</InternetGatewayDevice>  

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+shellcmdexe $(pidof $1) 0x0000100B $2
+

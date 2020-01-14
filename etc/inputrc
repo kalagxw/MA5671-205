@@ -1,0 +1,254 @@
+#
+# /etc/inputrc
+#
+# Author: Linux OS Center - Huawei Technologies Ltd., 
+#
+
+#
+# Eight bit compatible: Umlaute
+#
+set meta-flag on
+set output-meta on
+set convert-meta off
+set term xy
+#
+# VI line editing
+#
+$if mode=vi
+set editing-mode vi
+set keymap vi
+$endif
+#
+# Common standard keypad and cursor
+#
+"\e[1~":	beginning-of-line
+"\e[2~":	yank
+"\e[3~":	delete-char
+"\e[4~":	end-of-line
+"\e[5~":	history-search-backward
+"\e[6~":	history-search-forward
+$if term=xterm
+"\e[2;2~":	yank
+"\e[3;2~":	delete-char
+"\e[5;2~":	history-search-backward
+"\e[6;2~":	history-search-forward
+"\e[2;5~":	yank
+"\e[3;5~":	delete-char
+"\e[5;5~":	history-search-backward
+"\e[6;5~":	history-search-forward
+$endif
+"\e[C":		forward-char
+"\e[D":		backward-char
+"\e[A":		previous-history
+"\e[B":		next-history
+$if term=xterm
+"\e[E":		re-read-init-file
+"\e[2C":	forward-word
+"\e[2D":	backward-word
+"\e[2A":	history-search-backward
+"\e[2B":	history-search-forward
+"\e[1;2C":	forward-word
+"\e[1;2D":	backward-word
+"\e[1;2A":	history-search-backward
+"\e[1;2B":	history-search-forward
+"\e[1;3C":	forward-word
+"\e[1;3D":	backward-word
+"\e[1;3A":	history-search-backward
+"\e[1;3B":	history-search-forward
+"\e[5C":	forward-word
+"\e[5D":	backward-word
+"\e[5A":	history-search-backward
+"\e[5B":	history-search-forward
+"\e[1;5C":	forward-word
+"\e[1;5D":	backward-word
+"\e[1;5A":	history-search-backward
+"\e[1;5B":	history-search-forward
+$else
+"\e[G":		re-read-init-file
+$endif
+#
+# Avoid network problems
+#   ... \177 (ASCII-DEL) and \010 (ASCII-BS)
+#       do `backward-delete-char'
+# Note: `delete-char' is maped to \033[3~
+#       Therefore xterm's responce on pressing
+#       key Delete or KP-Delete should be
+#       \033[3~ ... NOT \177
+#
+"\C-?":		backward-delete-char
+"\C-H":		backward-delete-char
+#
+# Home and End
+#
+$if term=xterm
+#
+# Normal keypad and cursor of xterm
+#
+"\e[1~":	history-search-backward
+"\e[4~":	set-mark
+"\e[H":		beginning-of-line
+"\e[F":		end-of-line
+"\e[2H":	beginning-of-line
+"\e[2F":	end-of-line
+"\e[5H":	beginning-of-line
+"\e[5F":	end-of-line
+# Home and End of application keypad and cursor of xterm
+"\eOH":		beginning-of-line
+"\eOF":		end-of-line
+"\eO2H":	beginning-of-line
+"\eO2F":	end-of-line
+"\eO5H":	beginning-of-line
+"\eO5F":	end-of-line
+$else
+$if term=kvt
+"\e[1~":	history-search-backward
+"\e[4~":	set-mark
+"\eOH":		beginning-of-line
+"\eOF":		end-of-line
+$endif
+#
+# TERM=linux or console or gnome
+#
+"\e[1~":	beginning-of-line
+"\e[4~":	end-of-line
+$endif
+#
+# Application keypad and cursor of xterm
+#
+$if term=xterm
+"\eOD":         backward-char
+"\eOC":         forward-char
+"\eOA":         previous-history
+"\eOB":         next-history
+"\eOE":         re-read-init-file
+"\eO2D":        backward-word
+"\eO2C":        forward-word
+"\eO2A":        history-search-backward
+"\eO2B":        history-search-forward
+"\eO5D":        backward-word
+"\eO5C":        forward-word
+"\eO5A":        history-search-backward
+"\eO5B":        history-search-forward
+# DEC keyboard KP_F1 - KP_F4 or
+# XTerm of XFree86 in VT220 mode F1 - F4
+"\eOP":		prefix-meta
+"\eOQ":		undo
+"\eOR":		""  
+"\eOS":		kill-line
+$endif
+$if term=gnome
+# or gnome terminal F1 - F4
+"\eOP":		prefix-meta
+"\eOQ":		undo
+"\eOR":		""
+"\eOS":		kill-line
+$endif
+#
+# Function keys F1 - F12
+#
+$if term=linux
+#
+# On console the first five function keys
+#
+"\e[[A":	prefix-meta
+"\e[[B":	undo
+"\e[[C":	""
+"\e[[D":	kill-line
+"\e[[E":	""
+$else
+#
+# The first five standard function keys
+#
+"\e[11~":	prefix-meta
+"\e[12~":	undo
+"\e[13~":	""
+"\e[14~":	kill-line
+"\e[15~":	""
+$endif
+"\e[17~":	""
+"\e[18~":	""
+"\e[19~":	""
+"\e[20~":	""
+"\e[21~":	""
+# Note: F11, F12 are identical with Shift_F1 and Shift_F2
+"\e[23~":	""
+"\e[24~":	""
+#
+# Shift Function keys F1  - F12
+#      identical with F11 - F22
+#
+#"\e[23~":	""
+#"\e[24~":	""
+"\e[25~":	""
+"\e[26~":	""
+# DEC keyboard: F15=\e[28~ is Help
+"\e[28~":	""
+# DEC keyboard: F16=\e[29~ is Menu
+"\e[29~":	""
+"\e[31~":	""
+"\e[32~":	""
+"\e[33~":	""
+"\e[34~":	""
+$if term=xterm
+# Not common
+"\e[35~":	""
+"\e[36~":	""
+$endif
+#
+$if term=xterm
+#
+# Application keypad and cursor of xterm
+# with NumLock ON
+#
+# Operators
+"\eOo":		"/"
+"\eOj":		"*"
+"\eOm":		"-"
+"\eOk":		"+"
+"\eOl":		","
+"\eOM":		accept-line
+"\eOn":		"."
+# Numbers
+"\eOp":		"0"
+"\eOq":		"1"
+"\eOr":		"2"
+"\eOs":		"3"
+"\eOt":		"4"
+"\eOu":		"5"
+"\eOv":		"6"
+"\eOw":		"7"
+"\eOx":		"8"
+"\eOy":		"9"
+$endif
+#
+#  EMACS line editing
+#
+$if mode=emacs
+#
+# ... xterm application cursor
+#
+$if term=xterm
+"\e\eOD":	backward-word
+"\e\eOC":	forward-word
+"\e\eOA":	up-history
+"\e\eOB":	down-history
+"\C-\eOD":	backward-char
+"\C-\eOC":	forward-char
+"\C-\eOA":	up-history
+"\C-\eOB":	down-history
+$endif
+#
+# Standard cursor
+#
+"\e\e[D":	backward-word
+"\e\e[C":	forward-word
+"\e\e[A":	up-history
+"\e\e[B":	down-history
+"\C-\e[D":	backward-char
+"\C-\e[C":	forward-char
+"\C-\e[A":	up-history
+"\C-\e[B":	down-history
+$endif
+#
+# end
+#

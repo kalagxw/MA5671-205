@@ -1,0 +1,281 @@
+<!-- ObjectType表示对象类型，0标识单实例，1表示多实例，默认为0 -->
+<!-- MaxInstanceNum表示多实例的最大实例个数 -->
+<!-- Type表示属性类型，与结构体定义要保持一致 -->
+<!-- MaxLength表示属性所占用的最大空间，要与结构体保持一致，非VALUE_TYPE_CHAR类型该参数无效，VALUE_TYPE_CHAR类型MaxLength必须包含\0结束符的长度 -->
+<ActionInfo>
+<GetDeviceInfo>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewNetworkSyncCode Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewManufacturerOUI Type="VALUE_TYPE_CHAR" MaxLength="7" />
+<NewDeviceType Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewSerialNumber Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewHardwareVersion Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewSoftwareVersion Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewUpTime Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewProtocolVersion Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</ReplyPara>
+</GetDeviceInfo>
+<GetDeviceCapability>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewSupportedRFBand Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<NewSupportedWorkingMode Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<NewSupportedSSIDNumber Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<NewTransmitPowerSupported Type="VALUE_TYPE_CHAR" MaxLength="65" />
+</ReplyPara>
+</GetDeviceCapability>
+<GetNetworkInfo>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewDeviceStatus Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWorkingMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewInternetAccessMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewSignalIntensity Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewDHCPServerEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewChannelWidth Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewWlanConfigurationEntryNum Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewCurrentChannel Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewTransmitPower Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</ReplyPara>
+</GetNetworkInfo>
+<GetMacAddressPool>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewMacAddressPool Type="VALUE_TYPE_CHAR" MaxLength="513" />
+</ReplyPara>
+</GetMacAddressPool>
+<GetWLCIndexForCover>
+<SendPara>
+<NewQueryType Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewSSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewRFBand Type="VALUE_TYPE_CHAR" MaxLength="17" />
+</SendPara>
+<ReplyPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</ReplyPara>
+</GetWLCIndexForCover>
+<GetWlanConfiguration>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewSSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewCanUsedForCover Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewUsedForCover Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewStandard Type="VALUE_TYPE_CHAR" MaxLength="17" />
+<NewBSSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewMaxAssociateNum Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewAutoChannelEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewChannel Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewSSIDAdvertisementEnabled Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewSTAIsolation Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewRegulatoryDomain Type="VALUE_TYPE_CHAR" MaxLength="4" />
+<NewWMMEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewBeaconType Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewBasicEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewBasicAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWPAEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWPAAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewIEEE11iEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewIEEE11iAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewDtimPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewBeaconPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewRTSThreshold Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFragThreshold Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</ReplyPara>
+</GetWlanConfiguration>
+<GetWLCStats>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewTotalBytesSent Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewTotalBytesReceived Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewTotalPacketsSent Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewTotalPacketsReceived Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewErrorsSent Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewErrorsReceived Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewDiscardPacketsSent Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewDiscardPacketsReceived Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</ReplyPara>
+</GetWLCStats>
+<GetWLCAssociatedDevice>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara  ObjectType="1" MaxInstanceNum="32" RootName="AssociatedDevice" >
+<MACAddress Type="VALUE_TYPE_CHAR" MaxLength="18" />
+<IPAddress Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<AuthenticationState Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<LastDataTransmitRate Type="VALUE_TYPE_CHAR" MaxLength="5" />
+<UpTime Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<RxRate Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<TxRate Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<RSSI Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<Noise Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<SNR Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<SingalQuality Type="VALUE_TYPE_CHAR" MaxLength="9" />
+</ReplyPara>
+</GetWLCAssociatedDevice>
+<GetNeighborInfo>
+<SendPara>
+</SendPara>
+<ReplyPara  ObjectType="1" MaxInstanceNum="32" RootName="NeighborInfo" >
+<SSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<BSSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NetworkType Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<Channel Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<RSSI Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<Noise Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<DtimPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<BeaconPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<Security Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<Standard Type="VALUE_TYPE_CHAR" MaxLength="17" />
+<RFBand Type="VALUE_TYPE_CHAR" MaxLength="9" />
+<MaxBitRate Type="VALUE_TYPE_CHAR" MaxLength="9" />
+</ReplyPara>
+</GetNeighborInfo>
+<SetNetworkInfo>
+<SendPara>
+<NewWorkingMode Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<NewInternetAccessMode Type="VALUE_TYPE_CHAR" MaxLength="65" />
+<NewDHCPServerEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewChannelWidth Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara >
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetNetworkInfo>
+<SetWlanBaseConfiguration>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewSSID Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewUsedForCover Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewStandard Type="VALUE_TYPE_CHAR" MaxLength="17" />
+<NewBeaconType Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewBasicEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewBasicAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWPAEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWPAAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewIEEE11iEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewIEEE11iAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewMixEncryptionModes Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewMixAuthenticationMode Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWEPEncryptionLevel Type="VALUE_TYPE_CHAR" MaxLength="33" />
+<NewWEPKeyIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewKey Type="VALUE_TYPE_CHAR" MaxLength="129" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetWlanBaseConfiguration>
+<SetWlanAdvancedConfiguration>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewMaxAssociateNum Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewAutoChannelEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewChannel Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewTransmitPower Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewSSIDAdvertisementEnabled Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewSTAIsolation Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewRegulatoryDomain Type="VALUE_TYPE_CHAR" MaxLength="4" />
+<NewWMMEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewDtimPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewBeaconPeriod Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewRTSThreshold Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFragThreshold Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetWlanAdvancedConfiguration>
+<SetMacFilter>
+<SendPara>
+<NewMacFilterEnable Type="VALUE_TYPE_BOOL" MaxLength="4" />
+<NewMacFilterPolicy Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewMacFilterEntries Type="VALUE_TYPE_CHAR" MaxLength="1025" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetMacFilter>
+<InvokeAction>
+<SendPara>
+<NewActionType Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</InvokeAction>
+<Start>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</Start>
+<Rollback>
+<SendPara>
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</Rollback>
+<Commit>
+<SendPara>
+<NewNetworkSyncCode Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</Commit>
+<SetWlanFbtConfiguration>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFbtMode Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFbtRSSIThreshold Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetWlanFbtConfiguration>
+<SetWlanFbtScanSta>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFbtMacEntries Type="VALUE_TYPE_CHAR" MaxLength="1024" />
+<NewFbtChannel Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewFbtScanInterval Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetWlanFbtScanSta>
+<SetMacKickState>
+<SendPara>
+<NewWlanConfigurationIndex Type="VALUE_TYPE_UINT32" MaxLength="4" />
+<NewMacKickEntries Type="VALUE_TYPE_CHAR" MaxLength="1024" />
+<NewMacKickTime Type="VALUE_TYPE_UINT32" MaxLength="4" />
+</SendPara>
+<ReplyPara>
+<NewErrorCode Type="VALUE_TYPE_UINT32" MaxLength="4"  />
+<NewErrorDescription Type="VALUE_TYPE_CHAR" MaxLength="256" />
+</ReplyPara>
+</SetMacKickState>
+</ActionInfo>

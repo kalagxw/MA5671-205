@@ -1,0 +1,7 @@
+<InternetGatewayDevice> 
+<DeviceInfo setconfig = "0x00000002" getconfig = "0x00000002">
+<X_HW_IPProtocolVersion setconfig = "0x00000002" getconfig = "0x00000002">
+<Mode setconfig = "0x00000002" getconfig = "0x00000002"/>
+</X_HW_IPProtocolVersion>
+</DeviceInfo> 
+</InternetGatewayDevice> 

@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet"  href='../../resource/common/<%HW_WEB_CleanCache_Resource(style.css);%>' type='text/css'>
+<link rel="stylesheet"  href='../../Cuscss/<%HW_WEB_GetCusSource(frame.css);%>' type='text/css'>
+<script language="JavaScript" src="../../resource/<%HW_WEB_LoginResource(ssmpdes.html);%>"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta HTTP-EQUIV = 'Pragma' CONTENT = 'no-cache'>
+<script language = "javascript">
+var LoginRequestLanguage = '<%HW_WEB_GetLoginRequestLangue();%>';
+
+function btnLogin() 
+{
+    top.location.replace("login.asp");
+}
+function init()
+{
+	document.cookie = 'Cookie=default;path=/';
+}
+
+</script>
+<title>Failed</title>
+</head>
+<body class="mainbody" onload = "init();"> 
+<div align="center"> 
+<table width="955px" height="600px" cellpadding="0" cellspacing="0"> 
+<tr> 
+<td> <table width="100%" height="10%" border="0" cellspacing="0" cellpadding="0"> 
+<tr> 
+<td class="PageTitle_content"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tr> 
+<td width="13%" align="center"><img src="../../images/error.gif" width="48" height="48" /></td> 
+<td width="87%" id="Notice"> <font face="Arial">
+<script language="JavaScript" type="text/javascript">
+	document.write(PrompterDes['s1321']);
+</script> 
+</font> </td> 
+</tr> 
+</table></td> 
+</tr> 
+</table> 
+<table width="100%" height="45" cellpadding="0" cellspacing="0"> 
+<tr> 
+<td class="align_left"> 
+<input  class="ApplyButtoncss buttonwidth_100px" name="btnReboot" id="btnReboot" type="button" onClick="btnLogin()" value="Retry">
+<script language="JavaScript" type="text/javascript">
+	document.getElementsByName('btnReboot')[0].value = PrompterDes['s1015'];	
+</script>
+</td> 
+</tr> 
+</table></td> 
+</tr> 
+</table> 
+</div> 
+</body>
+</html>

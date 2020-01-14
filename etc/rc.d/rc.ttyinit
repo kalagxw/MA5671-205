@@ -1,0 +1,26 @@
+#! /bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+	mount -t proc proc /proc 
+	mount -t sysfs -o mode=750 sysfs /sys
+	mount -t tmpfs -o mode=750 tmpfs /dev
+# Creating device driver instances
+	#echo "Making device instances:"
+	mdev -s
+	echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+#the debug version open the console print 
+	DebugFlag=`md 0x80801058 1 | grep : | sed -n '1p' | cut -c14-15`
+	DebugFlag1=`md 0x80401058 1 | grep : | sed -n '1p' | cut -c14-15`
+	DebugFlag2=`md 0x80001058 1 | grep : | sed -n '1p' | cut -c14-15`
+	DebugFlag3=`md 0x80601058 1 | grep : | sed -n '1p' | cut -c14-15`
+	DebugFlag4=`md 0x82001058 1 | grep : | sed -n '1p' | cut -c14-15`
+	if [ "$DebugFlag" = "44" ] || [ "$DebugFlag1" = "44" ] || [ "$DebugFlag2" = "44" ] || [ "$DebugFlag3" = "44" ] || [ "$DebugFlag4" = "44" ] || [ `cat /usr/bin/bin/program_key` = "E8C,COMMON,CMCC" ]; then
+		insmod /lib/modules/linux/kernel/drivers/tty/serial/serial_core.ko
+		insmod /lib/modules/linux/kernel/drivers/tty/serial/8250/8250.ko
+		insmod /lib/modules/linux/kernel/drivers/tty/serial/8250/8250_dw.ko		
+		/etc/rc.d/rc.sysinit > /dev/console 2>&1
+	else
+		/etc/rc.d/rc.sysinit
+	fi
+

@@ -1,0 +1,27 @@
+<InternetGatewayDevice> 
+<LANDevice setconfig="0x00000003" getconfig = "0x00000003">
+<LANHostConfigManagement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<IPInterface setconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterfaceIPAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterfaceSubnetMask setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_AddressConflictDetectionEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+</IPInterface>
+</LANHostConfigManagement>
+</LANDevice>
+<X_HW_BUSSINESSWLAN setconfig="0x00000003" getconfig = "0x00000003">
+<Enable setconfig="0x00000003" getconfig = "0x00000003" />
+<CloudProviders setconfig="0x00000003" getconfig = "0x00000003" />
+<CloudServer setconfig="0x00000003" getconfig = "0x00000003" />
+<CloudPort setconfig="0x00000003" getconfig = "0x00000003" />
+</X_HW_BUSSINESSWLAN>
+ <X_HW_BUSSINESSWLANServerStatus setconfig="0x00000003" getconfig = "0x00000003">
+    <CloudServerStatus setconfig="0x00000003" getconfig = "0x00000003" />
+ </X_HW_BUSSINESSWLANServerStatus>
+ <X_HW_BUSSINESSWLANAuthResult setconfig="0x00000003" getconfig = "0x00000003">
+    <AuthResult setconfig="0x00000003" getconfig = "0x00000003" />
+ </X_HW_BUSSINESSWLANAuthResult>
+ <X_HW_BUSSINESSWLANDeviceID setconfig="0x00000003" getconfig = "0x00000003">
+    <DeviceID setconfig="0x00000003" getconfig = "0x00000003" />
+ </X_HW_BUSSINESSWLANDeviceID>
+</InternetGatewayDevice>

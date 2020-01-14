@@ -1,0 +1,17 @@
+<InternetGatewayDevice>
+<LANDevice setconfig="0x00000003" getconfig = "0x00000003">
+<LANHostConfigManagement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<DHCPServerEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DHCPLeaseTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MinAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MaxAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_DHCPL2RelayEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Option125Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_DNSList setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterface setconfig = "0x00000003" getconfig = "0x00000003">
+<IPInterfaceIPAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterfaceSubnetMask setconfig = "0x00000003" getconfig = "0x00000003"/>
+</IPInterface>
+</LANHostConfigManagement>
+</LANDevice>
+</InternetGatewayDevice> 

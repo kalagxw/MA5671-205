@@ -1,0 +1,12 @@
+<InternetGatewayDevice> 
+<LANDevice setconfig="0x0000000f" getconfig = "0x0000000f">
+<LANHostConfigManagement setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<IPInterface setconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterfaceIPAddress setconfig = "0x00000002" getconfig = "0x00000002"/>
+<IPInterfaceSubnetMask setconfig = "0x00000002" getconfig = "0x00000002"/>
+<X_HW_AddressConflictDetectionEnable setconfig = "0x00000002" getconfig = "0x00000002"/>
+</IPInterface>
+</LANHostConfigManagement>
+</LANDevice>
+</InternetGatewayDevice>

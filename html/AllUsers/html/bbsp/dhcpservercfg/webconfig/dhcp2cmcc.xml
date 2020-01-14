@@ -1,0 +1,55 @@
+<InternetGatewayDevice>
+<LANDevice setconfig="0x00000003" getconfig = "0x00000003">
+<LANHostConfigManagement setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<DHCPServerEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DHCPLeaseTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MinAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MaxAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_DHCPL2RelayEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_HGWStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_HGWEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_STBStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_STBEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_CameraStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_CameraEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ComputerStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ComputerEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_PhoneStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_PhoneEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Option125Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_DNSList setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterface setconfig = "0x00000003" getconfig = "0x00000003">
+<IPInterfaceIPAddress  setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPInterfaceSubnetMask  setconfig = "0x00000003" getconfig = "0x00000003"/>
+</IPInterface>
+<DHCPConditionalServingPool setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<VendorClassID setconfig = "0x00000003" getconfig = "0x00000003"/>
+<VendorClassIDMode setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MinAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<MaxAddress setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IPRouters setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SubnetMask setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DNSServers setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DHCPLeaseTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_NTPList setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Option43 setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DHCPOption setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Tag setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Value setconfig = "0x00000002" getconfig = "0x00000002"/>
+</DHCPOption>
+</DHCPConditionalServingPool>
+</LANHostConfigManagement>
+</LANDevice>
+<X_HW_DHCPSLVSERVER setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<DHCPEnable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Option60 setconfig = "0x00000003" getconfig = "0x00000003"/>
+<StartIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<EndIP setconfig = "0x00000003" getconfig = "0x00000003"/>
+<LeaseTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DNSList setconfig = "0x00000003" getconfig = "0x00000003"/>
+<NTPList setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Option43 setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_DHCPSLVSERVER> 
+</InternetGatewayDevice> 

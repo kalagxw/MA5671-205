@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ $# -eq 0 ] ; then
+    echo "Please input PID."
+    echo "    Usage: wap.debug.timer.stat PID "
+    exit 0
+fi
+
+shellcmdexe $1 0x00003804 8
+

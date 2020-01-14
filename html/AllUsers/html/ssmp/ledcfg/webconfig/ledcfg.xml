@@ -1,0 +1,20 @@
+<InternetGatewayDevice>
+<X_HW_SSMPPDT setconfig="0x00000003" getconfig = "0x00000003">
+<Deviceinfo setconfig = "0x00000003" getconfig = "0x00000003">
+<X_HW_LedSwitch setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_LedOffTime   setconfig = "0x00000003"  addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<StartTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+<EndTime setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_LedOffTime>
+</Deviceinfo> 
+</X_HW_SSMPPDT>
+<X_HW_DATACARD_FLOW_CONFIG setconfig = "0x00000003">
+<Total setconfig = "0x00000003"/>
+<Alarm setconfig = "0x00000003"/>
+<Warning setconfig = "0x00000003"/>
+<DSFlowUsedRxL setconfig = "0x00000003"/>
+<DSFlowUsedRxH setconfig = "0x00000003"/>
+<DSFlowUsedTxL setconfig = "0x00000003"/>
+<DSFlowUsedTxH setconfig = "0x00000003"/>
+</X_HW_DATACARD_FLOW_CONFIG>
+</InternetGatewayDevice>

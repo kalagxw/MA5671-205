@@ -1,0 +1,61 @@
+body {
+	text-align: center;
+	margin: 0px;
+	font-family: "Arial", "����";
+	font-size: 12px;
+}
+#main_wrapper {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	text-align: left;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	width: 955px;
+	height: 600px;
+	background-image: url(../images/login_bg.gif);
+	background-color: #5a5a5a;
+	background-repeat: repeat-x;
+}
+.hg_logo {
+	font-family: "Tohama", "Arial", "����";
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #4c4c4c;
+	padding: 10px;
+}
+.whitebold {
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+.info_text {
+	text-align: center;
+	color: #9d9d9d;
+	font-size: 11px;
+}
+.submit {
+	background: #fefefe url(../images/button_bg.gif) center repeat-x;
+	font: 12px Arial, ����;
+	color: #000;
+	height: 21px;
+	border: #c8c8c8 1px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.text_copyright {
+	color: #434343;
+	font-family: "Arial";
+	font-size: 11px;
+	height: 24px;
+}
+.input_login {
+	border: 1px solid #ccccce;
+	background-image: url(../images/login_inupt.gif);
+	height: 21px;
+	width: 180px;
+	padding-left: 5px;
+	padding-top: 3px;
+}

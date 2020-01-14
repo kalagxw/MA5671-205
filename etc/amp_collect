@@ -1,0 +1,61 @@
+SHELL:chipdebug print on
+WAP:display lanmac
+WAP:display optic
+WAP:display wlanmac
+WAP:get mac agingtime
+WAP:get wlan enable laninst 1
+WAP:get wlan basic laninst 1 wlaninst 1
+WAP:get wlan stats laninst 1 wlaninst 1
+WAP:display epon ont info
+WAP:display onu info
+WAP:display poncnt upstatistic
+WAP:display poncnt dnstatistic
+WAP:get global hgdetect
+WAP:display flow id all
+SHELL:Broadband display soc cnt
+SHELL:Broadband display l2mac
+SHELL:Broadband display soc flow
+SHELL:Broadband display soc ifc
+SHELL:ampcmdStatRx.sh
+SHELL:ampcmdStatTx.sh
+SHELL:ampcmdStatDrop.sh
+SHELL:ampcmd show car all
+SHELL:ampcmd show queue all
+SHELL:ampcmd show flow all
+SHELL:ampcmd show log
+SHELL:omcicmd pdt show log
+SHELL:oamcmd pdt show log
+SHELL:chipdebug print off
+WAP:omcicmd error log
+WAP:display pon statistics
+WAP:display portstatistics portnum 1
+WAP:display portstatistics portnum 2
+WAP:display portstatistics portnum 3
+WAP:display portstatistics portnum 4
+WAP:display portstatistics portnum 5
+WAP:get port config portid 1
+WAP:get port config portid 2
+WAP:get port config portid 3
+WAP:get port config portid 4
+WAP:get port config portid 5
+WAP:oamcmd error log
+SHELL:getcustomize.sh
+WAP:get rogue status
+SHELL:omcicmd show olt type
+WAP:ampcmd show emac stat
+WAP:omcicmd mib show meid 11 instid 65535
+WAP:omcicmd mib show meid 45 instid 65535
+WAP:omcicmd mib show meid 47 instid 65535
+WAP:omcicmd mib show meid 84 instid 65535
+WAP:omcicmd mib show meid 130 instid 65535
+WAP:omcicmd mib show meid 134 instid 65535
+WAP:omcicmd mib show meid 136 instid 65535
+WAP:omcicmd mib show meid 171 instid 65535
+WAP:omcicmd mib show meid 268 instid 65535
+WAP:omcicmd mib show meid 281 instid 65535
+WAP:omcicmd mib show meid 309 instid 65535
+SHELL:oamcmd show log 
+SHELL:omcicmd show log 
+SHELL: sleep 60
+
+

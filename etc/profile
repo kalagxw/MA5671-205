@@ -1,0 +1,81 @@
+# /etc/profile
+# init bash prompt and enviroment.
+#
+
+#alias ls="ls --color=auto"
+alias ll="ls -l"
+alias cp="cp -i"
+alias ..="cd .."
+
+PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/osgi/bin"
+export LD_LIBRARY_PATH=/lib:/lib/omci_module:/lib/oam_module:/usr/osgi/lib:/usr/osgi/lib/arm:/usr/osgi/lib/arm/jli:/usr/osgi/lib/arm/minimal
+
+#PS1="\[\033[32m\]\h \w\[\033[m\] \\$ "
+PS1="WAP(Dopra Linux) # "
+
+#set core dump according to the hw_wap_debug.config file
+var_file_name=/proc/wap_proc/debug_config
+if [ -e $var_file_name ]; then
+	var_find_core_flag=HW_WAP_AUTO_CORE_DUMP
+	var_find_mount=HW_WAP_AUTO_MOUNT
+	var_core_flag=`grep $var_find_core_flag $var_file_name | sed 's/[^0]*//' | sed 's/0x//'`
+	var_core_mount=`grep $var_find_mount $var_file_name | sed 's/[^\"]*//' | sed 's/"//' | cut -f 1 -d '"'`
+	if [ "$var_core_flag" != "" ] && [ "$var_core_flag" != "FFFFFFFF" ] && [ $var_core_flag -eq 1 ]; then
+		ulimit -c unlimited
+		echo "profile open core dump, flag=$var_core_flag"
+		if [ "$var_core_mount" != "" ];then
+			mount $var_core_mount
+			if [ $? = 0 ];then
+				echo "/mnt/nfs/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
+				echo "profile 'mount $var_core_mount' successful"
+			else
+				echo "/var/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
+				echo "profile 'mount $var_core_mount' failed"
+				route
+				ifconfig
+			fi
+		else
+			echo "/var/core-%e-%p-%t" > /proc/sys/kernel/core_pattern
+			echo "profile 'mount $var_core_mount' failed"
+		fi
+	else
+		ulimit -c 0
+                echo "profile close core dump, flag=$var_core_flag"
+        fi
+else
+	ulimit -c 0
+        echo "profile close core dump"
+fi
+
+#if [ `id -u` -eq 0 ]; then
+#	umask 000
+#else
+umask 000
+#fi
+
+#USER=`id -un`
+#LOGNAME=$USER
+LOGNAME=root
+
+HOSTNAME=`/bin/hostname`
+HISTSIZE=0
+
+TMOUT=900
+
+EDITOR=vi
+VISUAL=vi
+
+PAGER=more
+
+INPUTRC="/etc/inputrc"
+
+export PATH PS1 USER LOGNAME HOSTNAME HISTSIZE EDITOR VISUAL PAGER INPUTRC TMOUT
+
+# Running the local scripts from the user
+for i in /etc/profile.d/*.sh ; do
+	if [ -x $i ]; then
+		. $i
+	fi
+done
+unset i
+

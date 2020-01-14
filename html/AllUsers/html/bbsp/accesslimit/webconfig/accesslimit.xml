@@ -1,0 +1,13 @@
+<InternetGatewayDevice>
+<Services>
+<X_HW_AccessLimit setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Mode setconfig = "0x00000002" getconfig = "0x00000002"/>
+<TotalTerminalNumber setconfig = "0x00000002" getconfig = "0x00000002"/>
+<TypeLimit setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<VenderClassId setconfig = "0x00000002" getconfig = "0x00000002"/>
+<LimitNumber setconfig = "0x00000002" getconfig = "0x00000002"/>
+</TypeLimit>
+</X_HW_AccessLimit>
+</Services>
+</InternetGatewayDevice>

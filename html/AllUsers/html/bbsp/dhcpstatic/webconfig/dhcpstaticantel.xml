@@ -1,0 +1,10 @@
+<InternetGatewayDevice>
+<LANDevice setconfig="0x0000000f" getconfig = "0x0000000f">
+<LANHostConfigManagement setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DHCPStaticAddress setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Chaddr setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Yiaddr setconfig = "0x00000002" getconfig = "0x00000002"/>
+</DHCPStaticAddress>
+</LANHostConfigManagement>
+</LANDevice>
+</InternetGatewayDevice> 

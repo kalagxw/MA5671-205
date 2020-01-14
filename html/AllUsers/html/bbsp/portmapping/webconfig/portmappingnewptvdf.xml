@@ -1,0 +1,52 @@
+<InternetGatewayDevice>
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000003" getconfig = "0x00000003">
+<WANIPConnection setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<PortMapping setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<PortMappingEnabled setconfig = "0x00000003" getconfig = "0x00000003"/>
+<RemoteHost setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_RemoteHostRange setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_OperateRule setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPortEndRange setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PortMappingProtocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalClient setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PortMappingDescription setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_InternalEndPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ExternalSrcPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ExternalSrcEndPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Portlist setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Protocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalSrcPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_Portlist>
+</PortMapping>
+</WANIPConnection>
+<WANPPPConnection setconfig = "0x00000003" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<PortMapping setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<PortMappingEnabled setconfig = "0x00000003" getconfig = "0x00000003"/>
+<RemoteHost setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_RemoteHostRange setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_OperateRule setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPortEndRange setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PortMappingProtocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalClient setconfig = "0x00000003" getconfig = "0x00000003"/>
+<PortMappingDescription setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_InternalEndPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ExternalSrcPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_ExternalSrcEndPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<X_HW_Portlist setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Protocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<InternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<ExternalSrcPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+</X_HW_Portlist>
+</PortMapping>
+</WANPPPConnection>
+</WANConnectionDevice>
+</WANDevice>
+</InternetGatewayDevice> 

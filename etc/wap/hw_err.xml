@@ -1,0 +1,589 @@
+<ErrRoot>
+<1 CMO="0xf7309000" InfoStr="ERROR::invalid input parameter, must input parameter ExternalPort[int],ExternalEndPort[int],InternalPort[int],Protocol[string],InternalClientIp[string],and 
+InternalEndPort[int], other parameter is optional!" Output="0x80000000"/>
+<2 CMO="0xf7309001" InfoStr="ERROR::invalid input parameter, must input all the parameter!" Output="0x80000000"/>
+<3 CMO="0xf7307002" InfoStr="ERROR::null pointer! errno:0xf7307002" Output="0x80000000"/>
+<4 CMO="0xf7307003" InfoStr="ERROR::input para len invalid! errno:0xf7307003" Output="0x80000000"/>
+<5 CMO="0xf7307004" InfoStr="ERROR::input para value invalid! errno:0xf7307004" Output="0x80000000"/>
+<6 CMO="0xf7307005" InfoStr="ERROR::exceed node num max! errno:0xf7307005" Output="0x80000000"/>
+<7 CMO="0xf7307006" InfoStr="ERROR::not find rule! errno:0xf7307006" Output="0x80000000"/>
+<8 CMO="0xf7307007" InfoStr="ERROR::get cfg mask failed! errno:0xf7307007" Output="0x80000000"/>
+<9 CMO="0xf7307001" InfoStr="ERROR::false! errno:0xf7307001" Output="0x80000000"/>
+<a CMO="0xf7307008" InfoStr="ERROR::set rule repeat errno:0xf7307008" Output="0x80000000"/>
+<b CMO="0xf7307009" InfoStr="ERROR::get wanname failed errno:0xf7307009" Output="0x80000000"/>
+<c CMO="0xf730700a" InfoStr="ERROR::get node info failed errno:0xf730700a" Output="0x80000000"/>
+<d CMO="0xf730700b" InfoStr="ERROR::wan name repeat errno:0xf730700b" Output="0x80000000"/>
+<e CMO="0xf730700c" InfoStr="ERROR::get wan status failed errno:0xf730700c" Output="0x80000000"/>
+<f CMO="0xf730700d" InfoStr="ERROR::get wan status not right errno:0xf730700d" Output="0x80000000"/>
+<10 CMO="0xf730700e" InfoStr="ERROR::get wan conntype failed errno:0xf730700e" Output="0x80000000"/>
+<11 CMO="0xf730700f" InfoStr="ERROR::get nat status failed errno:0xf730700f" Output="0x80000000"/>
+<12 CMO="0xf7307010" InfoStr="ERROR::get wan ifname failed errno:0xf7307010" Output="0x80000000"/>
+<13 CMO="0xf7307011" InfoStr="ERROR::rule effect failed errno:0xf7307011" Output="0x80000000"/>
+<14 CMO="0xf7307012" InfoStr="ERROR::update node info failed errno:0xf7307012" Output="0x80000000"/>
+<15 CMO="0xf7307013" InfoStr="ERROR::check node info failed errno:0xf7307013" Output="0x80000000"/>
+<16 CMO="0xf7307014" InfoStr="ERROR::add node failed errno:0xf7307014" Output="0x80000000"/>
+<17 CMO="0xf7307015" InfoStr="ERROR::del node failed errno:0xf7307015" Output="0x80000000"/>
+<18 CMO="0xf7307016" InfoStr="ERROR::save node failed errno:0xf7307016" Output="0x80000000"/>
+<19 CMO="0xf7307017" InfoStr="ERROR::add xml obj failed errno:0xf7307017" Output="0x80000000"/>
+<1a CMO="0xf7307018" InfoStr="ERROR::del xml obj failed errno:0xf7307018" Output="0x80000000"/>
+<1b CMO="0xf7307019" InfoStr="ERROR::alloc paralist failed errno:0xf7307019" Output="0x80000000"/>
+<1c CMO="0xf730701a" InfoStr="ERROR::append paralist failed errno:0xf730701a" Output="0x80000000"/>
+<1d CMO="0xf730701b" InfoStr="ERROR::set db failed errno:0xf730701b" Output="0x80000000"/>
+<1e CMO="0xf730701c" InfoStr="ERROR::add db obj failed errno:0xf730701c" Output="0x80000000"/>
+<1f CMO="0xf730701d" InfoStr="ERROR::del db obj failed errno:0xf730701d" Output="0x80000000"/>
+<20 CMO="0xf730701e" InfoStr="ERROR::get db obj num failed errno:0xf730701e" Output="0x80000000"/>
+<21 CMO="0xf730701f" InfoStr="ERROR::malloc failed errno:0xf730701f" Output="0x80000000"/>
+<22 CMO="0xf7307020" InfoStr="ERROR::open file failed errno:0xf7307020" Output="0x80000000"/>
+<23 CMO="0xf7307021" InfoStr="ERROR::close file failed errno:0xf7307021" Output="0x80000000"/>
+<24 CMO="0xf7307022" InfoStr="ERROR::check ip info invalid errno:0xf7307022" Output="0x80000000"/>
+<25 CMO="0xf7307023" InfoStr="ERROR::check proto info invalid errno:0xf7307023" Output="0x80000000"/>
+<26 CMO="0xf7307024" InfoStr="ERROR::check proto port info invalid errno:0xf7307024" Output="0x80000000"/>
+<27 CMO="0xf7307025" InfoStr="ERROR::check enable info invalid errno:0xf7307025" Output="0x80000000"/>
+<28 CMO="0xf7307026" InfoStr="ERROR::check synattack info invalid errno:0xf7307026" Output="0x80000000"/>
+<29 CMO="0xf7307027" InfoStr="ERROR::check icmpecho info invalid errno:0xf7307027" Output="0x80000000"/>
+<2a CMO="0xf7307028" InfoStr="ERROR::check icmpredirect info invalid errno:0xf7307028" Output="0x80000000"/>
+<2b CMO="0xf7307029" InfoStr="ERROR::check httplen info invalid errno:0xf7307029" Output="0x80000000"/>
+<2c CMO="0xf730702a" InfoStr="ERROR::check httpwan info invalid errno:0xf730702a" Output="0x80000000"/>
+<2d CMO="0xf730702b" InfoStr="ERROR::check ftplan info invalid errno:0xf730702b" Output="0x80000000"/>
+<2e CMO="0xf730702d" InfoStr="ERROR::check ftpwan info invalid errno:0xf730702d" Output="0x80000000"/>
+<2f CMO="0xf730702e" InfoStr="ERROR::check tftplan info invalid errno:0xf730702e" Output="0x80000000"/>
+<30 CMO="0xf730702f" InfoStr="ERROR::check tftpwan info invalid errno:0xf730702f" Output="0x80000000"/>
+<31 CMO="0xf7307030" InfoStr="ERROR::check sshlan info invalid errno:0xf7307030" Output="0x80000000"/>
+<32 CMO="0xf7307031" InfoStr="ERROR::check sshwan info invalid errno:0xf7307031" Output="0x80000000"/>
+<33 CMO="0xf7307032" InfoStr="ERROR::check tftpenable info invalid errno:0xf7307032" Output="0x80000000"/>
+<34 CMO="0xf7307033" InfoStr="ERROR::check h323enable info invalid errno:0xf7307033" Output="0x80000000"/>
+<35 CMO="0xf7307034" InfoStr="ERROR::check sipenable info invalid errno:0xf7307034" Output="0x80000000"/>
+<36 CMO="0xf7307035" InfoStr="ERROR::check rtspenable info invalid errno:0xf7307035" Output="0x80000000"/>
+<37 CMO="0xf7307036" InfoStr="ERROR::check l2tpenable info invalid errno:0xf7307036" Output="0x80000000"/>
+<38 CMO="0xf7307037" InfoStr="ERROR::check ipsecenable info invalid errno:0xf7307037" Output="0x80000000"/>
+<39 CMO="0xf7307038" InfoStr="ERROR::check pptpenable info invalid errno:0xf7307038" Output="0x80000000"/>
+<3a CMO="0xf7307039" InfoStr="ERROR::check ftpenable info invalid errno:0xf7307039" Output="0x80000000"/>
+<3b CMO="0xf730703a" InfoStr="ERROR::check add port info failed errno:0xf730703a" Output="0x80000000"/>
+<3c CMO="0xf730703b" InfoStr="ERROR::check remotehost info invalid errno:0xf730703b" Output="0x80000000"/>
+<3d CMO="0xf730703c" InfoStr="ERROR::check internalclient info invalid errno:0xf730703c" Output="0x80000000"/>
+<3e CMO="0xf730703d" InfoStr="ERROR::check port info invalid errno:0xf730703d" Output="0x80000000"/>
+<3f CMO="0xf730703e" InfoStr="ERROR::check combin info invalid errno:0xf730703e" Output="0x80000000"/>
+<40 CMO="0xf730703f" InfoStr="ERROR::check integrity invalid errno:0xf730703f" Output="0x80000000"/>
+<41 CMO="0xf7307040" InfoStr="ERROR::check day info invalid errno:0xf7307040" Output="0x80000000"/>
+<42 CMO="0xf7307041" InfoStr="ERROR::check time info invalid errno:0xf7307041" Output="0x80000000"/>
+<43 CMO="0xf7307042" InfoStr="ERROR::check mac info invalid errno:0xf7307042" Output="0x80000000"/>
+<44 CMO="0xf7307043" InfoStr="ERROR::get trigger port total num failed errno:0xf7307043" Output="0x80000000"/>
+<45 CMO="0xf7307044" InfoStr="ERROR::trigger port total num exceed errno:0xf7307044" Output="0x80000000"/>
+<46 CMO="0xf7307045" InfoStr="ERROR::get open port total num failed errno:0xf7307045" Output="0x80000000"/>
+<47 CMO="0xf7307046" InfoStr="ERROR::open port total num exceed errno:0xf7307046" Output="0x80000000"/>
+<48 CMO="0xf7307047" InfoStr="ERROR::initial aclflt failed errno:0xf7307047" Output="0x80000000"/>
+<49 CMO="0xf7307048" InfoStr="ERROR::initial dosflt failed errno:0xf7307048" Output="0x80000000"/>
+<4a CMO="0xf7307049" InfoStr="ERROR::config firewall failed errno:0xf7307049" Output="0x80000000"/>
+<4b CMO="0xf730704a" InfoStr="ERROR::clear ipfltin node info failed errno:0xf730704a" Output="0x80000000"/>
+<4c CMO="0xf730704b" InfoStr="ERROR::clear ipfltout node info failed errno:0xf730704b" Output="0x80000000"/>
+<4d CMO="0xf730704c" InfoStr="ERROR::clear macflt node info failed errno:0xf730704c" Output="0x80000000"/>
+<4e CMO="0xf730704d" InfoStr="ERROR::clear aclflt node info failed errno:0xf730704d" Output="0x80000000"/>
+<4f CMO="0xf730704e" InfoStr="ERROR::clear dosflt node info failed errno:0xf730704e" Output="0x80000000"/>
+<50 CMO="0xf730704f" InfoStr="ERROR::wan up down register failed errno:0xf730704f" Output="0x80000000"/>
+<51 CMO="0xf7307050" InfoStr="ERROR::init nat failed errno:0xf7307050" Output="0x80000000"/>
+<52 CMO="0xf7307051" InfoStr="ERROR::init dmz failed errno:0xf7307051" Output="0x80000000"/>
+<53 CMO="0xf7307052" InfoStr="ERROR::init portmap failed errno:0xf7307052" Output="0x80000000"/>
+<54 CMO="0xf7307053" InfoStr="ERROR::init porttrigger failed errno:0xf7307053" Output="0x80000000"/>
+<55 CMO="0xf7307054" InfoStr="ERROR::wan ip pro failed errno:0xf7307054" Output="0x80000000"/>
+<56 CMO="0xf7307055" InfoStr="ERROR::wan down pro failed errno:0xf7307055" Output="0x80000000"/>
+<57 CMO="0xf7307056" InfoStr="ERROR::wan delete pro failed errno:0xf7307056" Output="0x80000000"/>
+<58 CMO="0xf7307057" InfoStr="ERROR::clear all napt table failed errno:0xf7307057" Output="0x80000000"/>
+<59 CMO="0xf7307058" InfoStr="ERROR::get feature spc fail errno:0xf7307058" Output="0x80000000"/>
+<5a CMO="0xf7307065" InfoStr="ERROR::check wansrcwhitelist enable info invalid errno:0xf7307000 " Output="0x80000000"/>
+<5b CMO="0xf7307066" InfoStr="ERROR::check wansrcwhitelist num for entries info invalid errno:0xf730702c " Output="0x80000000"/>
+<5c CMO="0xf730705f" InfoStr="ERROR::check srcipprefix info invalid errno " Output="0x80000000"/>
+<5d CMO="0xf730b002" InfoStr="ERROR::input null pointer!!" Output="0x80000000"/>
+<5e CMO="0xf730b003" InfoStr="ERROR::Input para is not right!" Output="0x80000000"/>
+<5f CMO="0xf730b006" InfoStr="ERROR::Invalid ip address" Output="0x80000000"/>
+<60 CMO="0xf730b010" InfoStr="ERROR::fail to get wan or lan info" Output="0x80000000"/>
+<61 CMO="0xf730b00d" InfoStr="ERROR::fail to get dns address of wan" Output="0x80000000"/>
+<62 CMO="0xf730b00e" InfoStr="ERROR::fail to get wan name" Output="0x80000000"/>
+<63 CMO="0xf730b00f" InfoStr="ERROR::fail to open file" Output="0x80000000"/>
+<64 CMO="0xf730b010" InfoStr="ERROR::the number of dns is error" Output="0x80000000"/>
+<65 CMO="0xf730b011" InfoStr="ERROR::Invalid domain name" Output="0x80000000"/>
+<66 CMO="0xf730b012" InfoStr="ERROR::Static entry already exists" Output="0x80000000"/>
+<67 CMO="0xf730b013" InfoStr="ERROR::Static entry does not exist" Output="0x80000000"/>
+<68 CMO="0xf730b014" InfoStr="ERROR::Interface does not exist" Output="0x80000000"/>
+<69 CMO="0xf730b015" InfoStr="ERROR::Invalid priority" Output="0x80000000"/>
+<6a CMO="0xf730b016" InfoStr="ERROR::Static entry is full" Output="0x80000000"/>
+<6b CMO="0xf730b017" InfoStr="ERROR::Domain name conflict" Output="0x80000000"/>
+<6c CMO="0xf730b018" InfoStr="ERROR::Server already exists" Output="0x80000000"/>
+<6d CMO="0xf730b019" InfoStr="ERROR::Server does not exist" Output="0x80000000"/>
+<6e CMO="0xf730b01a" InfoStr="ERROR::Exceeded the limit on the number of dns server" Output="0x80000000"/>
+<6f CMO="0xf730b01b" InfoStr="ERROR::Invalid para,timeout should be 1-10, retrytimes should be 1-3" Output="0x80000000"/>
+<70 CMO="0xf730b01c" InfoStr="ERROR::Invalid interface" Output="0x80000000"/>
+<71 CMO="0xf730b01e" InfoStr="ERROR::Interface is not supported" Output="0x80000000"/>
+<72 CMO="0xf730b01f" InfoStr="ERROR::Invalid IPv4 address" Output="0x80000000"/>
+<73 CMO="0xf730b020" InfoStr="ERROR::Invalid IPv6 address" Output="0x80000000"/>
+<74 CMO="0xf7301001" InfoStr="ERROR::ifm check parameter error" Output="0x80000000"/>
+<75 CMO="0xf7301002" InfoStr="ERROR::interface already exists" Output="0x80000000"/>
+<76 CMO="0xf7301003" InfoStr="ERROR::interface does not exist" Output="0x80000000"/>
+<77 CMO="0xf7301004" InfoStr="ERROR::ifm memory alloction failed" Output="0x80000000"/>
+<78 CMO="0xf7301005" InfoStr="ERROR::interface name is error" Output="0x80000000"/>
+<79 CMO="0xf7301006" InfoStr="ERROR::wan control block is null" Output="0x80000000"/>
+<7a CMO="0xf7301007" InfoStr="ERROR::lan control block is null" Output="0x80000000"/>
+<7b CMO="0xf7301008" InfoStr="ERROR::interface ip address already exists" Output="0x80000000"/>
+<7c CMO="0xf7301009" InfoStr="ERROR::interface ip address does not exist" Output="0x80000000"/>
+<7d CMO="0xf730100a" InfoStr="ERROR::ifm create sock failed" Output="0x80000000"/>
+<7e CMO="0xf730100b" InfoStr="ERROR::get netdevice index failed" Output="0x80000000"/>
+<7f CMO="0xf730100c" InfoStr="ERROR::get netdevice flag failed" Output="0x80000000"/>
+<80 CMO="0xf730100d" InfoStr="ERROR::if statuc ctrl block is null" Output="0x80000000"/>
+<81 CMO="0xf730100e" InfoStr="ERROR::get wan name by instance error" Output="0x80000000"/>
+<82 CMO="0xf730100f" InfoStr="ERROR::ifm open file failed" Output="0x80000000"/>
+<83 CMO="0xf7301010" InfoStr="ERROR::ifm read file failed" Output="0x80000000"/>
+<84 CMO="0xf7301011" InfoStr="ERROR::ifm seek file failed" Output="0x80000000"/>
+<85 CMO="0xf7301012" InfoStr="ERROR::ifm write file failed" Output="0x80000000"/>
+<86 CMO="0xf7301013" InfoStr="ERROR::ifm dns is disable" Output="0x80000000"/>
+<87 CMO="0xf7301014" InfoStr="ERROR::ifm msgtyep is error" Output="0x80000000"/>
+<88 CMO="0xf7301015" InfoStr="ERROR::ifm get wan mac failed" Output="0x80000000"/>
+<89 CMO="0xf7301016" InfoStr="ERROR::ifmdev no enough headroom" Output="0x80000000"/>
+<8a CMO="0xf7301017" InfoStr="ERROR::no such ifm dev" Output="0x80000000"/>
+<8b CMO="0xf7301018" InfoStr="ERROR::ifm device down" Output="0x80000000"/>
+<8c CMO="0xf7301019" InfoStr="ERROR::register ifm device failed" Output="0x80000000"/>
+<8d CMO="0xf730101a" InfoStr="ERROR::get wan status failed" Output="0x80000000"/>
+<8e CMO="0xf730101b" InfoStr="ERROR::wan file path error" Output="0x80000000"/>
+<8f CMO="0xf730101c" InfoStr="ERROR::delete ifm file failed" Output="0x80000000"/>
+<90 CMO="0xf730101d" InfoStr="ERROR::create ifm dir failed" Output="0x80000000"/>
+<91 CMO="0xf730101e" InfoStr="ERROR::wan type error" Output="0x80000000"/>
+<92 CMO="0xf730101f" InfoStr="ERROR::fail to get lanname " Output="0x80000000"/>
+<93 CMO="0xf7301020" InfoStr="ERROR::fail to set lanmode" Output="0x80000000"/>
+<94 CMO="0xf7301021" InfoStr="ERROR::fail to save db " Output="0x80000000"/>
+<95 CMO="0xf7301022" InfoStr="ERROR::fail to get bindinfo" Output="0x80000000"/>
+<96 CMO="0xf7301023" InfoStr="ERROR::fail to add xml obj" Output="0x80000000"/>
+<97 CMO="0xf7301024" InfoStr="ERROR::lan has been binded a wan" Output="0x80000000"/>
+<98 CMO="0xf7301025" InfoStr="ERROR::lan wan bind err " Output="0x80000000"/>
+<99 CMO="0xf7301026" InfoStr="ERROR::fail to get wan status" Output="0x80000000"/>
+<9a CMO="0xf7301027" InfoStr="ERROR::l2 lan can not be binded" Output="0x80000000"/>
+<9b CMO="0xf7301028" InfoStr="ERROR::l3 port has been binded" Output="0x80000000"/>
+<9c CMO="0xf7301029" InfoStr="ERROR::max if number exceeded" Output="0x80000000"/>
+<9d CMO="0xf730102a" InfoStr="bridged wan doesn't support this configuration" Output="0x80000000"/>
+<9e CMO="0xf730102b" InfoStr="ERROR::vlan of tr069 wan conflicts with another wan " Output="0x80000000"/>
+<9f CMO="0xf730102c" InfoStr="ERROR::type of tr069 wan is pppoe " Output="0x80000000"/>
+<a0 CMO="0xf730102d" InfoStr="ERROR::tr069 wan can be created once " Output="0x80000000"/>
+<a1 CMO="0xf730102e" InfoStr="ERROR::tr069 wan doesn't exist " Output="0x80000000"/>
+<a2 CMO="0xf7305023" InfoStr="Error:current mode is controllable " Output="0x80000000"/>
+<a3 CMO="0xf7305024" InfoStr="Error:Global multicast forward mode conflict in GPON!" Output="0x80000000"/>
+<a4 CMO="0xf7305025" InfoStr="Error:Port multicast vlan is already configured in EPON !" Output="0x80000000"/>
+<a5 CMO="0xf7307059" InfoStr="ERROR::check land info invalid errno:0xf7307059" Output="0x80000000"/>
+<a6 CMO="0xf730705a" InfoStr="ERROR::check land info invalid errno:0xf730705a" Output="0x80000000"/>
+<a7 CMO="0xf730705b" InfoStr="ERROR::check land info invalid errno:0xf730705b" Output="0x80000000"/>
+<a8 CMO="0xf7307060" InfoStr="ERROR::static route duplicated!" Output="0x80000000"/>
+<a9 CMO="0xf7307061" InfoStr="ERROR::dest prefix format invalid!" Output="0x80000000"/>
+<aa CMO="0xf7307062" InfoStr="ERROR::dest prefix and length do not match!" Output="0x80000000"/>
+<ab CMO="0xf7307063" InfoStr="ERROR::dest prefix is not unicast!" Output="0x80000000"/>
+<ac CMO="0xf7307064" InfoStr="ERROR::dest prefix is linklocal!" Output="0x80000000"/>
+<ad CMO="0xf730706a" InfoStr="ERROR::next hop format invalid!" Output="0x80000000"/>
+<ae CMO="0xf730706b" InfoStr="ERROR::next hop is not unicast!" Output="0x80000000"/>
+<af CMO="0xf7301031" InfoStr="The feature doesn't support" Output="0x80000000"/>
+<b0 CMO="0xf7301050" InfoStr="ERROR::Invalid WAN parameters" Output="0x84000000"/>
+<b1 CMO="0xf7343001" InfoStr="ERROR::Input parameters is null" Output="0x80000000"/>
+<b2 CMO="0xf7343002" InfoStr="ERROR::Input parameters is error" Output="0x80000000"/>
+<b3 CMO="0xf7330001" InfoStr="ERROR::Invalid parameters" Output="0x80000000"/>
+<b4 CMO="0xf7330002" InfoStr="ERROR::interface is not supported" Output="0x80000000"/>
+<b5 CMO="0xf730200c" InfoStr="ERROR::pool does not exist" Output="0x80000000"/>
+<b6 CMO="0xf730200d" InfoStr="ERROR::user does not exist" Output="0x80000000"/>
+<b7 CMO="0xf7330002" InfoStr="ERROR::interface is not supported" Output="0x80000000"/>
+<b8 CMO="0xf730200c" InfoStr="ERROR::pool does not exist" Output="0x80000000"/>
+<b9 CMO="0xf730200d" InfoStr="ERROR::user does not exist" Output="0x80000000"/>
+<ba CMO="0xF7302003" InfoStr="ERROR::Invalid parameters" Output="0x80000000"/>
+<bb CMO="0xF730200e" InfoStr="ERROR::set trace failed" Output="0x80000000"/>
+<bc CMO="0xF730200f" InfoStr="ERROR::query lease failed" Output="0x80000000"/>
+<bd CMO="0xF7302010" InfoStr="ERROR::interface is not supported" Output="0x80000000"/>
+<be CMO="0xF7302011" InfoStr="ERROR::interface does not exist" Output="0x80000000"/>
+<bf CMO="0xF7302012" InfoStr="ERROR::pool does not exist" Output="0x80000000"/>
+<c0 CMO="0xF7302013" InfoStr="ERROR::user does not exist" Output="0x80000000"/>
+<c1 CMO="0xF7302014" InfoStr="ERROR::Interface is down" Output="0x80000000"/>
+<c2 CMO="0xF7308001" InfoStr="ERROR::Invalid input protocol" Output="0x80000000"/>
+<c3 CMO="0xF7302016" InfoStr="ERROR::The maximum number was exceeded" Output="0x80000000"/>
+<c4 CMO="0xF7302015" InfoStr="ERROR::Duplicate configuration" Output="0x80000000"/>
+<c5 CMO="0xF7302017" InfoStr="ERROR::Item does not exist" Output="0x80000000"/>
+<c6 CMO="0xF7302019" InfoStr="ERROR::The wan is already detached" Output="0x80000000"/>
+<c7 CMO="0xF730201a" InfoStr="ERROR::The wan is already attached" Output="0x80000000"/>
+<c8 CMO="0xF730201b" InfoStr="ERROR::Please detach the wan first" Output="0x80000000"/>
+<c9 CMO="0xF733e001" InfoStr="ERROR::Invalid para, Age time should be 0 or [10-36000]" Output="0x80000000"/>
+<ca CMO="0xf733c001" InfoStr="ERROR::Invalid parameters" Output="0x80000000"/>
+<cb CMO="0xf733c002" InfoStr="ERROR::User does not exist" Output="0x80000000"/>
+<cc CMO="0xf710e033" InfoStr="ERROR::Exceeded the limit on the number of instance." Output="0x84000000"/>
+<cd CMO="0xf7205001" InfoStr="ERROR::invalid input parameter, such as NULL ptr!" Output="0x80000000"/>
+<ce CMO="0xf7205403" InfoStr="ERROR::invalid input parameter, it is NULL ptr!" Output="0x80000000"/>
+<cf CMO="0xf7205002" InfoStr="ERROR::insufficient memory!" Output="0x80000000"/>
+<d0 CMO="0xf7205003" InfoStr="ERROR::invalid sn, which must be 16 hex digits, or 12 characters end with 8 hex characters." Output="0x80000000"/>
+<d1 CMO="0xf7205004" InfoStr="ERROR::invalid sn password. It should be less than 10 char in GPON mode, or 32 char in EPON mode" Output="0x80000000"/>
+<d2 CMO="0xf720502f" InfoStr="ERROR::the ont is online, you are not allowed to change the password!" Output="0x80000000"/>
+<d3 CMO="0xf7205005" InfoStr="ERROR::invalid product ID, its value must be 4 char!" Output="0x80000000"/>
+<d4 CMO="0xf7205006" InfoStr="ERROR::invalid equipment id, which must be less than 64 characters!" Output="0x80000000"/>
+<d5 CMO="0xf7205007" InfoStr="ERROR::invalid board item, it must be composed of 16 digital or upper Alpha characters!" Output="0x80000000"/>
+<d6 CMO="0xf7205008" InfoStr="ERROR::invalid machine item, it must be composed of 20 digital or upper Alpha characters!" Output="0x80000000"/>
+<d7 CMO="0xf7205009" InfoStr="ERROR::invalid mac address, it should follow the format: XX:XX:XX:XX:XX:XX" Output="0x80000000"/>
+<d8 CMO="0xf720500a" InfoStr="ERROR::Reset is not successful because board is updating now, please try it later!" Output="0x80000000"/>
+<d9 CMO="0xf720500b" InfoStr="ERROR::invalid boot type, it should be main(0) or slave(1)!" Output="0x80000000"/>
+<da CMO="0xf720500e" InfoStr="ERROR::invalid provisioning code, whichi must be less than 64 chars!" Output="0x80000000"/>
+<db CMO="0xf720500f" InfoStr="ERROR::invalid software version!" Output="0x80000000"/>
+<dc CMO="0xf7205010" InfoStr="ERROR::invalid vendor id, which must be composed of 4 chars!" Output="0x80000000"/>
+<dd CMO="0xf7205011" InfoStr="ERROR::invalid up port mode" Output="0x80000000"/>
+<de CMO="0xf7205012" InfoStr="ERROR::fail to get release time" Output="0x80000000"/>
+<df CMO="0xf7205013" InfoStr="ERROR::Global data of dm has not been initiated" Output="0x80000000"/>
+<e0 CMO="0xf7205014" InfoStr="ERROR::fail to get current process name" Output="0x80000000"/>
+<e1 CMO="0xf7205015" InfoStr="ERROR::unexpected msg type" Output="0x80000000"/>
+<e2 CMO="0xf7205016" InfoStr="ERROR::Invalid FTP user name" Output="0x80000000"/>
+<e3 CMO="0xf7205017" InfoStr="ERROR::Invalid FTP user password" Output="0x80000000"/>
+<e4 CMO="0xf7205018" InfoStr="ERROR::Invalid ftp port number" Output="0x80000000"/>
+<e5 CMO="0xf7205019" InfoStr="ERROR::Invalid FTP url" Output="0x80000000"/>
+<e6 CMO="0xf720501a" InfoStr="ERROR::Invalid device name" Output="0x80000000"/>
+<e7 CMO="0xf720501b" InfoStr="ERROR::Invalid log number" Output="0x80000000"/>
+<e8 CMO="0xf720501c" InfoStr="ERROR::Log record does not exists!" Output="0x80000000"/>
+<e9 CMO="0xf720501d" InfoStr="ERROR::Invalid local path" Output="0x80000000"/>
+<ea CMO="0xf720501e" InfoStr="ERROR::Ftp is downloading, please try it later!" Output="0x80000000"/>
+<eb CMO="0xf720501f" InfoStr="ERROR::Local file does exist, please input again!" Output="0x80000000"/>
+<ec CMO="0xf7205020" InfoStr="ERROR::Fail to get usb device list" Output="0x80000000"/>
+<ed CMO="0xf7205021" InfoStr="ERROR::Fail to get mount info!" Output="0x80000000"/>
+<ee CMO="0xf7205022" InfoStr="ERROR::Fail to remove usb device, may be device or resource busy!" Output="0x80000000"/>
+<ef CMO="0xf7205023" InfoStr="ERROR::block over size" Output="0x80000000"/>
+<f0 CMO="0xf7205024" InfoStr="ERROR::block over lap" Output="0x80000000"/>
+<f1 CMO="0xf7205025" InfoStr="ERROR::can not copy single block" Output="0x80000000"/>
+<f2 CMO="0xf7205026" InfoStr="ERROR::Fail to create usb equipment test file!" Output="0x80000000"/>
+<f3 CMO="0xf7205027" InfoStr="ERROR::usb test failed!" Output="0x80000000"/>
+<f4 CMO="0xf7205028" InfoStr="ERROR::The board don't support this operation!" Output="0x80000000"/>
+<f5 CMO="0xf7205030" InfoStr="Error: invalid hex password, the format is ABCD12" Output="0x80000000"/>
+<f6 CMO="0xf720502c" InfoStr="ERROR::invalid mac address, it can not include broadcast or multicast mac address!" Output="0x80000000"/>
+<f7 CMO="0xf720502d" InfoStr="ERROR:the ont is online, you are not allowed to change the password!" Output="0x80000000"/>
+<f8 CMO="0xf7102500" InfoStr="ERROR::the input is invalid." Output="0x80000000"/>
+<f9 CMO="0xf7102501" InfoStr="ERROR::IP or Port invalid." Output="0x80000000"/>
+<fa CMO="0xf7102502" InfoStr="ERROR::Fail to set the logsrv." Output="0x80000000"/>
+<fb CMO="0xf7102505" InfoStr="ERROR::Fail to save log." Output="0x80000000"/>
+<fc CMO="0xf7102507" InfoStr="ERROR::Failure: the input logtype is invalid." Output="0x80000000"/>
+<fd CMO="0xf7102508" InfoStr="ERROR::Fail to clear log." Output="0x80000000"/>
+<fe CMO="0xf710250a" InfoStr="ERROR::Fail to set logtype filter." Output="0x80000000"/>
+<ff CMO="0xf710250c" InfoStr="ERROR::Fail to set Mid filter." Output="0x80000000"/>
+<100 CMO="0xf710250f" InfoStr="ERROR::Fail to set realtime output." Output="0x80000000"/>
+<101 CMO="0xf7102511" InfoStr="ERROR::Fail to set realtime output save." Output="0x80000000"/>
+<102 CMO="0xf7102513" InfoStr="ERROR::Fail to set debug output." Output="0x80000000"/>
+<103 CMO="0xf7102514" InfoStr="ERROR::Fail to get the logsrv." Output="0x80000000"/>
+<104 CMO="0xf7102515" InfoStr="ERROR::the input save time cannot less than 60 min." Output="0x80000000"/>
+<105 CMO="0xf7102516" InfoStr="ERROR::Fail to start the timer." Output="0x80000000"/>
+<106 CMO="0xf7102517" InfoStr="ERROR::Fail to save the timer." Output="0x80000000"/>
+<107 CMO="0xf7102518" InfoStr="ERROR::Mid filter condition full." Output="0x80000000"/>
+<108 CMO="0xf7102519" InfoStr="ERROR::the input Rto object is invalid." Output="0x80000000"/>
+<109 CMO="0xf710251a" InfoStr="ERROR::There is no mid filter." Output="0x80000000"/>
+<10a CMO="0xf7204001" InfoStr="ERROR::[SWM]FAILD!" Output="0x80000000"/>
+<10b CMO="0xf7204002" InfoStr="ERROR::[SWM]SYSTEM BUSY!" Output="0x80000000"/>
+<10c CMO="0xf7204003" InfoStr="ERROR::[SWM]UNKNOWN TYPE!" Output="0x80000000"/>
+<10d CMO="0xf7204004" InfoStr="ERROR::[SWM]NULL PTR!" Output="0x80000000"/>
+<10e CMO="0xf7204005" InfoStr="ERROR::[SWM]NOT A PACK!" Output="0x80000000"/>
+<10f CMO="0xf7204006" InfoStr="ERROR::[SWM]PACK TOO SHORT!" Output="0x80000000"/>
+<110 CMO="0xf7204007" InfoStr="ERROR::[SWM]WRONG ITEMNUM!" Output="0x80000000"/>
+<111 CMO="0xf7204008" InfoStr="ERROR::[SWM]LACK MEMORY!" Output="0x80000000"/>
+<112 CMO="0xf7204009" InfoStr="ERROR::[SWM]WRONG HEAD CRC!" Output="0x80000000"/>
+<113 CMO="0xf720400a" InfoStr="ERROR::[SWM]CHANNEL INIT FAILD!" Output="0x80000000"/>
+<114 CMO="0xf720400b" InfoStr="ERROR::[SWM]DEV INIT FAILD!" Output="0x80000000"/>
+<115 CMO="0xf720400c" InfoStr="ERROR::[SWM]THREAD CREATE FAILD!" Output="0x80000000"/>
+<116 CMO="0xf720400d" InfoStr="ERROR::[SWM]THREAD DETACH FAILD!" Output="0x80000000"/>
+<117 CMO="0xf720400e" InfoStr="ERROR::[SWM]CHANNEL IS FULL!" Output="0x80000000"/>
+<118 CMO="0xf720400f" InfoStr="ERROR::[SWM]INVAILID CHANNEL!" Output="0x80000000"/>
+<119 CMO="0xf7204010" InfoStr="ERROR::[SWM]INVAILID NAME!" Output="0x80000000"/>
+<11a CMO="0xf7204011" InfoStr="ERROR::[SWM]NO CHANNEL!" Output="0x80000000"/>
+<11b CMO="0xf7204012" InfoStr="ERROR::[SWM]CHANNEL NOT EXIST!" Output="0x80000000"/>
+<11c CMO="0xf7204013" InfoStr="ERROR::[SWM]CREATE BOOT FAILD!" Output="0x80000000"/>
+<11d CMO="0xf7204014" InfoStr="ERROR::[SWM]BOOT EXIST!" Output="0x80000000"/>
+<11e CMO="0xf7204015" InfoStr="ERROR::[SWM]NODE NOT EXIST!" Output="0x80000000"/>
+<11f CMO="0xf7204016" InfoStr="ERROR::[SWM]DEV FULL!" Output="0x80000000"/>
+<120 CMO="0xf7204017" InfoStr="ERROR::[SWM]INVAILID DEV!" Output="0x80000000"/>
+<121 CMO="0xf7204018" InfoStr="ERROR::[SWM]NO DEV!" Output="0x80000000"/>
+<122 CMO="0xf7204019" InfoStr="ERROR::[SWM]DEV NOT EXIST!" Output="0x80000000"/>
+<123 CMO="0xf720401a" InfoStr="ERROR::[SWM]CREATE FIFO FAILD!" Output="0x80000000"/>
+<124 CMO="0xf720401b" InfoStr="ERROR::[SWM]NOT NEED RECEIVE!" Output="0x80000000"/>
+<125 CMO="0xf720401c" InfoStr="ERROR::[SWM]OPEN FILE FAILD!" Output="0x80000000"/>
+<126 CMO="0xf720401d" InfoStr="ERROR::[SWM]UNKNOWN OPR!" Output="0x80000000"/>
+<127 CMO="0xf720401e" InfoStr="ERROR::[SWM]CAN NOT FREE!" Output="0x80000000"/>
+<128 CMO="0xf720401f" InfoStr="ERROR::[SWM]WRONG FILE SIZE!" Output="0x80000000"/>
+<129 CMO="0xf7204020" InfoStr="ERROR::[SWM]READ FILE FAILD!" Output="0x80000000"/>
+<12a CMO="0xf7204021" InfoStr="ERROR::[SWM]WRITE FILE FAILD!" Output="0x80000000"/>
+<12b CMO="0xf7204022" InfoStr="ERROR::[SWM]WRONG FILE CRC!" Output="0x80000000"/>
+<12c CMO="0xf7204023" InfoStr="ERROR::[SWM]UNSUPPORTED TYPE!" Output="0x80000000"/>
+<12d CMO="0xf7204024" InfoStr="ERROR::[SWM]NULL HANDLE!" Output="0x80000000"/>
+<12e CMO="0xf7204025" InfoStr="ERROR::[SWM]UNSUPPORTED OPR!" Output="0x80000000"/>
+<12f CMO="0xf7204026" InfoStr="ERROR::[SWM]DEV WRITE ERROR!" Output="0x80000000"/>
+<130 CMO="0xf7204027" InfoStr="ERROR::[SWM]VALID BUFFER!" Output="0x80000000"/>
+<131 CMO="0xf7204028" InfoStr="ERROR::[SWM]BUFFER FULL!" Output="0x80000000"/>
+<132 CMO="0xf7204029" InfoStr="ERROR::[SWM]BUFFER EMPTY!" Output="0x80000000"/>
+<133 CMO="0xf720402a" InfoStr="ERROR::[SWM]UNKNOWN STATE!" Output="0x80000000"/>
+<134 CMO="0xf720402b" InfoStr="ERROR::[SWM]SHORT DATA!" Output="0x80000000"/>
+<135 CMO="0xf720402c" InfoStr="ERROR::[SWM]NEXT ITEM NOT EXIST!" Output="0x80000000"/>
+<136 CMO="0xf720402d" InfoStr="ERROR::[SWM]NO ITEM!" Output="0x80000000"/>
+<137 CMO="0xf720402e" InfoStr="ERROR::[SWM]WRONG STATE!" Output="0x80000000"/>
+<138 CMO="0xf720402f" InfoStr="ERROR::[SWM]UNKNOWN FILE TYPE!" Output="0x80000000"/>
+<139 CMO="0xf7204030" InfoStr="ERROR::[SWM]LOAD TIME OUT!" Output="0x80000000"/>
+<13a CMO="0xf7204031" InfoStr="ERROR::[SWM]LOAD FINISH!" Output="0x80000000"/>
+<13b CMO="0xf7204032" InfoStr="ERROR::[SWM]NOT NEED RESUME!" Output="0x80000000"/>
+<13c CMO="0xf7204033" InfoStr="ERROR::[SWM]RESUME FAILD!" Output="0x80000000"/>
+<13d CMO="0xf7204034" InfoStr="ERROR::[SWM]NO FILEHEAD!" Output="0x80000000"/>
+<13e CMO="0xf7204035" InfoStr="ERROR::[SWM]WRONG LEN!" Output="0x80000000"/>
+<13f CMO="0xf7204036" InfoStr="ERROR::[SWM]DB GET FAILD!" Output="0x80000000"/>
+<140 CMO="0xf7204037" InfoStr="ERROR::[SWM]DB SET FAILD!" Output="0x80000000"/>
+<141 CMO="0xf7204038" InfoStr="ERROR::[SWM]WRONG FILENAME!" Output="0x80000000"/>
+<142 CMO="0xf7204039" InfoStr="ERROR::[SWM]WRONG CRC!" Output="0x80000000"/>
+<143 CMO="0xf720403a" InfoStr="ERROR::[SWM]NO DATA VALID!" Output="0x80000000"/>
+<144 CMO="0xf720403b" InfoStr="ERROR::[SWM]WRONG CHANNEL NAME!" Output="0x80000000"/>
+<145 CMO="0xf720403c" InfoStr="ERROR::[SWM]INVALID IP ADDRESS!" Output="0x80000000"/>
+<146 CMO="0xf720403d" InfoStr="ERROR::[SWM]INVALID LOG TYPE!" Output="0x80000000"/>
+<147 CMO="0xf720403e" InfoStr="ERROR::[SWM]SAME VERSION!" Output="0x80000000"/>
+<148 CMO="0xf720403f" InfoStr="ERROR::[SWM]ITEM OVER SIZE!" Output="0x80000000"/>
+<149 CMO="0xf7204040" InfoStr="ERROR::MAX [SWM]FACTORS!" Output="0x80000000"/>
+<14a CMO="0xf7204041" InfoStr="ERROR::[SWM]REREGIST FACTOR!" Output="0x80000000"/>
+<14b CMO="0xf7204042" InfoStr="ERROR::[SWM]SERVER PROBLEM!" Output="0x80000000"/>
+<14c CMO="0xf7204043" InfoStr="ERROR::[SWM]TERMINATE TASK!" Output="0x80000000"/>
+<14d CMO="0xf7204044" InfoStr="ERROR::[SWM]BAD PACK SEQUENCE!" Output="0x80000000"/>
+<14e CMO="0xf7204045" InfoStr="ERROR::[SWM]UNSUPPORT PRODUCT!" Output="0x80000000"/>
+<14f CMO="0xf7204048" InfoStr="ERROR::[SWM]OVER SIZE BIN FOR MS!" Output="0x80000000"/>
+<150 CMO="0xf7204049" InfoStr="ERROR::[SWM]Failed to active patch!" Output="0x80000000"/>
+<151 CMO="0xf7103001" InfoStr="ERROR::unknow error" Output="0x80000000"/>
+<152 CMO="0xf7103002" InfoStr="ERROR::error on mem alocate" Output="0x80000000"/>
+<153 CMO="0xf7103003" InfoStr="ERROR::error on set system ticker" Output="0x80000000"/>
+<154 CMO="0xf7103004" InfoStr="ERROR::thread is already running" Output="0x80000000"/>
+<155 CMO="0xf7103005" InfoStr="ERROR::error on create thread" Output="0x80000000"/>
+<156 CMO="0xf7103006" InfoStr="ERROR::data is already existed" Output="0x80000000"/>
+<157 CMO="0xf7103007" InfoStr="ERROR::real timer is full" Output="0x80000000"/>
+<158 CMO="0xf7103008" InfoStr="ERROR::NULL pointer error" Output="0x80000000"/>
+<159 CMO="0xf7103009" InfoStr="ERROR::timer handler out of index" Output="0x80000000"/>
+<15a CMO="0xf710300A" InfoStr="ERROR::timer handler error" Output="0x80000000"/>
+<15b CMO="0xf710300B" InfoStr="ERROR::create message queue error" Output="0x80000000"/>
+<15c CMO="0xf710300C" InfoStr="ERROR::create message queue error" Output="0x80000000"/>
+<15d CMO="0xf710300D" InfoStr="ERROR::message data size error" Output="0x80000000"/>
+<15e CMO="0xf710300E" InfoStr="ERROR::message timer type error" Output="0x80000000"/>
+<15f CMO="0xf710300F" InfoStr="ERROR::message send error" Output="0x80000000"/>
+<160 CMO="0xf7103010" InfoStr="ERROR::local timer is full" Output="0x80000000"/>
+<161 CMO="0xf7103011" InfoStr="ERROR::message recv error" Output="0x80000000"/>
+<162 CMO="0xf7103012" InfoStr="ERROR::cancel thread error" Output="0x80000000"/>
+<163 CMO="0xf7103013" InfoStr="ERROR::abs timer is full" Output="0x80000000"/>
+<164 CMO="0xf7103014" InfoStr="ERROR::timer is not exist" Output="0x80000000"/>
+<165 CMO="0xf7103015" InfoStr="ERROR::group timer is full" Output="0x80000000"/>
+<166 CMO="0xf7103016" InfoStr="ERROR::group is not exist" Output="0x80000000"/>
+<167 CMO="0xf7103017" InfoStr="ERROR::timer`s PID error" Output="0x80000000"/>
+<168 CMO="0xf7103018" InfoStr="ERROR::too mnay timer add to the group" Output="0x80000000"/>
+<169 CMO="0xf7103019" InfoStr="ERROR::timer index out of the gorup" Output="0x80000000"/>
+<16a CMO="0xf710301A" InfoStr="ERROR::timer is already existed" Output="0x80000000"/>
+<16b CMO="0xf710301B" InfoStr="ERROR::index error" Output="0x80000000"/>
+<16c CMO="0xf710301C" InfoStr="ERROR::no message recv" Output="0x80000000"/>
+<16d CMO="0xf710301D" InfoStr="ERROR::no message recv" Output="0x80000000"/>
+<16e CMO="0xf710301E" InfoStr="ERROR::message data too long to send" Output="0x80000000"/>
+<16f CMO="0xf710301F" InfoStr="ERROR::message data too long to send" Output="0x80000000"/>
+<170 CMO="0xf7103020" InfoStr="ERROR::out message lenght error for timer`s RPC call" Output="0x80000000"/>
+<171 CMO="0xf7103021" InfoStr="ERROR::out message lenght error for timer`s RPC call" Output="0x80000000"/>
+<172 CMO="0xf7103022" InfoStr="ERROR::message type error" Output="0x80000000"/>
+<173 CMO="0xf7103023" InfoStr="ERROR::timer`s type error" Output="0x80000000"/>
+<174 CMO="0xf7103024" InfoStr="ERROR::create local timer ID error" Output="0x80000000"/>
+<175 CMO="0xf7103025" InfoStr="ERROR::unknow the timer type" Output="0x80000000"/>
+<176 CMO="0xf7103026" InfoStr="ERROR::the timer queue is full" Output="0x80000000"/>
+<177 CMO="0xf7103027" InfoStr="ERROR::unknow the CLI CMO" Output="0x80000000"/>
+<178 CMO="0xf7103028" InfoStr="ERROR::unknow error on out put string" Output="0x80000000"/>
+<179 CMO="0xf7103029" InfoStr="ERROR::Timer count in group error" Output="0x80000000"/>
+<17a CMO="0xf710302A" InfoStr="ERROR::Timer count in local error" Output="0x80000000"/>
+<17b CMO="0xf710302B" InfoStr="ERROR::Abs timer`s value error" Output="0x80000000"/>
+<17c CMO="0xf7103030" InfoStr="ERROR::Timer tick overflow" Output="0x80000000"/>
+<17d CMO="0xf7103031" InfoStr="ERROR::The time formate error" Output="0x80000000"/>
+<17e CMO="0xf7103032" InfoStr="ERROR::Error on release timer" Output="0x80000000"/>
+<17f CMO="0xf710f207" InfoStr="ERROR::Does not support the patch feature" Output="0x80000000"/>
+<180 CMO="0xf710f208" InfoStr="ERROR::No patch exist" Output="0x80000000"/>
+<181 CMO="0xf710f209" InfoStr="ERROR::The patch does not exist" Output="0x80000000"/>
+<182 CMO="0xf710f20a" InfoStr="ERROR::The patch is in the process, can not be deleted" Output="0x80000000"/>
+<183 CMO="0xf710f20b" InfoStr="ERROR::Fail to delete the patch" Output="0x80000000"/>
+<184 CMO="0xf7205000" InfoStr="ERROR::netlink create fail!" Output="0x80000000"/>
+<185 CMO="0xf720500c" InfoStr="ERROR::netlink connect fail!" Output="0x80000000"/>
+<186 CMO="0xf720500d" InfoStr="ERROR::invalid netlink msg type!" Output="0x80000000"/>
+<187 CMO="0xf7202000" InfoStr="ERROR::Input para is NULL pointer" Output="0x80000000"/>
+<188 CMO="0xf7202001" InfoStr="ERROR::Input para is not right" Output="0x80000000"/>
+<189 CMO="0xf7202002" InfoStr="ERROR::Memory is insufficient" Output="0x80000000"/>
+<18a CMO="0xf7202003" InfoStr="ERROR::Too many command, it must be less than 300" Output="0x80000000"/>
+<18b CMO="0xf7202004" InfoStr="ERROR::Fail to init command tree" Output="0x80000000"/>
+<18c CMO="0xf7202005" InfoStr="ERROR::Fail to init help tree" Output="0x80000000"/>
+<18d CMO="0xf7202006" InfoStr="ERROR::Fail to init err tree" Output="0x80000000"/>
+<18e CMO="0xf7202007" InfoStr="ERROR::Invalid client ID" Output="0x80000000"/>
+<18f CMO="0xf7202008" InfoStr="ERROR::Fail to get help info" Output="0x80000000"/>
+<190 CMO="0xf7202009" InfoStr="ERROR::Fail to get output info" Output="0x80000000"/>
+<191 CMO="0xf720200A" InfoStr="ERROR::Fail to get error info" Output="0x80000000"/>
+<192 CMO="0xf720200B" InfoStr="ERROR::Peer has been shut down, which often occur in telnet connection" Output="0x80000000"/>
+<193 CMO="0xf720200C" InfoStr="ERROR::partial help is not successful" Output="0x80000000"/>
+<194 CMO="0xf720200D" InfoStr="ERROR::complete help is not successful" Output="0x80000000"/>
+<195 CMO="0xf720200E" InfoStr="ERROR::invalid instance value" Output="0x80000000"/>
+<196 CMO="0xf720200F" InfoStr="ERROR::Instance para from CLI is not matched to para in command tree" Output="0x80000000"/>
+<197 CMO="0xf7202010" InfoStr="ERROR::Para name is too long, which should be less than 32 char" Output="0x80000000"/>
+<198 CMO="0xf7202011" InfoStr="ERROR::Para value is too long, which should be less than 128 char" Output="0x80000000"/>
+<199 CMO="0xf7202012" InfoStr="ERROR::Invalid para type" Output="0x80000000"/>
+<19a CMO="0xf7202013" InfoStr="ERROR::Format of output info is not correct" Output="0x80000000"/>
+<19b CMO="0xf7202014" InfoStr="ERROR::Command is not existed" Output="0x80000000"/>
+<19c CMO="0xf7202015" InfoStr="ERROR::Command is not right" Output="0x80000000"/>
+<19d CMO="0xf7202016" InfoStr="ERROR::Too many user" Output="0x80000000"/>
+<19e CMO="0xf7202017" InfoStr="ERROR::Invalid client type" Output="0x80000000"/>
+<19f CMO="0xf7202018" InfoStr="ERROR::Client is not exist" Output="0x80000000"/>
+<1a0 CMO="0xf7202019" InfoStr="ERROR::Telnet server has been started" Output="0x80000000"/>
+<1a1 CMO="0xf720201A" InfoStr="ERROR::connect is timeout" Output="0x80000000"/>
+<1a2 CMO="0xf720201B" InfoStr="ERROR::undefined ESC state" Output="0x80000000"/>
+<1a3 CMO="0xf720201C" InfoStr="ERROR::unrecognized char in ESC1 state" Output="0x80000000"/>
+<1a4 CMO="0xf720201D" InfoStr="ERROR::unrecognized char in ESC2 state" Output="0x80000000"/>
+<1a5 CMO="0xf720201E" InfoStr="ERROR::Char is not recognized in ESC3 state!" Output="0x80000000"/>
+<1a6 CMO="0xf720201F" InfoStr="ERROR::Esc state is not matched!" Output="0x80000000"/>
+<1a7 CMO="0xf7202020" InfoStr="ERROR::Edit buffer is overflowed, it must be less than 512 chars!" Output="0x80000000"/>
+<1a8 CMO="0xf7202021" InfoStr="ERROR::Invalid echo mode!" Output="0x80000000"/>
+<1a9 CMO="0xf7202022" InfoStr="ERROR::Edit buffer is empty!" Output="0x80000000"/>
+<1aa CMO="0xf7202023" InfoStr="ERROR::Cursor has been in the line head!" Output="0x80000000"/>
+<1ab CMO="0xf7202024" InfoStr="ERROR::Cursor has been in the line end!" Output="0x80000000"/>
+<1ac CMO="0xf7202025" InfoStr="ERROR::invalid delete type!" Output="0x80000000"/>
+<1ad CMO="0xf7202026" InfoStr="ERROR::invalid submit state!" Output="0x80000000"/>
+<1ae CMO="0xf7202027" InfoStr="ERROR::The ctrl char is not supported!" Output="0x80000000"/>
+<1af CMO="0xf7202028" InfoStr="ERROR::Char is not supported!" Output="0x80000000"/>
+<1b0 CMO="0xf7202029" InfoStr="ERROR::There is no history command!" Output="0x80000000"/>
+<1b1 CMO="0xf720202A" InfoStr="ERROR::Recv buffer is overflowed!" Output="0x80000000"/>
+<1b2 CMO="0xf720202B" InfoStr="ERROR::User name has been existed!" Output="0x80000000"/>
+<1b3 CMO="0xf720202C" InfoStr="ERROR::Password is not matched!" Output="0x80000000"/>
+<1b4 CMO="0xf720202D" InfoStr="ERROR::invalid timeout value, which must be [1, 255]" Output="0x80000000"/>
+<1b5 CMO="0xf720202E" InfoStr="ERROR::password is not right!" Output="0x80000000"/>
+<1b6 CMO="0xf720202F" InfoStr="ERROR::User is not exist!" Output="0x80000000"/>
+<1b7 CMO="0xf7202030" InfoStr="ERROR::Fail to create serial thread!" Output="0x80000000"/>
+<1b8 CMO="0xf7202031" InfoStr="ERROR::Fail to create telnet server thread!" Output="0x80000000"/>
+<1b9 CMO="0xf7202032" InfoStr="ERROR::Invalid operate type!" Output="0x80000000"/>
+<1ba CMO="0xf7202033" InfoStr="ERROR::Some para is not inputted" Output="0x80000000"/>
+<1bb CMO="0xf7202034" InfoStr="ERROR::Redundant para is inputted in CLI" Output="0x80000000"/>
+<1bc CMO="0xf7202035" InfoStr="ERROR::Redundant para is inputted in CLI" Output="0x80000000"/>
+<1bd CMO="0xf7202036" InfoStr="ERROR::Command key is repeated!" Output="0x80000000"/>
+<1be CMO="0xf7202037" InfoStr="ERROR::Unexcepted message!" Output="0x80000000"/>
+<1bf CMO="0xf7202038" InfoStr="ERROR::Invalid message is recieved from SSH ctrl fifo!" Output="0x80000000"/>
+<1c0 CMO="0xf7202039" InfoStr="ERROR::Command key is too long, it must be less than 512!" Output="0x80000000"/>
+<1c1 CMO="0xf720203A" InfoStr="ERROR::Object path is too long!" Output="0x80000000"/>
+<1c2 CMO="0xf720203B" InfoStr="ERROR::Debug server has been started!" Output="0x80000000"/>
+<1c3 CMO="0xf720203C" InfoStr="ERROR::Fail to create SSH server thread!" Output="0x80000000"/>
+<1c4 CMO="0xf720203D" InfoStr="ERROR::Fail to create debug server thread!" Output="0x80000000"/>
+<1c5 CMO="0xf720203E" InfoStr="ERROR::too many cli users, it should be less than 5" Output="0x80000000"/>
+<1c6 CMO="0xf720203F" InfoStr="ERROR::root can not be deleted!" Output="0x80000000"/>
+<1c7 CMO="0xf7202040" InfoStr="ERROR::user should not be deleted by itself" Output="0x80000000"/>
+<1c8 CMO="0xf7202041" InfoStr="ERROR::user name is too long, it must be less than 32 chars" Output="0x80000000"/>
+<1c9 CMO="0xf7202042" InfoStr="ERROR::user password is too long, it must be less than 64 chars" Output="0x80000000"/>
+<1ca CMO="0xf7202043" InfoStr="ERROR::Failed to disable telnet, there is someone using telnet!" Output="0x80000000"/>
+<1cb CMO="0xf7202044" InfoStr="ERROR::set telnet access failure." Output="0x80000000"/>
+<1cc CMO="0xf7202045" InfoStr="ERROR::parameters input are inadequate." Output="0x80000000"/>
+<1cd CMO="0xf7202046" InfoStr="ERROR::parameter input is invalid." Output="0x80000000"/>
+<1ce CMO="0xf7202047" InfoStr="ERROR::equiptest should be started firstly." Output="0x80000000"/>
+<1cf CMO="0xf7202048" InfoStr="ERROR::all the ports should be in ONHOOK state." Output="0x80000000"/>
+<1d0 CMO="0xf7202049" InfoStr="ERROR::other test has been started." Output="0x80000000"/>
+<1d1 CMO="0xf7202050" InfoStr="ERROR::pots are not in SPC test state." Output="0x80000000"/>
+<1d2 CMO="0xf7202051" InfoStr="ERROR::There is no process to handle this command." Output="0x80000000"/>
+<1d3 CMO="0xf7202052" InfoStr="ERROR::SLIC has not initialised." Output="0x80000000"/>
+<1d4 CMO="0xf7202058" InfoStr="ERROR::User password is empty." Output="0x80000000"/>
+<1d5 CMO="0xf720205A" InfoStr="ERROR::User name is empty." Output="0x80000000"/>
+<1d6 CMO="0xf720205B" InfoStr="ERROR::Refuse to transparent on the device." Output="0x80000000"/>
+<1d7 CMO="0xf720205F" InfoStr="ERROR::monitor test failed!" Output="0x80000000"/>
+<1d8 CMO="0xf7202061" InfoStr="ERROR::System busy!" Output="0x80000000"/>
+<1d9 CMO="0xf720502a" InfoStr="ERROR::get usb status fail!" Output="0x80000000"/>
+<1da CMO="0xf720502b" InfoStr="ERROR:: maybe the power saving mode have set usb off, please downing under the correcrt mode" Output="0x80000000"/>
+<1db CMO="0xf720a001" InfoStr="Error::Faild to GZip!" Output="0x80000000"/>
+<1dc CMO="0xf720a002" InfoStr="Error::Faild to UNGZip!" Output="0x80000000"/>
+<1dd CMO="0xf720a003" InfoStr="ERROR::buffer is too short" Output="0x80000000"/>
+<1de CMO="0xf720a004" InfoStr="ERROR:: restore file is invalid!" Output="0x80000000"/>
+<1df CMO="0xf720a005" InfoStr="ERROR::fail to gzip file!" Output="0x80000000"/>
+<1e0 CMO="0xf720a006" InfoStr="Error::ERROR::null ptr !" Output="0x80000000"/>
+<1e1 CMO="0xf720a007" InfoStr="ERROR::fail to open file" Output="0x80000000"/>
+<1e2 CMO="0xf720a008" InfoStr="ERROR::fail to read file" Output="0x80000000"/>
+<1e3 CMO="0xf720a009" InfoStr="ERROR::fail to write file" Output="0x80000000"/>
+<1e4 CMO="0xf720a00a" InfoStr="ERROR::fail to set default file name " Output="0x80000000"/>
+<1e5 CMO="0xf720a00b" InfoStr="ERROR::fail to add ziphead!" Output="0x80000000"/>
+<1e6 CMO="0xf720a00c" InfoStr="ERROR::fail to cut ziphead!" Output="0x80000000"/>
+<1e7 CMO="0xf720a00d" InfoStr="ERROR::fail to execute cmd!" Output="0x80000000"/>
+<1e8 CMO="0xf720a00e" InfoStr="ERROR::wrong file!" Output="0x80000000"/>
+<1e9 CMO="0xf720a00f" InfoStr="ERROR::malloc faild !" Output="0x80000000"/>
+<1ea CMO="0xf720a010" InfoStr="ERROR::fail to get file path!" Output="0x80000000"/>
+<1eb CMO="0xf720a011" InfoStr="ERROR::fail to get file name!" Output="0x80000000"/>
+<1ec CMO="0xf720a012" InfoStr="ERROR::get usb device list fail" Output="0x80000000"/>
+<1ed CMO="0xf720a013" InfoStr="ERROR::get usb info fail" Output="0x80000000"/>
+<1ee CMO="0xf720a014" InfoStr="ERROR::backup fail!maybe no more space for backup!" Output="0x80000000"/>
+<1ef CMO="0xf720a015" InfoStr="ERROR::fail to get file size!" Output="0x80000000"/>
+<1f0 CMO="0xf720a016" InfoStr="ERROR::fail to open file,maybe no more space for backup!" Output="0x80000000"/>
+<1f1 CMO="0xf720a017" InfoStr="ERROR::fail to read file,maybe no more space for backup!" Output="0x80000000"/>
+<1f2 CMO="0xf720a018" InfoStr="ERROR::fail to write file,maybe no more space for backup!" Output="0x80000000"/>
+<1f3 CMO="0xf720011c" InfoStr="ERROR::The password has no special charater" Output="0x80000000"/>
+<1f4 CMO="0xf720011d" InfoStr="Bind Error::The lan has been bound with another dual stack WAN or the current WAN type is incorrect" Output="0x80000000"/>
+<1f5 CMO="0xf7203012" InfoStr="ERROR::illegal parameter please check the value! " Output="0x80000000"/>
+<1f6 CMO="0xf7210003" InfoStr="ERROR::illegal parameter please check the value! " Output="0x80000000"/>
+<1f7 CMO="0xf7210004" InfoStr="ERROR::fail to get sync resource! " Output="0x80000000"/>
+<1f8 CMO="0xf7210006" InfoStr="ERROR::failed to send hlp, please check board info! " Output="0x80000000"/>
+<1f9 CMO="0xf721000c" InfoStr="ERROR::failed to send hlp, please check board info! " Output="0x80000000"/>
+<1fa CMO="0xf7210007" InfoStr="ERROR::time out ! " Output="0x80000000"/>
+<1fb CMO="0xf7210008" InfoStr="ERROR::malloc faild ! " Output="0x80000000"/>
+<1fc CMO="0xf72100010" InfoStr="ERROR::board not exist ! " Output="0x80000000"/>
+<1fd CMO="0xf72100012" InfoStr="ERROR::cmd not exist ! " Output="0x80000000"/>
+<1fe CMO="0xf7210014" InfoStr="ERROR::illegal message ! " Output="0x80000000"/>
+<1ff CMO="0xf7210017" InfoStr="ERROR::fail to get value ! " Output="0x80000000"/>
+<200 CMO="0xf7200040" InfoStr="ERROR::fail to check old password ! " Output="0x80000000"/>
+<201 CMO="0xF8203001" InfoStr="ERROR::Backup file exist! " Output="0x80000000"/>
+<202 CMO="0xf720404c" InfoStr="ERROR::[SWM]No such kind of operation is running!" Output="0x80000000"/>
+<203 CMO="0xf7210001" InfoStr="ERROR::The input para is error." Output="0x84000000"/>
+<204 CMO="0xf7400000" InfoStr="ATTENTION::Some of configuration parameters have been delayed because the call in progress." Output="0x84000000"/>
+<205 CMO="0xf7400001" InfoStr="ERROR::Multi VAGs(ATAs) parameters conflicts." Output="0x84000000"/>
+<206 CMO="0xf7400002" InfoStr="ERROR::Not allowed to modify the key parameters when the user is busy." Output="0x84000000"/>
+<207 CMO="0xf7400003" InfoStr="ERROR::Repeated directory number." Output="0x84000000"/>
+<208 CMO="0xf7400004" InfoStr="ERROR::Not allowed to delete when the user is busy." Output="0x84000000"/>
+<209 CMO="0xf7400005" InfoStr="ERROR::Jitter buffer value conflicts." Output="0x84000000"/>
+<20a CMO="0xf7400006" InfoStr="ERROR::The POTS ports are occupied." Output="0x84000000"/>
+<20b CMO="0xf7400007" InfoStr="ERROR::Another POTS port is in test already." Output="0x84000000"/>
+<20c CMO="0xf7400008" InfoStr="ERROR::Another test of the POTS port is in progress." Output="0x84000000"/>
+<20d CMO="0xf7400009" InfoStr="ERROR::PT value of RFC2833 and RFC2198 conflicts." Output="0x84000000"/>
+<20e CMO="0xf740000a" InfoStr="ERROR::PT value of RFC2198 and VBD conflicts." Output="0x84000000"/>
+<20f CMO="0xf740000b" InfoStr="ERROR::PT value of VBD and RFC2833 conflicts." Output="0x84000000"/>
+<210 CMO="0xf740000c" InfoStr="ERROR::." Output="0x84000000"/>
+<211 CMO="0xf740000d" InfoStr="ERROR::Repeated directory number(URI)!" Output="0x84000000"/>
+<212 CMO="0xf740000e" InfoStr="ERROR::Repeated directory number(UserName)!" Output="0x84000000"/>
+<213 CMO="0xf740000f" InfoStr="ERROR::onhook time erro." Output="0x84000000"/>
+<214 CMO="0xf7400010" InfoStr="ERROR::Repeated IpSpc port!" Output="0x84000000"/>
+<215 CMO="0xf7400011" InfoStr="ERROR::rtp port erro!" Output="0x84000000"/>
+<216 CMO="0xf7400012" InfoStr="ERROR::IpSpc udpport erro." Output="0x84000000"/>
+<217 CMO="0xf7400013" InfoStr="ERROR::DIALSN_INNCALL_PRE_CONFLICT!" Output="0x84000000"/>
+<218 CMO="0xf7400014" InfoStr="ERROR::CODEC disable!" Output="0x84000000"/>
+<219 CMO="0xf7405000" InfoStr="" Output="0x80000000"/>
+<21a CMO="0xf7405001" InfoStr="ERROR::Repeated directory number!" Output="0x80000000"/>
+<21b CMO="0xf7405002" InfoStr="" Output="0x80000000"/>
+<21c CMO="0xf7405003" InfoStr="" Output="0x80000000"/>
+<21d CMO="0xf7405004" InfoStr="" Output="0x80000000"/>
+<21e CMO="0xf7405005" InfoStr="" Output="0x80000000"/>
+<21f CMO="0xf7405006" InfoStr="" Output="0x80000000"/>
+<220 CMO="0xf7405007" InfoStr="" Output="0x80000000"/>
+<221 CMO="0xf7405008" InfoStr="" Output="0x80000000"/>
+<222 CMO="0xf7301051" InfoStr="ERROR::Not allowed to modify the key parameters of WAN because the call in progress" Output="0x84000000"/>
+<223 CMO="0xf7301052" InfoStr="ERROR::Not allowed to delete the WAN because the call in progress" Output="0x84000000"/>
+<224 CMO="0x1" InfoStr="ERROR::The requested operation can not be performed. Please check whether the related parameters are correct!" Output="0x84000000"/>
+<225 CMO="0xf7400015" InfoStr="ERROR::The requested operation can not be performed. Please check whether the related parameters are correct!" Output="0x84000000"/>
+<226 CMO="0xf7400016" InfoStr="success!::Safety media mirroring is enabled, but signaling mirroring is not authenticated and is disabled!" Output="0x84000000"/>
+<227 CMO="0xf7400017" InfoStr="ERROR::The Port have used by other VAG(ATA)." Output="0x84000000"/>
+<228 CMO="0xf7400018" InfoStr="INFO::Duplicate operation. The command is under execution." Output="0x84000000"/>
+<229 CMO="0xf740001a" InfoStr="ERROR::The port is not in off-hook state." Output="0x84000000"/>
+<22a CMO="0xf740001b" InfoStr="ERROR::The port is not in a call." Output="0x84000000"/>
+<22b CMO="0xf740001c" InfoStr="ERROR::Operation conflict. A local loopback is in progress." Output="0x84000000"/>
+<22c CMO="0xf740001d" InfoStr="ERROR::Operation conflict. A remote loopback is in progress." Output="0x84000000"/>
+<22d CMO="0xf740001e" InfoStr="ERROR::Incorrect parameter settings of the remote diagnosis server." Output="0x84000000"/>
+<22e CMO="0xf7400020" InfoStr="ERROR::Invalid value of the port parameter." Output="0x84000000"/>
+<22f CMO="0xf7400021" InfoStr="ERROR::Invalid value of the enable parameter." Output="0x84000000"/>
+<230 CMO="0xf7400022" InfoStr="ERROR::Invalid value of the switch parameter." Output="0x84000000"/>
+<231 CMO="0xf7400023" InfoStr="ERROR::Invalid value of the diagtype parameter." Output="0x84000000"/>
+<232 CMO="0xf7400024" InfoStr="ERROR::Invalid value of the autostop parameter." Output="0x84000000"/>
+<233 CMO="0xf7400025" InfoStr="ERROR::Invalid value of the dir parameter." Output="0x84000000"/>
+<234 CMO="0xf7400026" InfoStr="ERROR::Invalid value of the displaytelno parameter." Output="0x84000000"/>
+<235 CMO="0xf7400027" InfoStr="ERROR::Invalid value of the type parameter." Output="0x84000000"/>
+<236 CMO="0xf7400028" InfoStr="ERROR::Invalid value of the voiceservice parameter." Output="0x84000000"/>
+<237 CMO="0xf7400029" InfoStr="ERROR::Invalid value of the timerautostop parameter." Output="0x84000000"/>
+<238 CMO="0xf740002a" InfoStr="ERROR::Invalid value of the mode parameter." Output="0x84000000"/>
+<239 CMO="0xf740002b" InfoStr="ERROR::Invalid value of the mg parameter." Output="0x84000000"/>
+<23a CMO="0xf7400019" InfoStr="ERROR::Parameter error:port" Output="0x84000000"/>
+<23b CMO="0xf740001a" InfoStr="ERROR::Parameter error:autostop" Output="0x84000000"/>
+<23c CMO="0xf740001b" InfoStr="ERROR::Parameter error:diagnosetype" Output="0x84000000"/>
+<23d CMO="0xf740001c" InfoStr="ERROR::Parameter error:displayno" Output="0x84000000"/>
+<23e CMO="0xf740002c" InfoStr="ERROR::Invalid value of the channel parameter." Output="0x84000000"/>
+<23f CMO="0xf740002d" InfoStr="ERROR::capture users beyond the limit!" Output="0x84000000"/>
+<240 CMO="0xf740002e" InfoStr="success!::remote server changed, capture users should be enabled again !" Output="0x84000000"/>
+<241 CMO="0xf7400030" InfoStr="ERROR::The operation is being stopped. Please try later." Output="0x84000000"/>
+<242 CMO="0xf7400031" InfoStr="ERROR::Operation conflict. The operation is being executed on another port." Output="0x84000000"/>
+<243 CMO="0xf7400032" InfoStr="ERROR::DSP record debugging is not enabled." Output="0x84000000"/>
+<244 CMO="0xf7400033" InfoStr="ERROR::Operation conflict. Please try after you hang up." Output="0x84000000"/>
+<245 CMO="0xf7400034" InfoStr="ERROR::Operation conflict. The interval between queries must be greater than 1 minute." Output="0x84000000"/>
+<246 CMO="0xf7400035" InfoStr="ERROR::Unknown error." Output="0x84000000"/>
+<247 CMO="0xf7400036" InfoStr="ERROR::Operation conflict. The interval between queries must be greater than 10 seconds." Output="0x84000000"/>
+<248 CMO="0xf7605001" InfoStr="ERROR::Input para is not right!" Output="0x80000000"/>
+<249 CMO="0xf7600006" InfoStr="ERROR::The table is full." Output="0x84000000"/>
+<24a CMO="0xF760000d" InfoStr="ERROR::PCB don't support RF filter!" Output="0x80000000"/>
+</ErrRoot>

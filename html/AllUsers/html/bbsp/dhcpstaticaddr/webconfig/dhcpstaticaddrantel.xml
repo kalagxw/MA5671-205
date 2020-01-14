@@ -1,0 +1,12 @@
+<InternetGatewayDevice>
+<LANDevice setconfig="0x0000000f" getconfig = "0x0000000f">
+<X_HW_DHCPv6 setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Server setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<StaticAllocation  setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Chaddr setconfig = "0x00000002" getconfig = "0x00000002"/>
+<InterfaceID setconfig = "0x00000002" getconfig = "0x00000002"/>
+</StaticAllocation>
+</Server>
+</X_HW_DHCPv6>
+</LANDevice>
+</InternetGatewayDevice> 

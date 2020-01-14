@@ -1,0 +1,22 @@
+var DosReload = 
+[
+	
+]
+
+function CusLoadFrame()
+{
+	if(('<%HW_WEB_GetParaByDomainName(InternetGatewayDevice.X_HW_Security.X_HW_FirewallLevel);%>'.toUpperCase() != 'CUSTOM' )
+		|| (('<%HW_WEB_GetUserType();%>' != '0') && (IsSonetAndMobily() ==false)))
+	{
+		setDisable('synFlooding' , 1);
+		setDisable('icmpEcho' , 1);
+		setDisable('icmpRedirect' , 1);
+		setDisable('land' , 1);
+		setDisable('smurf' , 1);
+		setDisable('winnuke' , 1);		
+		setDisable('pingsweep' , 1);
+		setDisable('btnApply_ex' , 1);
+		setDisable('cancelValue' , 1);
+	}
+
+}

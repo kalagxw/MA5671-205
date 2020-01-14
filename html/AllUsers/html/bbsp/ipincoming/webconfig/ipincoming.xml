@@ -1,0 +1,22 @@
+<InternetGatewayDevice> 
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<IpFilterInPolicy setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IpFilterInRight setconfig = "0x00000003" getconfig = "0x00000003"/>
+<IpFilterIn setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Enable setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourceIPStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<SourceIPEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestIPStart setconfig = "0x00000003" getconfig = "0x00000003"/>
+<DestIPEnd setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Protocol setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Priority setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Direction setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Action setconfig = "0x00000003" getconfig = "0x00000003"/>
+<Name setconfig = "0x00000003" getconfig = "0x00000003"/>
+<LanSideTcpPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<LanSideUdpPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<WanSideTcpPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+<WanSideUdpPort setconfig = "0x00000003" getconfig = "0x00000003"/>
+</IpFilterIn>
+</X_HW_Security>
+</InternetGatewayDevice> 

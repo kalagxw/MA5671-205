@@ -1,0 +1,8 @@
+<InternetGatewayDevice>
+<X_HW_ARPPingDiagnostics setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<ARPPingEnable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<WanName setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ARPPingInterval setconfig = "0x00000002" getconfig = "0x00000002"/>
+<ARPPingNumberOfRepetitions setconfig = "0x00000002" getconfig = "0x00000002"/>
+</X_HW_ARPPingDiagnostics>
+</InternetGatewayDevice> 

@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta HTTP-EQUIV = 'Pragma' CONTENT = 'no-cache'>
+<title>Waiting</title>
+<link rel="stylesheet" href="../../../resource/common/<%HW_WEB_CleanCache_Resource(style.css);%>" type="text/css"/>
+<link rel="stylesheet"  href='../../../Cuscss/<%HW_WEB_GetCusSource(frame.css);%>' type='text/css'>
+<script language="JavaScript" src="../../../resource/<%HW_WEB_Resource(bbspdes.html);%>"></script>
+<script language="JavaScript" src="../../../html/bbsp/common/managemode.asp"></script>
+</head>
+<body class="mainbody">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div align='center'><script>document.write(waninfo_language['waninfowait']);</script></div>
+<script>
+
+function AfterTime()
+{
+	if(IsE8cFrame())
+	{
+		document.location.href = "waninfoe8c.asp";
+	}
+	else
+	{
+		document.location.href = "waninfo.asp";
+	}
+}
+
+
+window.setTimeout(AfterTime, 3000);
+</script>
+</body>
+</html>

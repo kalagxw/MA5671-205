@@ -1,0 +1,4 @@
+var DnsHostReload = 
+[
+	{ReloadId:"domain", ReloadValue:[{display:0}]},
+]

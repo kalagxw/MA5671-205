@@ -1,0 +1,20 @@
+#! /bin/sh
+#add recoverflag into /mnt/jffs2/custunpara.txt
+#para :N/:Y
+
+#file is existed or not
+fileexisted=""
+if [ -f "/mnt/jffs2/custunpara.txt" ]
+then
+    fileexisted="True"
+else
+    echo "ERROR::custunpara.txt is not existed."
+    exit 1
+fi
+
+cat /mnt/jffs2/custunpara.txt | 
+while IFS=: read para1 para2
+do
+echo $para1"$1" > /mnt/jffs2/custunpara.txt
+done
+echo "add flag success!"

@@ -1,0 +1,13 @@
+<InternetGatewayDevice>
+<X_HW_APMPolicy setconfig = "0x00000003" getconfig = "0x00000003"> 
+<EnablePowerSavingMode  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<BatteryModePolicy setconfig = "0x00000003" getconfig = "0x00000003"> 
+<NotUseUsbService  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NotUseLanService  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NotUseWlanService  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NotUseVoiceService  setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NotUseCATVService   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+<NotUseRemoteManagement   setconfig = "0x00000003" getconfig = "0x00000003"/> 
+</BatteryModePolicy> 
+</X_HW_APMPolicy>
+</InternetGatewayDevice>  

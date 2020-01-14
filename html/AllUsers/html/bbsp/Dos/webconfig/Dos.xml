@@ -1,0 +1,13 @@
+<InternetGatewayDevice>
+<X_HW_Security setconfig = "0x00000003" addconfig = "0x00000003" delconfig = "0x00000003" getconfig = "0x00000003">
+<Dosfilter setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<SynFloodEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<IcmpEchoReplyEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<IcmpRedirectEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<LandEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<SmurfEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<WinnukeEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+<PingSweepEn setconfig = "0x00000002" getconfig = "0x00000002"/>
+</Dosfilter>
+</X_HW_Security>
+</InternetGatewayDevice> 

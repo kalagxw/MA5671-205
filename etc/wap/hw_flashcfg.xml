@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<option system_pack="0" flash_size="0x01000000"/>
+<uboot rotate_flag="0" address0="0x00000000" length0="0x00040000"/>
+<flash_config rotate_flag="0" address0="0x00040000" length0="0x00001000"/>
+<system_param rotate_flag="0" address0="0x00041000" length0="0x0001f000"/>
+<kernel rotate_flag="0" address0="0x00060000" length0="0x00180000"/>
+<rootfs rotate_flag="0" address0="0x001e0000" length0="0x00900000"/>
+<minisys rotate_flag="0" address0="0x00ae0000" length0="0x00380000"/>
+<file_system rotate_flag="0" address0="0x00e60000" length0="0x00180000"/>
+<reserved rotate_flag="0" address0="0x00fe0000" length0="0x00020000"/>
+</root>           

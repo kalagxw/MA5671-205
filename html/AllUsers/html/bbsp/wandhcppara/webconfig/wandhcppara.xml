@@ -1,0 +1,16 @@
+<InternetGatewayDevice>
+<WANDevice>
+<WANConnectionDevice addconfig = "0x00000003" setconfig = "0x00000001" getconfig = "0x00000003">
+<WANIPConnection setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<DHCPClient setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<ReqDHCPOption setconfig = "0x00000002" addconfig = "0x00000002" delconfig = "0x00000002" getconfig = "0x00000002">
+<Enable setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Tag setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Order setconfig = "0x00000002" getconfig = "0x00000002"/>
+<Value setconfig = "0x00000002" getconfig = "0x00000002"/>
+</ReqDHCPOption> 
+</DHCPClient>
+</WANIPConnection>
+</WANConnectionDevice>
+</WANDevice>
+</InternetGatewayDevice> 

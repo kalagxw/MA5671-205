@@ -1,0 +1,286 @@
+#! /bin/sh
+
+# 参数索引从0开始，$#是参数个数减1
+# 使用格式如下：
+# Broadband display XXX
+#           debug XXX on
+#                     off
+#                     pkt N
+
+isdigit()
+{
+	result=0
+	case $1 in
+	[0-9])
+		result=1
+		;;
+	[0-9][0-9])
+		result=1
+		;;
+	[0-9][0-9][0-9])
+		result=1
+		;;
+	[0-9][0-9][0-9][0-9])
+		result=1
+		;;
+	[0-9][0-9][0-9][0-9][0-9])
+		result=1
+		;;
+	esac
+	return $result
+}
+
+if [ $# -ge 2 ]; then
+	
+	# 一级命令
+	#if [ $0 == "Broadband" ]; then
+
+		# 二级命令
+		if [ $1 == "display" ]; then
+
+			# 不允许有参数
+			if [ $# -ne 2 ]; then
+				echo "ERROR::input para is not right!"
+				exit 1
+			fi
+
+			case $2 in
+			ifm)
+				Bbspcmd ifm_pdt show l3ifmtbl
+				Bbspcmd ifm_pdt show wanstats
+				exit 0
+				;;
+
+			route)
+				Bbspcmd route_pdt show routetbl
+				Bbspcmd route_pdt show policymap
+				Bbspcmd route_pdt show policytbl
+				exit 0
+				;;
+
+			ker_route)
+				Bbspcmd ker_route show egress
+				Bbspcmd ker_route show tunnel
+				exit 0
+				;;
+
+			napt)
+				Bbspcmd napt_pdt show conn
+				Bbspcmd napt_pdt show remap
+				Bbspcmd napt_pdt show l3rep
+				Bbspcmd napt_pdt show napt
+				Bbspcmd napt_pdt show cfg
+				exit 0
+				;;
+
+			ptpdrv)
+				Bbspcmd ptpdrv show iwf
+				exit 0
+				;;
+
+			qos)
+				Bbspcmd qos_pdt show smart
+				exit 0
+				;;
+
+			ethoam)
+				Bbspcmd ethoam_pdt show cfg
+				Bbspcmd ethoam_pdt show correct
+				exit 0
+				;;
+
+			hw_route)
+				Bbspcmd ker_route show hw_route
+				exit 0
+				;;
+
+			hw_tunnel)
+				Bbspcmd ker_route show hw_tunnel
+				exit 0
+				;;
+
+			*)
+				echo "ERROR::input para is not right!"
+				exit 1
+				;;
+			esac
+		fi
+		
+		# 二级命令
+		if [ $1 == "debug" ]; then
+		
+			# 只允许有{ on | off | pkt N }三种参数
+			if [ $# -eq 3 ]; then
+				if [ $3 != "on" -a $3 != "off" ]; then
+					echo "ERROR::input para is not right!"
+					exit 1
+				fi
+			elif [ $# -eq 4 ]; then
+				isdigit $4
+				if [ $3 != "pkt" -o $? -ne 1 ]; then
+					echo "ERROR::input para is not right!"
+					exit 1
+				fi
+			else
+				echo "ERROR::input para is not right!"
+				exit 1
+			fi
+
+			case $2 in
+			igmp)
+				if [ "$3" == on ]; then
+					Bbspcmd igmp_pdt dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd igmp_pdt dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			ker_route)
+				if [ "$3" == on ]; then
+					Bbspcmd ker_route dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd ker_route dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			napt)
+				if [ "$3" == on ]; then
+					Bbspcmd napt_pdt dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd napt_pdt dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			portchk)
+				if [ "$3" == on ]; then
+					Bbspcmd portchk dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd portchk dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			ptpdrv)
+				if [ "$3" == on ]; then
+					Bbspcmd ptpdrv dbg all
+				elif [ "$3" == off ]; then
+					Bbspcmd ptpdrv dbg all off
+				else
+					Bbspcmd ptpdrv dbg pkt $5
+				fi
+				exit 0
+				;;
+
+			qos)
+				if [ "$3" == on ]; then
+					Bbspcmd qos_pdt dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd qos_pdt dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			route)
+				if [ "$3" == on ]; then
+					Bbspcmd route_pdt dbg on
+				elif [ "$3" == off ]; then
+					Bbspcmd route_pdt dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			ifm)
+				if [ "$3" == on ]; then
+					Bbspcmd ifm_pdt dbg on
+					Bbspcmd wlwan set print on
+				elif [ "$3" == off ]; then
+					Bbspcmd ifm_pdt dbg off
+					Bbspcmd wlwan set print off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			lswadp)
+				if [ "$3" == on ]; then
+					Bbspcmd lswadp dbg all
+				elif [ "$3" == off ]; then
+					Bbspcmd lswadp dbg all off
+				else
+					Bbspcmd lswadp dbg pkt $5
+				fi
+				exit 0
+				;;
+
+			ethoam)
+				if [ "$3" == on ]; then
+					Bbspcmd ethoam_pdt dbg cfg
+					Bbspcmd ethoam_pdt dbg proc
+				elif [ "$3" == off ]; then
+					Bbspcmd ethoam_pdt dbg off
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			*)
+				echo "ERROR::input para is not right!"
+				exit 1
+				;;
+			esac
+		fi
+		
+		# 二级命令
+		if [ $1 == "stat" ]; then
+		
+			# 只允许有{ display | clear  }二种参数
+			if [ $# -eq 3 ]; then
+				if [ $3 != "display" -a $3 != "clear" ]; then
+					echo "ERROR::input para is not right!"
+					exit 1
+				fi
+			else
+				echo "ERROR::input para is not right!"
+				exit 1
+			fi
+
+			case $2 in
+			l2)
+				if [ "$3" == display ]; then
+					LdspCmdA.sh soc display l2 stat
+				elif [ "$3" == clear ]; then
+					LdspCmdA.sh soc display l2 clear
+				else
+					:
+				fi
+				exit 0
+				;;
+
+			*)
+				echo "ERROR::input para is not right!"
+				exit 1
+				;;
+			esac
+		fi
+	#fi
+fi
+
+echo "ERROR::input para is not right!"
+exit 1

@@ -1,0 +1,129 @@
+#!/bin/sh
+
+cpu_mask=0;
+cpu_num=1;
+
+HW_MCore_Cpu_Usage()
+{
+    echo ""    
+    echo "Usage:"
+    echo "*Set IRQ Enable and Process CPU Bind.";
+    echo "  cpu irq <number> enable [cpumask]";
+    echo "  cpu process <pid> bind [cpumask]";
+}
+
+HW_MCore_Show_Error()
+{
+    echo "ERROR::Error Input Parameter!";
+    HW_MCore_Cpu_Usage;
+}
+
+HW_MCore_Get_CpuNum()
+{
+    cpu_num=`cat /proc/cpuinfo | grep processor -c`;
+    if [ $cpu_num -eq 0 ]; then
+        cpu_num=1;
+    fi
+}
+
+HW_MCore_Cpu_Check()
+{
+    var_cpu=$1;
+    HW_MCore_Get_CpuNum;
+   
+    cpu_idx=$(expr $var_cpu + 1);
+    
+    if [ $cpu_idx -gt $cpu_num ] || [ $cpu_idx -lt 1 ]; then
+        echo "ERROR::Cpu Index Error! Cpu Number is $cpu_num, Valid Cpu Index is 0~$(($cpu_num-1)). Please Check and Try Again."; exit 1;
+    else
+        return;
+    fi
+}
+
+HW_MCore_Cpu_GetMask()
+{
+    ((var_cpu=$1));
+
+    HW_MCore_Cpu_Check $var_cpu;
+    if [ $? -eq 0 ] ; then
+        HW_MCore_Cpu_Usage;
+        exit $?;
+    fi
+	
+    cpu_mask=$((1<<$var_cpu));
+	
+    return;
+}
+
+HW_MCore_Irq_Enable()
+{
+    var_irq=$1;
+    var_cpu=$2;
+    
+    if [ ! -d /proc/irq/$var_irq ] ; then
+        echo "ERROR::Irq Number Error! Please Check and Try Again.";
+        exit 1;
+    fi
+    
+    HW_MCore_Cpu_Check $var_cpu;
+    if [ $? -eq 0 ] ; then
+        HW_MCore_Cpu_Usage;
+        exit $?;
+    fi
+    
+    HW_MCore_Cpu_GetMask $var_cpu;
+    if [ -f /proc/irq/$var_irq/smp_affinity ] ; then
+        echo $cpu_mask > /proc/irq/$var_irq/smp_affinity;
+    fi
+    
+    if [ $? -eq 0 ] ; then 
+        echo "Set Irq $var_irq Cpu $var_cpu Affinity Done!";
+    else
+        echo "ERROR::Set Irq $var_irq Cpu $var_cpu Affinity Failed!";
+    fi
+}
+
+HW_MCore_Process_Bind()
+{
+    echo "HW_MCore_Process_Bind $1 $2";
+    
+    var_pid=$1;
+    var_cpu=$2;
+    
+    if [ ! -d /proc/$var_pid ] ; then
+        echo "ERROR::Pid Number Error! Please Check and Try Again.";
+        exit 1;
+    fi
+    
+    HW_MCore_Cpu_Check $var_cpu;
+    if [ $? -eq 0 ] ; then
+        HW_MCore_Cpu_Usage;
+        exit $?;
+    fi
+
+    HW_MCore_Cpu_GetMask $var_cpu;
+    taskset -p $cpu_mask $var_pid;
+    
+    if [ $? -eq 0 ] ; then 
+        echo "Set Process $var_pid Cpu $var_cpu Affinity Done!";
+    else
+        echo "ERROR::Set Process $var_pid Cpu $var_cpu Affinity Failed!";
+    fi
+}
+
+HW_MCore_Cpu_Bind()
+{
+    if [ $1 = "irq" ] && [ $3 = "enable" ] ; then
+        HW_MCore_Irq_Enable $2 $4;
+    elif [ $1 = "process" ] && [ $3 = "bind" ] ; then
+        HW_MCore_Process_Bind $2 $4;
+    else
+        HW_MCore_Show_Error;
+    fi
+}
+
+if [ $# -eq 4 ] ; then
+    HW_MCore_Cpu_Bind $*;
+else
+    HW_MCore_Show_Error;
+fi

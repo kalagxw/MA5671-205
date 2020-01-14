@@ -1,0 +1,9 @@
+<InternetGatewayDevice> 
+<X_HW_FeatureList setconfig = "0x00000003" addconfig = "0x00000000" delconfig = "0x00000000">
+	<BBSPCustomization setconfig = "0x00000003" addconfig = "0x00000000" delconfig = "0x00000000">
+	<RouteTable setconfig = "0x00000003" addconfig = "0x00000000" delconfig = "0x00000000">
+		<State setconfig = "0x00000003"/>
+	</RouteTable>
+	</BBSPCustomization>
+</X_HW_FeatureList>
+</InternetGatewayDevice> 

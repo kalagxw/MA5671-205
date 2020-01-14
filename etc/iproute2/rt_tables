@@ -1,0 +1,19 @@
+#
+# reserved values
+#
+255	local
+254	main
+253	default
+201     lan1
+202     lan2
+203     lan3
+204     lan4
+205     ssid1
+206     ssid2
+207     ssid3
+208     ssid4
+0	unspec
+#
+# local
+#
+#1	inr.ruhep

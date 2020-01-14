@@ -1,0 +1,6 @@
+SHELL:uptime
+WAP:display version
+SHELL:chipdebug soc drop
+SHELL:chipdebug soc tocpures
+SHELL:chipdebug phy display debug info
+SHELL:wifi_collect.sh

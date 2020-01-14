@@ -1,0 +1,50 @@
+SHELL:LdspCmd.sh print on
+SHELL:Bbspcmd cmd_debug on | sleep 1
+SHELL:Bbspcmd ctp show_ctp all | sleep 1
+SHELL:Bbspcmd user_ctp show_ctp all | sleep 1
+SHELL:Bbspcmd mac show all | sleep 2
+SHELL:Bbspcmd vbridge bridge-info | sleep 2
+SHELL:Bbspcmd vbridge uni-binding | sleep 1
+SHELL:Bbspcmd vbridge nni-binding | sleep 1
+SHELL:Bbspcmd vbridge uplink-binding | sleep 1
+SHELL:Bbspcmd vbridge port-binding | sleep 1
+SHELL:Bbspcmd xponcfg show allcfg | sleep 2
+SHELL:Bbspcmd debug  show_topo | sleep 1
+SHELL:Bbspcmd fw show com | sleep 1
+SHELL:Bbspcmd fw show spec | sleep 1
+SHELL:Bbspcmd veth port
+SHELL:Bbspcmd veth table
+WAP:bbspcmd para wan show layer all
+SHELL: sleep 2
+SHELL:Bbspcmd cmd_debug off | sleep 1
+SHELL:cat /var/wan/wan1/config
+SHELL:cat /var/wan/ppp257/config
+SHELL:cat /var/dhcpd/dhcpd.conf
+SHELL:cat /var/dhcpd/option125Tr111.conf
+SHELL:cat /var/ipv6/dhcp6s/dhcp6s.conf
+SHELL:cat /var/ipv6/dhcp6c/wan1/dhcp6c.conf
+SHELL:cat /var/ipv6/dhcp6c/wan1/dhcp6c_opt.conf
+SHELL:cat /var/ipv6/dhcp6c/wan1/dhcp6c_result
+SHELL:cat /var/ipv6/dhcp6c/ppp257/dhcp6c.conf
+SHELL:cat /var/ipv6/dhcp6c/ppp257/dhcp6c_opt.conf
+SHELL:cat /var/ipv6/dhcp6c/ppp257/dhcp6c_result
+SHELL:cat /var/dhcpd/clientinfo.conf
+SHELL: sleep 2
+WAP:display bbsp stats wan id all
+SHELL: sleep 2
+WAP:display dhcpslv
+WAP:display dhcpsrv lanid 1
+WAP:display dhcphosts lanid 1 hostid all
+WAP:igmp get debug switch
+WAP:igmp get flow info
+WAP:igmp get global cfg
+WAP:igmp get iptv
+WAP:igmp get multilmac
+WAP:igmp get port multicast config
+WAP:igmp get statistics
+SHELL:cat /var/dnsmasq_br0.conf
+SHELL:cat /var/dnsmasq_br0_0.conf
+SHELL:cat /mnt/jffs2/dns_collet_info
+SHELL:netstat -na
+SHELL: sleep 1
+

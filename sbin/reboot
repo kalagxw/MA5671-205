@@ -1,0 +1,13 @@
+#! /bin/sh
+
+umount -f /mnt/jffs2 > /dev/null
+
+release.sh 1> /dev/null 2> /dev/null
+
+sleep 2
+
+if [ $# -eq 0  ]; then
+    busybox reboot -f
+else
+    busybox reboot $* -f
+fi
